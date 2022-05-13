@@ -2837,3 +2837,4 @@ Sanesecurity.Foxhole.Rar_fs2841:CL_TYPE_RAR:*:(?i)^wire confirmation_pdf\.exe$:*
 Sanesecurity.Foxhole.Rar_fs2842:CL_TYPE_RAR:*:(?i)^wire slip\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2843:CL_TYPE_RAR:*:(?i)^wire transfer\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2844:CL_TYPE_RAR:*:(?i)^wire tt\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2845:CL_TYPE_RAR:*:(?i)^inqry-.{0,30}\.pdf\.exe$:*:*:*:1:*:*
