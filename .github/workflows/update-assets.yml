@@ -33,4 +33,5 @@ jobs:
         run: |
           git --no-pager add --all
           git --no-pager commit --message="Assets update on ${{steps.get-current-time.outputs.time}}"
+          git --no-pager push
         shell: "sh"
