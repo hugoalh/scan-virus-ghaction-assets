@@ -2,7 +2,7 @@ function Get-Csv {
 	[CmdletBinding()][OutputType([pscustomobject[]])]
 	param (
 		[Parameter(Mandatory = $true, Position = 0)][string]$Path,
-		[string]$Delimiter = ',',
+		[char]$Delimiter = ',',
 		[ValidateSet('ASCII', 'BigEndianUnicode', 'BigEndianUTF32', 'OEM', 'Unicode', 'UTF7', 'UTF8', 'UTF8BOM', 'UTF8NoBOM', 'UTF32')][string]$Encoding = 'UTF8NoBOM'
 	)
 	[string[]]$Raw = Get-Content -Path $Path -Encoding $Encoding
