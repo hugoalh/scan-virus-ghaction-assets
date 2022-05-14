@@ -2,11 +2,12 @@
 	'clamav-signatures-ignore-presets',
 	'clamav-unofficial-signatures'
 )
-Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath 'get-csv.psm1') -Scope 'Local'
-foreach ($Asset in $AssetsAvailable) {
-	[string]$AssetRoot = Join-Path -Path $PSScriptRoot -ChildPath $Asset
+Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_get-csv.psm1') -Scope 'Local'
+for ($AssetsAvailableIndex = 0; $AssetsAvailableIndex -lt $AssetsAvailable.Count; $AssetsAvailableIndex++) {
+	[string]$AssetRoot = Join-Path -Path $PSScriptRoot -ChildPath $AssetsAvailable[$AssetsAvailableIndex]
 	[pscustomobject[]]$AssetIndex = Get-Csv -LiteralPath (Join-Path -Path $AssetRoot -ChildPath 'index.tsv') -Delimiter "`t"
-	foreach ($Item in $AssetIndex) {
+	for ($AssetItemIndex = 0; $AssetItemIndex -lt $AssetIndex.Count; $AssetItemIndex++) {
+		[pscustomobject]$Item = $AssetIndex[$AssetItemIndex]
 		[string]$OutFileFullName = Join-Path -Path $AssetRoot -ChildPath $Item.Location
 		[string]$OutFileRoot = Split-Path -Path $OutFileFullName -Parent
 		if ((Test-Path -LiteralPath $OutFileRoot -PathType 'Container') -eq $false) {
@@ -17,12 +18,11 @@ foreach ($Asset in $AssetsAvailable) {
 		} catch {
 			Write-Warning -Message $_
 		}
-		Start-Sleep -Seconds 2
+		if (($AssetsAvailableIndex -ne ($AssetsAvailable.Count - 1)) -and ($AssetItemIndex -ne ($AssetIndex.Count - 1))) {
+			Start-Sleep -Seconds 2.5
+		}
 	}
 }
 [string]$Timestamp = Get-Date -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
-[string]$AssetsMetaDataFullName = Join-Path -Path $PSScriptRoot -ChildPath 'assets-metadata.json'
-[hashtable]$AssetsMetaData = (Get-Content -LiteralPath $AssetsMetaDataFullName -Raw -Encoding 'UTF8NoBOM' | ConvertFrom-Json -AsHashtable -Depth 100)
-$AssetsMetaData.timestamp = $Timestamp
-Set-Content -LiteralPath $AssetsMetaDataFullName -Value (ConvertTo-Json -InputObject $AssetsMetaData -Depth 100 -Compress) -Confirm:$false -NoNewline -Encoding 'UTF8NoBOM'
+Set-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_timestamp.txt') -Value $Timestamp -Confirm:$false -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$Timestamp"

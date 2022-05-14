@@ -23,7 +23,7 @@ jobs:
       - name: "Invoke Updater"
         id: "updater"
         run: |
-          pwsh -NonInteractive ./assets-updater.ps1
+          pwsh -NonInteractive ./_updater.ps1
         shell: "sh"
       - name: "Push Git Commit"
         run: |
