@@ -1,18 +1,14 @@
-[hashtable[]]$AssetsAvailable = @(
-	@{ Path = 'clamav-signatures-ignore-presets'; UpdateCondition = '^.+$' },
-	@{ Path = 'clamav-unofficial-signatures'; UpdateCondition = '^.+$' },
-	@{ Path = 'yara-rules'; UpdateCondition = '^workflow_dispatch$' }
-)
 [string]$TriggeredBy = $env:INPUT_TRIGGEREDBY
 Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_get-csv.psm1') -Scope 'Local'
-foreach ($AssetAvailable in $AssetsAvailable) {
-	if ($TriggeredBy -notmatch $AssetAvailable.UpdateCondition) {
-		continue
-	}
-	[string]$AssetRoot = Join-Path -Path $PSScriptRoot -ChildPath $AssetAvailable.Path
+@(
+	'clamav-signatures-ignore-presets',
+	'clamav-unofficial-signatures',
+	'yara-rules'
+) | ForEach-Object -Process {
+	[string]$AssetRoot = Join-Path -Path $PSScriptRoot -ChildPath $_
 	[pscustomobject[]]$AssetIndex = Get-Csv -LiteralPath (Join-Path -Path $AssetRoot -ChildPath 'index.tsv') -Delimiter "`t"
 	$AssetIndex | Where-Object -FilterScript {
-		return ($_.UpdateMethod -eq 'Git')
+		return (($_.UpdateMethod -eq 'Git') -and ($TriggeredBy -match $_.UpdateCondition))
 	} | ForEach-Object -Process {
 		return ConvertTo-Json -InputObject [ordered]@{
 			Location = ($_.Location -split '[\\\/]')[0]
@@ -34,7 +30,7 @@ foreach ($AssetAvailable in $AssetsAvailable) {
 		Set-Location -LiteralPath $PSScriptRoot
 	}
 	$AssetIndex | Where-Object -FilterScript {
-		return ($_.UpdateMethod -eq 'WebRequest')
+		return (($_.UpdateMethod -eq 'WebRequest') -and ($TriggeredBy -match $_.UpdateCondition))
 	} | ForEach-Object -Process {
 		[string]$OutFileFullName = Join-Path -Path $AssetRoot -ChildPath $_.Location
 		[string]$OutFileRoot = Split-Path -Path $OutFileFullName -Parent
