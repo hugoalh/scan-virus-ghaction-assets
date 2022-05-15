@@ -24,6 +24,8 @@ jobs:
         id: "updater"
         run: |
           pwsh -NonInteractive ./_updater.ps1
+        env:
+          INPUT_TRIGGEREDBY: "${{github.event_name}}"
         shell: "sh"
       - name: "Push Git Commit"
         run: |
