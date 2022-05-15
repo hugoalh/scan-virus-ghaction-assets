@@ -1,3 +1,5 @@
+[string]$ErrorActionPreferenceOld = $ErrorActionPreference
+$ErrorActionPreference = 'Stop'
 [string]$TriggeredBy = $env:INPUT_TRIGGEREDBY
 Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_get-csv.psm1') -Scope 'Local'
 @(
@@ -10,10 +12,10 @@ Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_get-csv.psm1') -
 	$AssetIndex | Where-Object -FilterScript {
 		return (($_.UpdateMethod -eq 'Git') -and ($TriggeredBy -match $_.UpdateCondition))
 	} | ForEach-Object -Process {
-		return ConvertTo-Json -InputObject [ordered]@{
+		return ConvertTo-Json -InputObject ([ordered]@{
 			Location = ($_.Location -split '[\\\/]')[0]
 			Source = $_.Source
-		} -Depth 100 -Compress
+		}) -Depth 100 -Compress
 	} | Select-Object -Unique | ForEach-Object -Process {
 		[hashtable]$Item = ConvertFrom-Json -InputObject $_ -AsHashtable -Depth 100
 		[string]$GitWorkingDirectory = Join-Path -Path $AssetRoot -ChildPath $Item.Location
@@ -49,3 +51,4 @@ Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_get-csv.psm1') -
 [string]$Timestamp = Get-Date -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
 Set-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_timestamp.txt') -Value $Timestamp -Confirm:$false -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$Timestamp"
+$ErrorActionPreference = $ErrorActionPreferenceOld
