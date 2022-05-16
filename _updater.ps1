@@ -78,6 +78,6 @@ $TimestampIndex['_commit'] = $CommitTime
 		Element = $_.Name
 		Time = Get-Date -Date $_.Value -UFormat $UFormatTimeISO -AsUTC
 	}
-}) | Sort-Object -Property 'Element' | Export-Csv -LiteralPath $TimestampIndexFullPath -Delimiter "`t" -Encoding 'UTF8NoBOM' -NoTypeInformation -Confirm:$false
+}) | Sort-Object -Property 'Element' | ConvertTo-Csv -Delimiter "`t" -NoTypeInformation -UseQuotes 'AsNeeded' | Set-Content -LiteralPath $TimestampIndexFullPath -Encoding 'UTF8NoBOM' -Confirm:$false -NoNewLine
 Write-Host -Object "::set-output name=timestamp::$(Get-Date -Date $CommitTime -UFormat $UFormatTimeISO -AsUTC)"
 $ErrorActionPreference = $ErrorActionPreferenceOld
