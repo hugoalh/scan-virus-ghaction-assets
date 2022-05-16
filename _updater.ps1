@@ -22,20 +22,21 @@ foreach ($AssetDirectory in @(
 			continue
 		}
 		if ($AssetIndexItem.UpdateMethod -eq 'Git') {
-			[string]$GitSession = "Git::$($AssetIndexItem.Source)"
+			[string]$GitName = ($AssetIndexItem.Location -split '[\\\/]')[0]
+			[string]$GitSession = "$GitName::$($AssetIndexItem.Source)"
 			if ($GitFinishSessions -notcontains $GitSession) {
-				[string]$GitWorkingDirectory = Join-Path -Path $AssetRoot -ChildPath $AssetIndexItem.Location
-				if (Test-Path -LiteralPath $GitWorkingDirectory) {
-					Remove-Item -LiteralPath $GitWorkingDirectory -Recurse -Force -Confirm:$false
+				[string]$GitWorkingDirectoryRoot = Join-Path -Path $AssetRoot -ChildPath $GitName
+				if (Test-Path -LiteralPath $GitWorkingDirectoryRoot) {
+					Remove-Item -LiteralPath $GitWorkingDirectoryRoot -Recurse -Force -Confirm:$false
 				}
 				Set-Location -LiteralPath $AssetRoot
 				try {
-					Invoke-Expression -Command "git --no-pager clone --quiet --recurse-submodules `"$($AssetIndexItem.Source)`" `"$($AssetIndexItem.Location)`""
+					Invoke-Expression -Command "git --no-pager clone --quiet --recurse-submodules `"$($AssetIndexItem.Source)`" `"$GitName`""
 					Remove-Item -LiteralPath @(
-						(Join-Path -Path $GitWorkingDirectory -ChildPath '.git'),
-						(Join-Path -Path $GitWorkingDirectory -ChildPath '.github')
+						(Join-Path -Path $GitWorkingDirectoryRoot -ChildPath '.git'),
+						(Join-Path -Path $GitWorkingDirectoryRoot -ChildPath '.github')
 					) -Recurse -Force -Confirm:$false
-					Get-ChildItem -LiteralPath $GitWorkingDirectory -Include @(
+					Get-ChildItem -LiteralPath $GitWorkingDirectoryRoot -Include @(
 						'.dockerignore',
 						'*.eml',
 						'*.html',
