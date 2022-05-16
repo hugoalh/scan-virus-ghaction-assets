@@ -16,8 +16,7 @@ function Set-Csv {
 		[char]$Delimiter = ',',
 		[ValidateSet('ASCII', 'BigEndianUnicode', 'BigEndianUTF32', 'OEM', 'Unicode', 'UTF7', 'UTF8', 'UTF8BOM', 'UTF8NoBOM', 'UTF32')][string]$Encoding = 'UTF8NoBOM'
 	)
-	[string[]]$Raw = ConvertTo-Csv -InputObject $InputObject -Delimiter $Delimiter -NoTypeInformation -UseQuotes 'AsNeeded'
-	return Set-Content -LiteralPath $LiteralPath -Value ($Raw -join "`n") -Confirm:$false -NoNewLine -Encoding $Encoding
+	return Set-Content -LiteralPath $LiteralPath -Value (($InputObject | ConvertTo-Csv -Delimiter $Delimiter -NoTypeInformation -UseQuotes 'AsNeeded') -join "`n") -Confirm:$false -NoNewLine -Encoding $Encoding
 }
 Export-ModuleMember -Function @(
 	'Get-Csv',

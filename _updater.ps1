@@ -4,7 +4,7 @@ Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scop
 [datetime]$BufferTime = (Get-Date -AsUTC).AddHours(-2)
 [string]$TimestampIndexFullPath = Join-Path -Path $PSScriptRoot -ChildPath '_timestamp.tsv'
 [hashtable]$TimestampIndex = @{}
-[pscustomobject[]](Get-Csv -LiteralPath $TimestampIndexFullPath -Delimiter "`t") | ForEach-Object -Process {
+Get-Csv -LiteralPath $TimestampIndexFullPath -Delimiter "`t" | ForEach-Object -Process {
 	$TimestampIndex[$_.Element] = Get-Date -Date $_.Time -AsUTC
 }
 [string]$TriggeredBy = $env:INPUT_TRIGGEREDBY
@@ -74,11 +74,11 @@ foreach ($AssetCategoryDirectory in @(
 }
 [datetime]$CommitTime = Get-Date -AsUTC
 $TimestampIndex['_commit'] = $CommitTime
-Set-Csv -LiteralPath $TimestampIndexFullPath -InputObject ($TimestampIndex.GetEnumerator() | ForEach-Object -Process {
+Set-Csv -LiteralPath $TimestampIndexFullPath -InputObject ([pscustomobject[]]($TimestampIndex.GetEnumerator() | ForEach-Object -Process {
 	return [pscustomobject]@{
 		Element = $_.Name
 		Time = Get-Date -Date $_.Value -UFormat $UFormatTimeISO -AsUTC
 	}
-} | Sort-Object -Property 'Element') -Delimiter "`t"
+}) | Sort-Object -Property 'Element') -Delimiter "`t"
 Write-Host -Object "::set-output name=timestamp::$(Get-Date -Date $CommitTime -UFormat $UFormatTimeISO -AsUTC)"
 $ErrorActionPreference = $ErrorActionPreferenceOld
