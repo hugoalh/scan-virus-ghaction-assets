@@ -1,5 +1,5 @@
 Element	Time
-_commit	2022-05-16T03:22:13Z
+_commit	2022-05-16T05:04:33Z
 clamav-signatures-ignore-presets/sanesecurity	2022-05-16T03:20:30Z
 clamav-unofficial-signatures/bofhland/cracked-url	2022-05-16T03:20:33Z
 clamav-unofficial-signatures/bofhland/malware-attach	2022-05-16T03:20:36Z
@@ -32,6 +32,7 @@ clamav-unofficial-signatures/sanesecurity/malwarehash	2022-05-16T03:21:56Z
 clamav-unofficial-signatures/sanesecurity/phish	2022-05-16T03:21:59Z
 clamav-unofficial-signatures/sanesecurity/rogue	2022-05-16T03:22:03Z
 clamav-unofficial-signatures/sanesecurity/shelter	2022-05-16T03:22:06Z
+yara-rules/	2022-05-16T05:04:33Z
 yara-rules/bartblaze	2000-01-01T00:00:00Z
 yara-rules/blacktop	2000-01-01T00:00:00Z
 yara-rules/deadbits/ac-backdoor-linux	2000-01-01T00:00:00Z
