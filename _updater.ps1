@@ -74,11 +74,11 @@ foreach ($AssetCategoryDirectory in @(
 }
 [datetime]$CommitTime = Get-Date -AsUTC
 $TimestampIndex['_commit'] = $CommitTime
-Set-Csv -LiteralPath $TimestampIndexFullPath -InputObject ([pscustomobject[]]($TimestampIndex.GetEnumerator() | ForEach-Object -Process {
+Set-Csv -LiteralPath $TimestampIndexFullPath -InputObject ($TimestampIndex.GetEnumerator() | ForEach-Object -Process {
 	return [pscustomobject]@{
 		Element = $_.Name
 		Time = Get-Date -Date $_.Value -UFormat $UFormatTimeISO -AsUTC
 	}
-}) | Sort-Object -Property 'Element') -Delimiter "`t"
+} | Sort-Object -Property 'Element') -Delimiter "`t"
 Write-Host -Object "::set-output name=timestamp::$(Get-Date -Date $CommitTime -UFormat $UFormatTimeISO -AsUTC)"
 $ErrorActionPreference = $ErrorActionPreferenceOld
