@@ -1,4 +1,0 @@
-build
-release
-*.bu
-.circleci/build_num
