@@ -12,7 +12,7 @@ function Set-Csv {
 	[CmdletBinding()][OutputType([void])]
 	param (
 		[Parameter(Mandatory = $true, Position = 0)][Alias('LP', 'PSPath')][string]$LiteralPath,
-		[Parameter(Mandatory = $true, Position = 1)][Alias('Input', 'Object')][pscustomobject]$InputObject,
+		[Parameter(Mandatory = $true, Position = 1)][Alias('Input', 'Object')][pscustomobject[]]$InputObject,
 		[char]$Delimiter = ',',
 		[ValidateSet('ASCII', 'BigEndianUnicode', 'BigEndianUTF32', 'OEM', 'Unicode', 'UTF7', 'UTF8', 'UTF8BOM', 'UTF8NoBOM', 'UTF32')][string]$Encoding = 'UTF8NoBOM'
 	)
