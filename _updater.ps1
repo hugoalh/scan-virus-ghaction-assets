@@ -41,6 +41,7 @@ foreach ($AssetCategoryDirectory in @(
 				'*.eml',
 				'*.html',
 				'*.py',
+				'*.sh',
 				'*.txt',
 				'*.yml',
 				'Dockerfile',
