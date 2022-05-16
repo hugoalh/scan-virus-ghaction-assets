@@ -1,6 +1,6 @@
 [string]$ErrorActionPreferenceOld = $ErrorActionPreference
 $ErrorActionPreference = 'Stop'
-Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_get-csv.psm1') -Scope 'Local'
+Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scope 'Local'
 [datetime]$BufferTime = (Get-Date -AsUTC).AddHours(-2)
 [string]$TimestampIndexFullPath = Join-Path -Path $PSScriptRoot -ChildPath '_timestamp.tsv'
 [hashtable]$TimestampIndex = @{}
@@ -50,7 +50,7 @@ foreach ($AssetCategoryDirectory in @(
 		} catch {
 			Write-Warning -Message $_
 		}
-		$TimestampIndex["$AssetCategoryDirectory/$($_.Name)"] = Get-Date -AsUTC
+		$script:TimestampIndex["$AssetCategoryDirectory/$($_.Name)"] = Get-Date -AsUTC
 		Set-Location -LiteralPath $PSScriptRoot
 	}
 	$AssetIndex | Where-Object -FilterScript {
@@ -68,16 +68,16 @@ foreach ($AssetCategoryDirectory in @(
 			Write-Warning -Message $_
 		}
 		Start-Sleep -Seconds 1
-		$TimestampIndex["$AssetCategoryDirectory/$($_.Name)"] = Get-Date -AsUTC
+		$script:TimestampIndex["$AssetCategoryDirectory/$($_.Name)"] = Get-Date -AsUTC
 	}
 }
 [datetime]$CommitTime = Get-Date -AsUTC
 $TimestampIndex['_commit'] = $CommitTime
-[pscustomobject[]]($TimestampIndex.GetEnumerator() | ForEach-Object -Process {
+Set-Csv -LiteralPath $TimestampIndexFullPath -Value ([pscustomobject[]]($TimestampIndex.GetEnumerator() | ForEach-Object -Process {
 	return [pscustomobject]@{
 		Element = $_.Name
 		Time = Get-Date -Date $_.Value -UFormat $UFormatTimeISO -AsUTC
 	}
-}) | Sort-Object -Property 'Element' | ConvertTo-Csv -Delimiter "`t" -NoTypeInformation -UseQuotes 'AsNeeded' | Set-Content -LiteralPath $TimestampIndexFullPath -Encoding 'UTF8NoBOM' -Confirm:$false -NoNewLine
+}) | Sort-Object -Property 'Element') -Delimiter "`t"
 Write-Host -Object "::set-output name=timestamp::$(Get-Date -Date $CommitTime -UFormat $UFormatTimeISO -AsUTC)"
 $ErrorActionPreference = $ErrorActionPreferenceOld
