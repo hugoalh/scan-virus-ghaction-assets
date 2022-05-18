@@ -2840,3 +2840,4 @@ Sanesecurity.Foxhole.Rar_fs2844:CL_TYPE_RAR:*:(?i)^wire tt\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2845:CL_TYPE_RAR:*:(?i)^inqry-.{0,30}\.pdf\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2846:CL_TYPE_RAR:*:(?i)^usd.{0,30}swift\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2847:CL_TYPE_RAR:*:(?i)^nsppd\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2848:CL_TYPE_RAR:*:(?i)^doc-bl\.exe:*:*:*:1:*:*
