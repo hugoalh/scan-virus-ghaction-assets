@@ -1,8 +1,26 @@
 name: "Update Assets"
 on:
   schedule:
-    - cron: "0 0,12 * * *"
+    - cron: "0 0 * * 0"
+    - cron: "0 12 * * 0"
+    - cron: "0 0 * * 1"
+    - cron: "0 12 * * 1"
+    - cron: "0 0 * * 2"
+    - cron: "0 12 * * 2"
+    - cron: "0 0 * * 3"
+    - cron: "0 12 * * 3"
+    - cron: "0 0 * * 4"
+    - cron: "0 12 * * 4"
+    - cron: "0 0 * * 5"
+    - cron: "0 12 * * 5"
+    - cron: "0 0 * * 6"
+    - cron: "0 12 * * 6"
   workflow_dispatch:
+    inputs:
+      flag:
+        description: "{string} Flag."
+        required: false
+        default: ""
 concurrency:
   group: "scan-virus-ghaction-assets-updater"
   cancel-in-progress: false
@@ -25,7 +43,7 @@ jobs:
         run: |
           pwsh -NonInteractive ./_updater.ps1
         env:
-          INPUT_TRIGGEREDBY: "${{github.event_name}}"
+          INPUT_TRIGGEREDBY: "${{github.event.inputs.flag || github.event.schedule || github.event_name}}"
         shell: "sh"
       - name: "Push Git Commit"
         run: |

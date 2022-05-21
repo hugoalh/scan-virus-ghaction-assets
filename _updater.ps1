@@ -1,7 +1,9 @@
 [string]$ErrorActionOldPreference = $ErrorActionPreference
 $ErrorActionPreference = 'Stop'
 Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scope 'Local'
-[datetime]$BufferTime = (Get-Date -AsUTC).AddHours(-2)
+[datetime]$ExecuteTime = Get-Date -AsUTC
+[datetime]$BufferTime = (Get-Date -Date $ExecuteTime -AsUTC).AddMinutes(-30)
+[string]$CommitTime = Get-Date -Date $ExecuteTime -UFormat $UFormatTimeISO -AsUTC
 [string]$TriggeredBy = $env:INPUT_TRIGGEREDBY
 [string]$UFormatTimeISO = '%Y-%m-%dT%H:%M:%SZ'
 foreach ($AssetDirectory in @(
@@ -16,8 +18,8 @@ foreach ($AssetDirectory in @(
 	for ($AssetIndexNumber = 0; $AssetIndexNumber -lt $AssetIndex.Count; $AssetIndexNumber++) {
 		[pscustomobject]$AssetIndexItem = $AssetIndex[$AssetIndexNumber]
 		if (
-			($TriggeredBy -notmatch $AssetIndexItem.UpdateCondition) -or
-			($BufferTime -lt (Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC))
+			$TriggeredBy -notmatch $AssetIndexItem.UpdateCondition -or
+			$BufferTime -lt (Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC)
 		) {
 			continue
 		}
@@ -69,11 +71,11 @@ foreach ($AssetDirectory in @(
 		} else {
 			continue
 		}
-		$AssetIndex[$AssetIndexNumber].LastUpdateTime = Get-Date -UFormat $UFormatTimeISO -AsUTC
+		$AssetIndex[$AssetIndexNumber].LastUpdateTime = $CommitTime
 	}
 	Set-Csv -LiteralPath $AssetIndexFileFullPath -InputObject $AssetIndex -Delimiter "`t"
 }
-[string]$CommitTime = Get-Date -UFormat $UFormatTimeISO -AsUTC
 Set-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_timestamp.txt') -Value $CommitTime -Confirm:$false -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$CommitTime"
 $ErrorActionPreference = $ErrorActionOldPreference
+exit 0
