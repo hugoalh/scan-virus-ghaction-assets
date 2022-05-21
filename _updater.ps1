@@ -1,11 +1,10 @@
 [string]$ErrorActionOldPreference = $ErrorActionPreference
 $ErrorActionPreference = 'Stop'
 Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scope 'Local'
+[ValidateNotNullOrEmpty()][string]$TriggeredBy = $env:INPUT_TRIGGEREDBY
 [datetime]$ExecuteTime = Get-Date -AsUTC
 [datetime]$BufferTime = (Get-Date -Date $ExecuteTime -AsUTC).AddMinutes(-30)
-[string]$CommitTime = Get-Date -Date $ExecuteTime -UFormat $UFormatTimeISO -AsUTC
-[string]$TriggeredBy = $env:INPUT_TRIGGEREDBY
-[string]$UFormatTimeISO = '%Y-%m-%dT%H:%M:%SZ'
+[string]$CommitTime = Get-Date -Date $ExecuteTime -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
 foreach ($AssetDirectory in @(
 	'clamav-signatures-ignore-presets',
 	'clamav-unofficial-signatures',
