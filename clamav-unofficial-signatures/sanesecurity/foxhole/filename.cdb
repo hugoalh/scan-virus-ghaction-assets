@@ -2843,3 +2843,11 @@ Sanesecurity.Foxhole.Rar_fs2847:CL_TYPE_RAR:*:(?i)^nsppd\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2848:CL_TYPE_RAR:*:(?i)^doc-bl\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2849:CL_TYPE_RAR:*:(?i)^specs\\specs\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2850:CL_TYPE_RAR:*:(?i)^company profile\\company profile\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2851:CL_TYPE_ZIP:*:(?i)^pre alert documents\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2852:CL_TYPE_ZIP:*:(?i)^bill of lading\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2853:CL_TYPE_ZIP:*:(?i)^shipping invoice#.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2854:CL_TYPE_ZIP:*:(?i)^bl-invoice shipping advice\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2855:CL_TYPE_ZIP:*:(?i)^hbl\+mbl shipping documents\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2856:CL_TYPE_ZIP:*:(?i)^hbl\+mbl shipping documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2857:CL_TYPE_ZIP:*:(?i)^bl-invoice shipping documents#.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2858:CL_TYPE_ZIP:*:(?i)^hml\+mbl shipping advice\.exe$:*:*:*:1:*:*
