@@ -597,6 +597,7 @@ neo23x0/thor-hacktools		neo23x0/yara/thor-hacktools.yar	https://github.com/Neo23
 neo23x0/thor-inverse-matches		neo23x0/yara/thor_inverse_matches.yar	https://github.com/Neo23x0/signature-base.git	^0 0 \* \* 0|workflow_dispatch|full$	Git	2022-05-29T02:03:29Z
 neo23x0/thor-webshells		neo23x0/yara/thor-webshells.yar	https://github.com/Neo23x0/signature-base.git	^0 0 \* \* 0|workflow_dispatch|full$	Git	2022-05-29T02:03:29Z
 neo23x0/threat-lenovo-superfish		neo23x0/yara/threat_lenovo_superfish.yar	https://github.com/Neo23x0/signature-base.git	^0 0 \* \* 0|workflow_dispatch|full$	Git	2022-05-29T02:03:29Z
+neo23x0/vul-backdoor-anti-theft-web		neo23x0/yara/vul_backdoor_antitheftweb.yar	https://github.com/Neo23x0/signature-base.git	^0 0 \* \* 0|workflow_dispatch|full$	Git	2022-05-29T02:03:29Z
 neo23x0/vul-cve-2020-0688		neo23x0/yara/vul_cve_2020_0688.yar	https://github.com/Neo23x0/signature-base.git	^0 0 \* \* 0|workflow_dispatch|full$	Git	2022-05-29T02:03:29Z
 neo23x0/vul-cve-2020-1938		neo23x0/yara/vul_cve_2020_1938.yar	https://github.com/Neo23x0/signature-base.git	^0 0 \* \* 0|workflow_dispatch|full$	Git	2022-05-29T02:03:29Z
 neo23x0/vul-cve-2021-3438-printdriver		neo23x0/yara/vul_cve_2021_3438_printdriver.yar	https://github.com/Neo23x0/signature-base.git	^0 0 \* \* 0|workflow_dispatch|full$	Git	2022-05-29T02:03:29Z

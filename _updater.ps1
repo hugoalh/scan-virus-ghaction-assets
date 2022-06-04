@@ -100,4 +100,3 @@ foreach ($AssetDirectory in @(
 Set-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_timestamp.txt') -Value $CommitTime -Confirm:$false -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$CommitTime"
 $ErrorActionPreference = $ErrorActionOriginalPreference
-exit 0
