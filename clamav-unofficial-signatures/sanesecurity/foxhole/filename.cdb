@@ -2854,3 +2854,4 @@ Sanesecurity.Foxhole.Zip_fs2858:CL_TYPE_ZIP:*:(?i)^hml\+mbl shipping advice\.exe
 Sanesecurity.Foxhole.Rar_fs2859:CL_TYPE_RAR:*:(?i)^remittance slip\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs2860:CL_TYPE_ISO9660:*:(?i)^quotation .{0,30}\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs2861:CL_TYPE_RAR:*:(?i)^bank statement copy\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs2862:CL_TYPE_ISO9660:*:(?i)^new order_.{0,30}_pdf.exe:*:*:*:*:*:*
