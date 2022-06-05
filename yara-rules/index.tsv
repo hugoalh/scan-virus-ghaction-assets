@@ -450,6 +450,7 @@ neo23x0/gen-crimson-rat		neo23x0/yara/gen_crimson_rat.yar	https://github.com/Neo
 neo23x0/gen-crunchrat		neo23x0/yara/gen_crunchrat.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-05T01:43:11Z
 neo23x0/gen-dde-in-office-docs		neo23x0/yara/gen_dde_in_office_docs.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-05T01:43:11Z
 neo23x0/gen-deviceguard-evasion		neo23x0/yara/gen_deviceguard_evasion.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-05T01:43:11Z
+neo23x0/gen-doc-follina		neo23x0/yara/gen_doc_follina.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-05T01:43:11Z
 neo23x0/gen-dropper-pdb		neo23x0/yara/gen_dropper_pdb.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-05T01:43:11Z
 neo23x0/gen-elf-file-anomalies		neo23x0/yara/gen_elf_file_anomalies.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-05T01:43:11Z
 neo23x0/gen-empire		neo23x0/yara/gen_empire.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-05T01:43:11Z
