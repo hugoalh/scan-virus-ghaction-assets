@@ -2858,4 +2858,28 @@ Sanesecurity.Foxhole.Iso_fs2862:CL_TYPE_ISO9660:*:(?i)^new order_.{0,30}_pdf.exe
 Sanesecurity.Foxhole.Rar_fs2863:CL_TYPE_RAR:*:(?i)^bill of lading\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2864:CL_TYPE_RAR:*:(?i)^inquiry sheet\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2865:CL_TYPE_RAR:*:(?i)^istereoneural\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Rar_fs2866:CL_TYPE_RAR:*:(?i)^telex transfer copy.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2866:CL_TYPE_RAR:*:(?i)^telex transfer copy\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2867:CL_TYPE_ZIP:*:(?i)^mml\+hbl shipping advice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2868:CL_TYPE_ZIP:*:(?i)^bl-invoice shipping advice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2869:CL_TYPE_ZIP:*:(?i)^bl-invoice shipping advice\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2870:CL_TYPE_ZIP:*:(?i)^bl-shipping advice#.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2871:CL_TYPE_ZIP:*:(?i)^bl-shipping advice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2872:CL_TYPE_ZIP:*:(?i)^bl-shipping documents\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2873:CL_TYPE_ZIP:*:(?i)^invoice-bl documents\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2874:CL_TYPE_ZIP:*:(?i)^pre alert documents\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2875:CL_TYPE_ZIP:*:(?i)^shipping advice#new\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2876:CL_TYPE_ZIP:*:(?i)^shipping advice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2877:CL_TYPE_ZIP:*:(?i)^shipping invoice#.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2878:CL_TYPE_ZIP:*:(?i)^slip-.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2879:CL_TYPE_ZIP:*:(?i)^statmt_.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2880:CL_TYPE_ZIP:*:(?i)^noah\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2881:CL_TYPE_RAR:*:(?i)^bank details confirmation\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2882:CL_TYPE_RAR:*:(?i)^company cataloge\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2883:CL_TYPE_RAR:*:(?i)^quote - glencore.pdf1\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2884:CL_TYPE_RAR:*:(?i)^quote - glencore.pdf2\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2885:CL_TYPE_RAR:*:(?i)^GB-.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2886:CL_TYPE_ZIP:*:(?i)^invoice no .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2887:CL_TYPE_RAR:*:(?i)^sales contract ets\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2888:CL_TYPE_RAR:*:(?i) payment Advice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2889:CL_TYPE_RAR:*:(?i)^attach .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs2890:CL_TYPE_RAR:*:(?i)^inquiry Sheet\.bat$$:*:*:*:1:*:*
