@@ -2857,3 +2857,5 @@ Sanesecurity.Foxhole.Rar_fs2861:CL_TYPE_RAR:*:(?i)^bank statement copy\.exe$:*:*
 Sanesecurity.Foxhole.Iso_fs2862:CL_TYPE_ISO9660:*:(?i)^new order_.{0,30}_pdf.exe:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs2863:CL_TYPE_RAR:*:(?i)^bill of lading\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2864:CL_TYPE_RAR:*:(?i)^inquiry sheet\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2865:CL_TYPE_RAR:*:(?i)^istereoneural\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2866:CL_TYPE_RAR:*:(?i)^telex transfer copy.exe$:*:*:*:1:*:*
