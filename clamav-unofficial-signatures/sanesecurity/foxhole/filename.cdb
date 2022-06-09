@@ -2882,4 +2882,7 @@ Sanesecurity.Foxhole.Zip_fs2886:CL_TYPE_ZIP:*:(?i)^invoice no .{0,30}\.exe$:*:*:
 Sanesecurity.Foxhole.Rar_fs2887:CL_TYPE_RAR:*:(?i)^sales contract ets\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2888:CL_TYPE_RAR:*:(?i) payment Advice\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2889:CL_TYPE_RAR:*:(?i)^attach .{0,30}\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Iso_fs2890:CL_TYPE_RAR:*:(?i)^inquiry Sheet\.bat$$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs2890:CL_TYPE_RAR:*:(?i)^inquiry Sheet\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs2891:CL_TYPE_ISO9660:*:(?i)^new order_.{0,30}_pdf.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs2892:CL_TYPE_ISO9660:*:(?i)^quotation.{0,30}.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs2893:CL_TYPE_ISO9660:*:(?i)^quotatio\.exe$:*:*:*:*:*:*
