@@ -74,6 +74,7 @@ neo23x0/apt-cmstar		neo23x0/yara/apt_cmstar.yar	https://github.com/Neo23x0/signa
 neo23x0/apt-cn-netfilter		neo23x0/yara/apt_cn_netfilter.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/apt-cn-pp-zerot		neo23x0/yara/apt_cn_pp_zerot.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/apt-cn-reddelta		neo23x0/yara/apt_cn_reddelta.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
+neo23x0/apt-cn-twisted-panda		neo23x0/yara/apt_cn_twisted_panda.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/apt-cobaltstrike		neo23x0/yara/apt_cobaltstrike.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/apt-cobaltstrike-evasive		neo23x0/yara/apt_cobaltstrike_evasive.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/apt-codoso		neo23x0/yara/apt_codoso.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
@@ -548,6 +549,7 @@ neo23x0/gen-susp-lnk		neo23x0/yara/gen_susp_lnk.yar	https://github.com/Neo23x0/s
 neo23x0/gen-susp-lnk-files		neo23x0/yara/gen_susp_lnk_files.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/gen-susp-obfuscation		neo23x0/yara/gen_susp_obfuscation.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/gen-susp-office-dropper		neo23x0/yara/gen_susp_office_dropper.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
+neo23x0/gen-susp-ps-jab		neo23x0/yara/gen_susp_ps_jab.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/gen-susp-sfx		neo23x0/yara/gen_susp_sfx.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/gen-susp-strings-in-ole		neo23x0/yara/gen_susp_strings_in_ole.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
 neo23x0/gen-susp-wer-files		neo23x0/yara/gen_susp_wer_files.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-12T01:48:06Z
