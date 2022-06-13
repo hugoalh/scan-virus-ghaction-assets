@@ -2887,3 +2887,4 @@ Sanesecurity.Foxhole.Iso_fs2891:CL_TYPE_ISO9660:*:(?i)^new order_.{0,30}_pdf.exe
 Sanesecurity.Foxhole.Iso_fs2892:CL_TYPE_ISO9660:*:(?i)^quotation.{0,30}.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs2893:CL_TYPE_ISO9660:*:(?i)^quotatio\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs2894:CL_TYPE_ZIP:*:(?i)^pre alert documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2895:CL_TYPE_ZIP:*:(?i)^shipping advice#aseans\.exe$:*:*:*:1:*:*
