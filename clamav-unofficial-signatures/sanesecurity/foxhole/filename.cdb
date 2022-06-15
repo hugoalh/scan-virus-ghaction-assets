@@ -2888,3 +2888,18 @@ Sanesecurity.Foxhole.Iso_fs2892:CL_TYPE_ISO9660:*:(?i)^quotation.{0,30}.exe$:*:*
 Sanesecurity.Foxhole.Iso_fs2893:CL_TYPE_ISO9660:*:(?i)^quotatio\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs2894:CL_TYPE_ZIP:*:(?i)^pre alert documents\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2895:CL_TYPE_ZIP:*:(?i)^shipping advice#aseans\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2896.Pwd:CL_TYPE_ZIP:*:(?i)^purchases .{0,30}\.xls$:*:*:1:1:*:*
+Sanesecurity.Foxhole.Zip_fs2897:CL_TYPE_ZIP:*:(?i)^bank information\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2898:CL_TYPE_ZIP:*:(?i)^documents asean\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2899:CL_TYPE_ZIP:*:(?i)^mbl\+hbl shipping advice\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2900:CL_TYPE_ZIP:*:(?i)^shipping advice#aseans\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2901:CL_TYPE_ZIP:*:(?i)^bl-invoice shipping documents\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2902:CL_TYPE_ZIP:*:(?i)^sales contract for 5 fcl urad faq\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2903:CL_TYPE_ZIP:*:(?i)^bl-documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2904:CL_TYPE_ZIP:*:(?i)^inq-.{0,30}\.scr$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2905:CL_TYPE_ZIP:*:(?i)^documents\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2906:CL_TYPE_ZIP:*:(?i)^document\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2907:CL_TYPE_ZIP:*:(?i)^tt1850 thruster\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2908:CL_TYPE_ZIP:*:(?i)^bl-invoice shipping\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2909.Pwd:CL_TYPE_ZIP:*:(?i)^Invoice Copies .{0,30}\.xls$:*:*:1:1:*:*
+Sanesecurity.Foxhole.Zip_fs2910.Pwd:CL_TYPE_ZIP:*:(?i)^po\.xls$:*:*:1:1:*:*
