@@ -2913,3 +2913,5 @@ Sanesecurity.Foxhole.Rar_fs2917:CL_TYPE_RAR:*:(?i)^e2003-078-boq for fittings\.e
 Sanesecurity.Foxhole.Iso_fs2918:CL_TYPE_ISO9660:*:(?i)^new order_w.{0,30}_pdf\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs2919:CL_TYPE_ZIP:*:(?i)^updatted s o a\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2920:CL_TYPE_ZIP:*:(?i)^documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2921:CL_TYPE_RAR:*:(?i)^purchase order\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2922:CL_TYPE_ZIP:*:(?i)^scan-.{0,6}\.html$:*:*:*:1:*:*
