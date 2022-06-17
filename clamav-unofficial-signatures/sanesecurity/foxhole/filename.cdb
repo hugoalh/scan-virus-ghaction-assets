@@ -2882,7 +2882,7 @@ Sanesecurity.Foxhole.Zip_fs2886:CL_TYPE_ZIP:*:(?i)^invoice no .{0,30}\.exe$:*:*:
 Sanesecurity.Foxhole.Rar_fs2887:CL_TYPE_RAR:*:(?i)^sales contract ets\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2888:CL_TYPE_RAR:*:(?i) payment Advice\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2889:CL_TYPE_RAR:*:(?i)^attach .{0,30}\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Rar_fs2890:CL_TYPE_RAR:*:(?i)^inquiry Sheet\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2890:CL_TYPE_RAR:*:(?i)^inquiry sheet\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs2891:CL_TYPE_ISO9660:*:(?i)^new order_.{0,30}_pdf.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs2892:CL_TYPE_ISO9660:*:(?i)^quotation.{0,30}.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs2893:CL_TYPE_ISO9660:*:(?i)^quotatio\.exe$:*:*:*:*:*:*
@@ -2911,3 +2911,5 @@ Sanesecurity.Foxhole.Rar_fs2915:CL_TYPE_RAR:*:(?i)^maersk sets documents\.js$:*:
 Sanesecurity.Foxhole.Rar_fs2916:CL_TYPE_RAR:*:(?i)^tnt consignmentnumber.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2917:CL_TYPE_RAR:*:(?i)^e2003-078-boq for fittings\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs2918:CL_TYPE_ISO9660:*:(?i)^new order_w.{0,30}_pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs2919:CL_TYPE_ZIP:*:(?i)^updatted s o a\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2920:CL_TYPE_ZIP:*:(?i)^documents\.exe$:*:*:*:1:*:*
