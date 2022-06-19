@@ -2915,3 +2915,7 @@ Sanesecurity.Foxhole.Zip_fs2919:CL_TYPE_ZIP:*:(?i)^updatted s o a\.exe$:*:*:*:1:
 Sanesecurity.Foxhole.Zip_fs2920:CL_TYPE_ZIP:*:(?i)^documents\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2921:CL_TYPE_RAR:*:(?i)^purchase order\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2922:CL_TYPE_ZIP:*:(?i)^scan-.{0,6}\.html$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2923:CL_TYPE_RAR:*:(?i)^po no  .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs2924:CL_TYPE_RAR:*:(?i)^request soa as at.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs2925:CL_TYPE_ISO9660:*:(?i)^swift_copy-hsbc bank_pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs2926:CL_TYPE_ISO9660:*:(?i)^swift_co.exe$:*:*:*:*:*:*
