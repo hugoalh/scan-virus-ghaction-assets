@@ -2919,3 +2919,4 @@ Sanesecurity.Foxhole.Rar_fs2923:CL_TYPE_RAR:*:(?i)^po no  .{0,30}\.exe$:*:*:*:1:
 Sanesecurity.Foxhole.Rar_fs2924:CL_TYPE_RAR:*:(?i)^request soa as at.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs2925:CL_TYPE_ISO9660:*:(?i)^swift_copy-hsbc bank_pdf\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs2926:CL_TYPE_ISO9660:*:(?i)^swift_co.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs2927:CL_TYPE_RAR:*:(?i)payment advice\.exe$:*:*:*:1:*:*
