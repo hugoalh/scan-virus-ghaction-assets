@@ -2921,3 +2921,6 @@ Sanesecurity.Foxhole.Iso_fs2925:CL_TYPE_ISO9660:*:(?i)^swift_copy-hsbc bank_pdf\
 Sanesecurity.Foxhole.Iso_fs2926:CL_TYPE_ISO9660:*:(?i)^swift_co.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs2927:CL_TYPE_RAR:*:(?i)payment advice\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2928:CL_TYPE_ZIP:*:(?i)^bl-shipping documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2929.Pwd:CL_TYPE_ZIP:*:(?i)^invoice\.xls$:*:*:1:1:*:*
+Sanesecurity.Foxhole.Zip_fs2930:CL_TYPE_ZIP:*:(?i)^urgent reques\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2931:CL_TYPE_ZIP:*:(?i)^shipping advice#.{0,30}\.exe$:*:*:*:1:*:*
