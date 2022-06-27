@@ -158,6 +158,7 @@ neo23x0/apt-lazarus-jun18		neo23x0/yara/apt_lazarus_jun18.yar	https://github.com
 neo23x0/apt-lazarus-vhd-ransomware		neo23x0/yara/apt_lazarus_vhd_ransomware.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/apt-leviathan		neo23x0/yara/apt_leviathan.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/apt-lnx-kobalos		neo23x0/yara/apt_lnx_kobalos.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
+neo23x0/apt-lnx-linadoor-rootkit		neo23x0/yara/apt_lnx_linadoor_rootkit.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/apt-lotusblossom-elise		neo23x0/yara/apt_lotusblossom_elise.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/apt-magichound		neo23x0/yara/apt_magichound.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/apt-mal-ilo-board-elf		neo23x0/yara/apt_mal_ilo_board_elf.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
@@ -509,6 +510,7 @@ neo23x0/gen-osx-backdoor-bella		neo23x0/yara/gen_osx_backdoor_bella.yar	https://
 neo23x0/gen-osx-evilosx		neo23x0/yara/gen_osx_evilosx.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-osx-pyagent-persistence		neo23x0/yara/gen_osx_pyagent_persistence.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-p0wnshell		neo23x0/yara/gen_p0wnshell.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
+neo23x0/gen-phish-attachments		neo23x0/yara/gen_phish_attachments.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-pirpi		neo23x0/yara/gen_pirpi.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-powerkatz		neo23x0/yara/gen_powerkatz.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-powershdll		neo23x0/yara/gen_powershdll.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
@@ -542,6 +544,7 @@ neo23x0/gen-shikataganai		neo23x0/yara/gen_shikataganai.yar	https://github.com/N
 neo23x0/gen-sign-anomalies		neo23x0/yara/gen_sign_anomalies.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-solarwinds-credential-stealer		neo23x0/yara/gen_solarwinds_credential_stealer.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-susp-bat-aux		neo23x0/yara/gen_susp_bat_aux.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
+neo23x0/gen-susp-bat2exe		neo23x0/yara/gen_susp_bat2exe.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-susp-cmd-var-expansion		neo23x0/yara/gen_susp_cmd_var_expansion.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-susp-hacktool		neo23x0/yara/gen_susp_hacktool.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
 neo23x0/gen-susp-js-obfuscatorio		neo23x0/yara/gen_susp_js_obfuscatorio.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-06-26T01:51:16Z
