@@ -1239,7 +1239,7 @@ Sanesecurity.Foxhole.Zip_fs989:CL_TYPE_ZIP:*:(?i)^shipping documents\.bat$:*:*:*
 Sanesecurity.Foxhole.Zip_fs990:CL_TYPE_ZIP:*:(?i)^shipping_receipt\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs991:CL_TYPE_ZIP:*:(?i)^statement of account with invoice\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs992:CL_TYPE_ZIP:*:(?i)^updated soa\.bat$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs992:CL_TYPE_ZIP:*:(?i)^updated soa\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs992:CL_TYPE_ZIP:*:(?i)^updated soa\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs993:CL_TYPE_ZIP:*:(?i)^outstanding payment\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs994:CL_TYPE_ZIP:*:(?i)^payment swift copy\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs995:CL_TYPE_ZIP:*:(?i)^balance payment\.bat$:*:*:*:1:*:*
@@ -2927,3 +2927,4 @@ Sanesecurity.Foxhole.Zip_fs2931:CL_TYPE_ZIP:*:(?i)^shipping advice#.{0,30}\.exe$
 Sanesecurity.Foxhole.Zip_fs2932.Pwd:CL_TYPE_ZIP:*:(?i)^invoice number [0-9]{5}\.xls$:*:*:1:1:*:*
 Sanesecurity.Foxhole.Zip_fs2933:CL_TYPE_ZIP:*:(?i)^doc#001\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2934:CL_TYPE_ZIP:*:(?i)^payment for amount\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Mail_fn2935:CL_TYPE_MAIL:*:^WeTransfer_files_:*:*:*:*:*:*
