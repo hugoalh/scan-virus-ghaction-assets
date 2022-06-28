@@ -1034,7 +1034,7 @@ Sanesecurity.Foxhole.Arj_fs802:CL_TYPE_ARJ:*:(?i)^doc[0-9]{0,20}.{0,20}\.exe$:*:
 Sanesecurity.Foxhole.Zip_fs803:CL_TYPE_ZIP:*:(?i)^remittance copy\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Tar_fs803:CL_TYPE_POSIX_TAR:*:(?i)^commercial invoice\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn804:CL_TYPE_7Z:*:(?i)^order_case_.{0,20}\.js$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_badexts48:CL_TYPE_ZIP:*:(?i)\)\.pdf\.js$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_badexts48:CL_TYPE_ZIP:*:(?i)\.pdf\.js$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs805:CL_TYPE_ZIP:*:(?i)^photo parcel.{0,20}\.pdf\.js$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_badexts49:CL_TYPE_POSIX_TAR:*:(?i),txt\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs806:CL_TYPE_ZIP:*:(?i)^request-redelivery-.{0,20}\.pdf\.js$:*:*:*:1:*:*
@@ -2059,7 +2059,7 @@ Sanesecurity.Foxhole.Zip_fs1774:CL_TYPE_ZIP:*:(?i)^scan.{0,10}-Payment.{0,30}\.h
 Sanesecurity.Foxhole.Rar_fs1775:CL_TYPE_RAR:*:(?i)^Faktura.{0,50}\.vbs$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs1776:CL_TYPE_ISO9660:*:(?i)^confidential agreement\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs1777:CL_TYPE_ZIP:*:(?i)^srbijagas inquiry\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1778:CL_TYPE_ZIP:*:(?i)^paymnet copy - \(.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs1778:CL_TYPE_ZIP:*:(?i)^paymnet copy - .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs1779:CL_TYPE_ISO9660:*:(?i)bankswift\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs1780:CL_TYPE_ISO9660:*:(?i)open invoices .{0,30}\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs1781:CL_TYPE_ISO9660:*:(?i)p o\.exe$:*:*:*:*:*:*
@@ -2926,3 +2926,4 @@ Sanesecurity.Foxhole.Zip_fs2930:CL_TYPE_ZIP:*:(?i)^urgent reques\.exe$:*:*:*:1:*
 Sanesecurity.Foxhole.Zip_fs2931:CL_TYPE_ZIP:*:(?i)^shipping advice#.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2932.Pwd:CL_TYPE_ZIP:*:(?i)^invoice number [0-9]{5}\.xls$:*:*:1:1:*:*
 Sanesecurity.Foxhole.Zip_fs2933:CL_TYPE_ZIP:*:(?i)^doc#001\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs2934:CL_TYPE_ZIP:*:(?i)^payment for amount\.exe$:*:*:*:1:*:*
