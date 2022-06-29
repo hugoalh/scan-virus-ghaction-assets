@@ -28,7 +28,7 @@ jobs:
       - name: "Invoke Updater"
         id: "updater"
         run: |
-          pwsh -NonInteractive ./_updater.ps1
+          pwsh -NonInteractive ./_updater.ps1 -Verbose
         env:
           INPUT_FLAGS: "${{github.event.inputs.flags}}"
           INPUT_SCHEDULE: "${{github.event.schedule}}"
