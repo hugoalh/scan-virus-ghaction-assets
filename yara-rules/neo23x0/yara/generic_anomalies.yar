@@ -41,18 +41,32 @@ rule Cloaked_as_JPG {
       description = "Detects a non-JPEG file cloaked as JPG"
       author = "Florian Roth"
       date = "2015/03/02"
-      modified = "2021/06/08"
+      modified = "2022-06-29"
       score = 50
    strings:
       $fp1 = "<!DOCTYPE" ascii
+      $fp2 = "Sophos Encrypted File Format" ascii
+      $fp3 = "This is a critical resource file used by WatchGuard/TDR" ascii
    condition:
       uint16be(0) != 0xFFD8 and extension == ".jpg"
-      and filetype != "GIF" and
-      not $fp1 in (0..30) and
-      not uint16(0) == 0x8b1f and /* GZIP */
-      not uint16(0) == 0x4d42 and /* BMP */
-      not uint32(0) == 0x474E5089 and /* PNG Header */
-      not filename matches /\$I[A-Z0-9]{6}/
+      and filetype != "GIF"
+      and filetype != "PDF"
+      and not $fp1 in (0..30)
+      and not $fp2 at 0
+      and not $fp3
+      and not uint16(0) == 0x8b1f /* GZIP */
+      and not uint16(0) == 0x4d42 /* BMP */
+      and not uint32(0) == 0x474E5089 /* PNG Header */
+      and not uint32(0) == 0x002A4949 /* TIFF Header */
+      and not uint32be(0) == 0x3c737667 /* <svg */
+      and not uint32be(0) == 0x52494646 /* RIFF (WebP) */
+      and not uint32be(0x4) == 0x66747970 /* HEIF Header https://github.com/strukturag/libheif/commit/6ca8e2548dbfe21200bae3a7c2c315a1796e3852 */
+      and not uint32be(0xe) == 0x4a464946 /* JFIF distributed by Matlab */
+      and not filename matches /\$[Ii][A-Z0-9]{6}/
+      and not filepath contains "WinSxS"
+      and not filepath contains "Package_for_RollupFix"
+      and not filename matches /^\._/
+      and not filepath contains "$Recycle.Bin"
 }
 
 /*
@@ -358,6 +372,7 @@ rule SUSP_Putty_Unnormal_Size {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2019-01-07"
+      modified = "2022-06-30"
       score = 50
       hash1 = "e5e89bdff733d6db1cffe8b3527e823c32a78076f8eadc2f9fd486b74a0e9d88"
       hash2 = "ce4c1b718b54973291aefdd63d1cca4e4d8d4f5353a2be7f139a290206d0c170"
@@ -395,6 +410,11 @@ rule SUSP_Putty_Unnormal_Size {
       and filesize != 774200
       and filesize != 854072
       and filesize != 665144
+      and filesize != 640000 /* putty provided by Safenet https://thalesdocs.com/gphsm/luna/7.1/docs/network/Content/install/sa_hw_install/hardware_installation_lunasa.htm */
+      and filesize != 650720 /* Citrix XenCenter */
+      and filesize != 662808 /* Citrix XenCenter */
+      and filesize != 651256 /* Citrix XenCenter */
+      and filesize != 664432 /* Citrix XenCenter */
 }
 
 rule SUSP_RTF_Header_Anomaly {
