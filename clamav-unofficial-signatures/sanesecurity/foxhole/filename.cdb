@@ -3145,3 +3145,4 @@ Sanesecurity.Foxhole.Zip_fs3148:CL_TYPE_ZIP:*:(?i)^urgent requirement.{0,30}\.ex
 Sanesecurity.Foxhole.Zip_fs3149:CL_TYPE_ZIP:*:(?i)^urgent requirement.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3150:CL_TYPE_ZIP:*:(?i)^incorrect invoice\.xls$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3151:CL_TYPE_ZIP:*:(?i)^new order.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3152:CL_TYPE_RAR:*:(?i)^maerskline shipping documents\.exe$:*:*:*:1:*:*
