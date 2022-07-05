@@ -161,6 +161,9 @@ ForEach ($AssetDirectory In @(
 	Write-Host -Object "At ``$AssetDirectory``."
 	Set-Csv -LiteralPath $AssetIndexFileFullPath -InputObject $AssetIndex -Delimiter "`t"
 }
-Set-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_timestamp.txt') -Value $CommitTime -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
+[String]$MetadataFullName = Join-Path -Path $PSScriptRoot -ChildPath 'metadata.json'
+[PSCustomObject]$Metadata = (Get-Content -LiteralPath $MetadataFullName -Raw -Encoding 'UTF8NoBOM' | ConvertFrom-Json -Depth 100)
+$Metadata.Timestamp = $CommitTime
+Set-Content -LiteralPath $MetadataFullName -Value ($Metadata | ConvertTo-Json -Depth 100 -Compress) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$CommitTime"
 $ErrorActionPreference = $ErrorActionOriginalPreference
