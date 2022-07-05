@@ -3144,5 +3144,13 @@ Sanesecurity.Foxhole.Zip_fs3147:CL_TYPE_ZIP:*:(?i)^urgent request.{0,30}\.exe$:*
 Sanesecurity.Foxhole.Zip_fs3148:CL_TYPE_ZIP:*:(?i)^urgent requirement.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3149:CL_TYPE_ZIP:*:(?i)^urgent requirement.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3150:CL_TYPE_ZIP:*:(?i)^incorrect invoice\.xls$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs3151:CL_TYPE_ZIP:*:(?i)^new order.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3151:CL_TYPE_ZIP:*:(?i)^new order\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3152:CL_TYPE_RAR:*:(?i)^maerskline shipping documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3153:CL_TYPE_ZIP:*:(?i)^export invoice#.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3154:CL_TYPE_ZIP:*:(?i)^shipping invoice documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3155:CL_TYPE_ZIP:*:(?i)^etd's shipping schedule\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3156:CL_TYPE_ZIP:*:(?i)^export documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3157:CL_TYPE_ZIP:*:(?i)^updatted  s o a\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3158.Pwd:CL_TYPE_ZIP:*:^Outstanding Invoices\.xls$:*:*:1:1:*:*
+Sanesecurity.Foxhole.Zip_fs3159:CL_TYPE_ZIP:*:(?i)^new folder :*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3160:CL_TYPE_RAR:*:(?i)^outstanding docs for overdue invoices\.exe$:*:*:*:1:*:*
