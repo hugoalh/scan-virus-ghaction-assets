@@ -30,7 +30,7 @@ If ($InputSchedule.Length -gt 0) {
 		$ConditionsAvailable += "day_$($ExecuteTime.Day)_$Condition"
 		$ConditionsAvailable += "weekday_$($ExecuteTime.DayOfWeek.GetHashCode())_$Condition"
 	} Else {
-		[string]$Condition = "hour_$($ExecuteTime.Hour)"
+		[String]$Condition = "hour_$($ExecuteTime.Hour)"
 		$ConditionsAvailable += $Condition
 		$ConditionsAvailable += "day_$($ExecuteTime.Day)_$Condition"
 		$ConditionsAvailable += "weekday_$($ExecuteTime.DayOfWeek.GetHashCode())_$Condition"
