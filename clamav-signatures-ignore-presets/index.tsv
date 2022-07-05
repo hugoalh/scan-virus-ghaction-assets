@@ -1,2 +1,2 @@
 Name	Location	Source	UpdateCondition	UpdateMethod	LastUpdateTime
-sanesecurity	sigwhitelist.ign2	https://mirror.rollernet.us/sanesecurity/sigwhitelist.ign2	flag_clamav; flag_full; schedule	WebRequest	2022-07-04T12:53:29Z
+sanesecurity	sigwhitelist.ign2	https://mirror.rollernet.us/sanesecurity/sigwhitelist.ign2	flag_clamav; flag_full; schedule	WebRequest	2022-07-05T01:48:17Z
