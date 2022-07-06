@@ -3154,3 +3154,4 @@ Sanesecurity.Foxhole.Zip_fs3157:CL_TYPE_ZIP:*:(?i)^updatted  s o a\.exe$:*:*:*:1
 Sanesecurity.Foxhole.Zip_fs3158.Pwd:CL_TYPE_ZIP:*:^Outstanding Invoices\.xls$:*:*:1:1:*:*
 Sanesecurity.Foxhole.Zip_fs3159:CL_TYPE_ZIP:*:(?i)^new folder :*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3160:CL_TYPE_RAR:*:(?i)^outstanding docs for overdue invoices\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3161:CL_TYPE_RAR:*:(?i)^scan_skmbt-tt ref mt103_.{0,30}\.exe$:*:*:*:1:*:*
