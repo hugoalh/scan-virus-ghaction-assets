@@ -169,7 +169,6 @@ a281bbc260593e6b4cff8670d5a0bcac:327390:Porcupine.Unclassified.105958:73
 897cfbb69355bddee0e857335c10fa3f:317440:Porcupine.Unclassified.106214:73
 918b6cc2f853f8dbdda0f82bce1ba318:316600:Porcupine.Win32.Downloader.Delf.DIB.106072:73
 d10d8467f9f6ab840c660bf07fa35e09:310463:Porcupine.Win32.Injector.DNSU.106007:73
-7114b2f01c5a0ba5e03bbeacca9ab14c:301174:Porcupine.Unclassified.105613:73
 f6f5a83a173bc4668eb47abe13af1226:299488:Porcupine.MSIL.Kryptik.AFOS.106163:73
 cc50ca17cc2838880a6f5984b65f34b2:297984:Porcupine.MSIL.Downloader.Agent.LXY.105820:73
 acb933559f23de7215b1b859f6d7512d:292888:Porcupine.MSIL.Kryptik.ADNS.106088:73
@@ -195,6 +194,7 @@ f6fa416410dfc2dd4a7574a22744442c:248856:Porcupine.MSIL.Injector.UWS.106145:73
 d493f543bd4e59ec7dd6645e834e75d9:239148:Porcupine.Unclassified.106110:73
 22900d6f2b8f86dcc9bb04f6cb047710:238539:Porcupine.Unclassified.106099:73
 8c4151ea670460a2a1e2db1b9e8d5da8:233784:Porcupine.NSIS.Injector.ASH.105976:73
+02d6ddd97988d174e6023956b02931aa:233237:Porcupine.Java.TrojanDropper.Agent.GG.106242:73
 89a049f02134fa92cd90ae80168cdf66:229376:Porcupine.MSIL.Downloader.Agent_AGen.UV.106184:73
 141e1b3145e36aa66b912ad11a627885:226030:Porcupine.Unclassified.105795:73
 6853f997f4404e5be399eecbcd98a7c9:225280:Porcupine.MSIL.Downloader.Agent.MAJ.106069:73
