@@ -3160,4 +3160,8 @@ Sanesecurity.Foxhole.Zip_fs3163:CL_TYPE_ZIP:*:(?i)^mr#.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3164:CL_TYPE_ZIP:*:(?i)^cnc\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3165:CL_TYPE_ZIP:*:(?i)^contracts\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3166:CL_TYPE_ZIP:*:(?i)^bank details\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Iso_fs3167:CL_TYPE_ISO9660:*:(?i)^Solicitud.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3167:CL_TYPE_ISO9660:*:(?i)^solicitud.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3168:CL_TYPE_ZIP:*:(?i)^arrival notice, cargo details,and cargo manifest\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3169:CL_TYPE_ISO9660:*:(?i)^payment slip\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3170:CL_TYPE_ISO9660:*:(?i)^payment_\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3171:CL_TYPE_RAR:*:(?i)^po\.exe$:*:*:*:1:*:*
