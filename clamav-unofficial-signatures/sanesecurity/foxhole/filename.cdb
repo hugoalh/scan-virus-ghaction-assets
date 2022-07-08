@@ -1320,7 +1320,6 @@ Sanesecurity.Foxhole.Iso_fs1062:CL_TYPE_ISO9660:*:(?i)^payment document_swift.{0
 Sanesecurity.Foxhole.Iso_fs1063:CL_TYPE_ISO9660:*:(?i)^scan_quotation.{0,20}\.exe$:*:*:0:0:0:00000000
 Sanesecurity.Foxhole.Iso_fs1064:CL_TYPE_ISO9660:*:(?i)^paymentslip and invoice.{0,20}\.exe$:*:*:0:0:0:00000000
 Sanesecurity.Foxhole.Zip_fs1065:CL_TYPE_ZIP:*:(?i)^aero_oil swift copy_pdf\.jar$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1066:CL_TYPE_ZIP:*:(?i)^aero_oil swift copy_pdf\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1067:CL_TYPE_ZIP:*:(?i)^awb tnt\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1068:CL_TYPE_ZIP:*:(?i)^bank details\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1069:CL_TYPE_ZIP:*:(?i)^bank receipt\.jar$:*:*:*:1:*:*
@@ -1634,7 +1633,6 @@ Sanesecurity.Foxhole.Rar_fs1353:CL_TYPE_RAR:*:(?i)^wirec\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1354:CL_TYPE_ZIP:*:(?i)^acct#.{0,30}\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1355:CL_TYPE_ZIP:*:(?i)^awb .{0,30}\.pdf\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1356:CL_TYPE_ZIP:*:(?i)^cde\. .{0,30}\.pdf\.jar$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1357:CL_TYPE_ZIP:*:(?i)^chuks(1)\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1358:CL_TYPE_ZIP:*:(?i)^confirmation for po no.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1359:CL_TYPE_ZIP:*:(?i)^dhl_.{0,30}\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1360:CL_TYPE_ZIP:*:(?i)^doc[0-9]{10}\.doc$:*:*:*:1:*:*
@@ -1687,7 +1685,6 @@ Sanesecurity.Foxhole.Zip_fs1406:CL_TYPE_ZIP:*:(?i) yunshen order\.exe$:*:*:*:1:*
 Sanesecurity.Foxhole.Zip_fs1407:CL_TYPE_ZIP:*:(?i)^acct#.{0,30}\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1408:CL_TYPE_ZIP:*:(?i)^awb .{0,30}\.pdf\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1409:CL_TYPE_ZIP:*:(?i)^cde\. .{0,30}\.pdf\.jar$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1410:CL_TYPE_ZIP:*:(?i)^chuks(1)\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1411:CL_TYPE_ZIP:*:(?i)^confirmation for po no.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1412:CL_TYPE_ZIP:*:(?i)^dhl_.{0,30}\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1413:CL_TYPE_ZIP:*:(?i)^drawing&po#.{0,30}3\.pdf\.zip\.jar$:*:*:*:1:*:*
@@ -1803,7 +1800,6 @@ Sanesecurity.Foxhole.Zip_fs1512:CL_TYPE_ZIP:*:(?i)^attachments default\.htm .{0,
 Sanesecurity.Foxhole.Zip_fs1513:CL_TYPE_ZIP:*:(?i)^bg\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1514:CL_TYPE_ZIP:*:(?i)^bnmh_.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1515:CL_TYPE_ZIP:*:(?i)^cde\.awb .{0,30}\.pdf\.jar$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1516:CL_TYPE_ZIP:*:(?i)^chuks(1)\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1517:CL_TYPE_ZIP:*:(?i)^dhl shipment copy\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1518:CL_TYPE_ZIP:*:(?i)^dhl\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1519:CL_TYPE_ZIP:*:(?i)^documents\..{0,30}\.jar$:*:*:*:1:*:*
@@ -1868,7 +1864,6 @@ Sanesecurity.Foxhole.7z_fs1576:CL_TYPE_7Z:*:(?i)^ym\.scr$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs1577:CL_TYPE_ZIP:*:(?i)^_output.{0,30}\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1578:CL_TYPE_ZIP:*:(?i)^0000#mt103\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1579:CL_TYPE_ZIP:*:(?i)^bank copy of payment schedule\.jar$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1580:CL_TYPE_ZIP:*:(?i)^chuks(1)\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1581:CL_TYPE_ZIP:*:(?i)^cryped vii\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1582:CL_TYPE_ZIP:*:(?i)^documents_.{0,30}\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1583:CL_TYPE_ZIP:*:(?i)^new po_.{0,30}\.exe$:*:*:*:1:*:*
@@ -1952,7 +1947,6 @@ Sanesecurity.Foxhole.Rar_fs1669:CL_TYPE_RAR:*:(?i)^wisemman_output.{0,30}\.bat$:
 Sanesecurity.Foxhole.Zip_fs1670:CL_TYPE_ZIP:*:(?i)^[0-9]{10,20}\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1671:CL_TYPE_ZIP:*:(?i)^build-2018-.{0,30}\.xlsx$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1672:CL_TYPE_ZIP:*:(?i)^catalog quotation .{0,30}\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1673:CL_TYPE_ZIP:*:(?i)^chuks(1)\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1674:CL_TYPE_ZIP:*:(?i)^due statement of account .{0,30}\.doc$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1675:CL_TYPE_ZIP:*:(?i)^hcf113571h-oicdun\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1676:CL_TYPE_ZIP:*:(?i)^ihr2018- 461 - inv revised\.exe$:*:*:*:1:*:*
@@ -2256,7 +2250,6 @@ Sanesecurity.Foxhole.Zip_fs1970:CL_TYPE_ZIP:*:(?i)^chika  2019_output.{0,30}\.ex
 Sanesecurity.Foxhole.Zip_fs1971:CL_TYPE_ZIP:*:(?i)^chika 2019_output.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1972:CL_TYPE_ZIP:*:(?i)^chika new file_output.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1973:CL_TYPE_ZIP:*:(?i)^chriss\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs1974:CL_TYPE_ZIP:*:(?i)^chuks(1)\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1975:CL_TYPE_ZIP:*:(?i)^compensation.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1976:CL_TYPE_ZIP:*:(?i)^contact.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs1977:CL_TYPE_ZIP:*:(?i)^contract.{0,30}\.exe$:*:*:*:1:*:*
@@ -2458,7 +2451,6 @@ Sanesecurity.Foxhole.Rar_fs2172:CL_TYPE_RAR:*:(?i)^qtn-.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2173:CL_TYPE_RAR:*:(?i)^quotation#.{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2174:CL_TYPE_RAR:*:(?i)^ref\. asg-.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2175:CL_TYPE_RAR:*:(?i)^sales contract\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs2176:CL_TYPE_ZIP:*:(?i)^advice-1\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2177:CL_TYPE_ZIP:*:(?i)^advise swift.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2178:CL_TYPE_ZIP:*:(?i)^bill of lading draft\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2179:CL_TYPE_ZIP:*:(?i)^commercial contract\.exe$:*:*:*:1:*:*
@@ -2534,7 +2526,6 @@ Sanesecurity.Foxhole.Rar_fs2248:CL_TYPE_RAR:*:(?i)^product specification & e-bro
 Sanesecurity.Foxhole.Rar_fs2249:CL_TYPE_RAR:*:(?i)^proforma inv\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2250:CL_TYPE_RAR:*:(?i)^quotation#.{0,70}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2251:CL_TYPE_RAR:*:(?i)^transaction_details\.hta$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs2252:CL_TYPE_ZIP:*:(?i)^advice-1\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2253:CL_TYPE_ZIP:*:(?i)^doc\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2254:CL_TYPE_ZIP:*:(?i)^doc_.{0,30} r2\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs2255:CL_TYPE_ZIP:*:(?i)^doc002p1\.exe$:*:*:*:1:*:*
@@ -2626,7 +2617,6 @@ Sanesecurity.Foxhole.Rar_fs2632:CL_TYPE_RAR:*:(?i)^amended purchhase order follo
 Sanesecurity.Foxhole.Rar_fs2633:CL_TYPE_RAR:*:(?i)^arrival notice & invoice\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2634:CL_TYPE_RAR:*:(?i)^available contracts\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2635:CL_TYPE_RAR:*:(?i)^awb & invoice\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Rar_fs2636:CL_TYPE_RAR:*:(?i)^bank details\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2637:CL_TYPE_RAR:*:(?i)^bank details_html\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2638:CL_TYPE_RAR:*:(?i)^bank paymment slip_gpj\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs2639:CL_TYPE_RAR:*:(?i)^bank slip\.exe$:*:*:*:1:*:*
@@ -3165,3 +3155,4 @@ Sanesecurity.Foxhole.Zip_fs3168:CL_TYPE_ZIP:*:(?i)^arrival notice, cargo details
 Sanesecurity.Foxhole.Iso_fs3169:CL_TYPE_ISO9660:*:(?i)^payment slip\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs3170:CL_TYPE_ISO9660:*:(?i)^payment_\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs3171:CL_TYPE_RAR:*:(?i)^po\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3172:CL_TYPE_ISO9660:*:(?i)^packing_draft_copy\.exe$:*:*:*:*:*:*
