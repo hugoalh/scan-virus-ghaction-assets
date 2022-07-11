@@ -3156,3 +3156,6 @@ Sanesecurity.Foxhole.Iso_fs3169:CL_TYPE_ISO9660:*:(?i)^payment slip\.exe$:*:*:*:
 Sanesecurity.Foxhole.Iso_fs3170:CL_TYPE_ISO9660:*:(?i)^payment_\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs3171:CL_TYPE_RAR:*:(?i)^po\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3172:CL_TYPE_ISO9660:*:(?i)^packing_draft_copy\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3173:CL_TYPE_ZIP:*:(?i)^waybill co and hc\.zip$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3174:CL_TYPE_RAR:*:(?i)^shipping doc\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3175:CL_TYPE_RAR:*:(?i)^new order-qtx\.exe$:*:*:*:1:*:*
