@@ -3159,3 +3159,7 @@ Sanesecurity.Foxhole.Iso_fs3172:CL_TYPE_ISO9660:*:(?i)^packing_draft_copy\.exe$:
 Sanesecurity.Foxhole.Zip_fs3173:CL_TYPE_ZIP:*:(?i)^waybill co and hc\.zip$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3174:CL_TYPE_RAR:*:(?i)^shipping doc\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3175:CL_TYPE_RAR:*:(?i)^new order-qtx\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3176:CL_TYPE_ZIP:*:(?i)^purchase contract\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3177:CL_TYPE_RAR:*:(?i)^new order-qtx sheets\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3178:CL_TYPE_RAR:*:(?i)^maerskline shipment documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3179:CL_TYPE_ZIP:*:(?i)^parking list\.exe$:*:*:*:1:*:*
