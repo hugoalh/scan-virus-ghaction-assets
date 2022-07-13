@@ -3163,3 +3163,4 @@ Sanesecurity.Foxhole.Zip_fs3176:CL_TYPE_ZIP:*:(?i)^purchase contract\.exe$:*:*:*
 Sanesecurity.Foxhole.Rar_fs3177:CL_TYPE_RAR:*:(?i)^new order-qtx sheets\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3178:CL_TYPE_RAR:*:(?i)^maerskline shipment documents\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3179:CL_TYPE_ZIP:*:(?i)^parking list\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3180:CL_TYPE_RAR:*:(?i)^shipping doc\.exe$:*:*:*:1:*:*
