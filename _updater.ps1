@@ -1,43 +1,39 @@
 [String]$ErrorActionOriginalPreference = $ErrorActionPreference
 $ErrorActionPreference = 'Stop'
-If ($Env:GITHUB_EVENT_NAME -inotin @('schedule', 'workflow_dispatch')) {
-	Write-Host -Object '::error::Invalid event trigger!'
+Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scope 'Local'
+[AllowEmptyString()][String]$InputEvent = ($Env:GITHUB_EVENT_NAME ?? '') -ireplace '_', '-'
+If ($Env:GITHUB_EVENT_NAME -inotin @(
+	'schedule',
+	'workflow-dispatch'
+)) {
+	Write-Host -Object "::error::``$InputEvent`` is not a valid updater event trigger!"
 	Exit 1
 }
-Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scope 'Local'
-[AllowEmptyString()][String]$InputFlags = $Env:INPUT_FLAGS
-[AllowEmptyString()][String]$InputSchedule = $Env:INPUT_SCHEDULE
 [DateTime]$ExecuteTime = Get-Date -AsUTC
 [DateTime]$BufferTime = (Get-Date -Date $ExecuteTime -AsUTC).AddMinutes(-30)
 [String]$CommitTime = Get-Date -Date $ExecuteTime -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
-Write-Host -Object "$($PSStyle.Bold)Commit/Execute Time:$($PSStyle.Reset) $CommitTime"
-[String[]]$ConditionsAvailable = @('any', "day_$($ExecuteTime.Day)", "weekday_$($ExecuteTime.DayOfWeek.GetHashCode())")
+Write-Host -Object "$($PSStyle.Bold)Commit/Execute Time:$($PSStyle.BoldOff) $CommitTime"
+[String[]]$ConditionsAvailable = @(
+	'any',
+	"event:$Env:GITHUB_EVENT_NAME"
+)
+[AllowEmptyString()][String]$InputFlags = $Env:INPUT_FLAGS
+[AllowEmptyString()][String]$InputSchedule = $Env:INPUT_SCHEDULE
 If ($InputFlags.Length -igt 0) {
-	ForEach ($Item In ($InputFlags -isplit ';' | ForEach-Object -Process {
+	ForEach ($Item In ([String[]]($InputFlags -isplit ';') | ForEach-Object -Process {
 		Return $_.Trim()
 	} | Where-Object -FilterScript {
 		Return ($_.Length -igt 0)
 	})) {
-		$ConditionsAvailable += "flag_$Item"
+		$ConditionsAvailable += "flag:$Item"
 	}
 }
-If ($InputSchedule.Length -gt 0) {
-	$ConditionsAvailable += 'schedule'
-	[String]$ScheduleHour = $InputSchedule -ireplace '^.+ (?<hour>.+) .+ .+ .+$', '${hour}'
-	If ($ScheduleHour -imatch '^\d?\d$') {
-		[String]$Condition = "hour_$ScheduleHour"
-		$ConditionsAvailable += $Condition
-		$ConditionsAvailable += "day_$($ExecuteTime.Day)_$Condition"
-		$ConditionsAvailable += "weekday_$($ExecuteTime.DayOfWeek.GetHashCode())_$Condition"
-	} Else {
-		[String]$Condition = "hour_$($ExecuteTime.Hour)"
-		$ConditionsAvailable += $Condition
-		$ConditionsAvailable += "day_$($ExecuteTime.Day)_$Condition"
-		$ConditionsAvailable += "weekday_$($ExecuteTime.DayOfWeek.GetHashCode())_$Condition"
-	}
+If ($InputSchedule.Length -igt 0) {
+	[String]$ScheduleHour = $InputSchedule -ireplace '^.+ (?<Hour>.+) .+ .+ .+$', '${Hour}'
+	$ConditionsAvailable += "timetoken:$(($ScheduleHour -imatch '^(?:1?\d|2[0-3])$') ? $ScheduleHour : $ExecuteTime.Hour) $($ExecuteTime.Day) $($ExecuteTime.Month) $($ExecuteTime.DayOfWeek.GetHashCode())"
 }
 $ConditionsAvailable = ($ConditionsAvailable | Sort-Object -Unique)
-Write-Host -Object "$($PSStyle.Bold)Conditions Available ($($ConditionsAvailable.Count)):$($PSStyle.Reset) $($ConditionsAvailable -join ', ')"
+Write-Host -Object "$($PSStyle.Bold)Conditions Available ($($ConditionsAvailable.Count)):$($PSStyle.BoldOff) $($ConditionsAvailable -join ', ')"
 ForEach ($AssetDirectory In @(
 	'clamav-signatures-ignore-presets',
 	'clamav-unofficial-signatures',
@@ -51,19 +47,8 @@ ForEach ($AssetDirectory In @(
 	For ($AssetIndexNumber = 0; $AssetIndexNumber -ilt $AssetIndex.Count; $AssetIndexNumber++) {
 		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexNumber]
 		Write-Host -Object "At ``$AssetDirectory/$($AssetIndexItem.Name)``."
-		[Boolean]$ShouldUpdate = $False
-		ForEach ($Item In ($AssetIndexItem.UpdateCondition -isplit ';' | ForEach-Object -Process {
-			Return $_.Trim()
-		} | Where-Object -FilterScript {
-			Return ($_.Length -igt 0)
-		})) {
-			If ($Item -iin $ConditionsAvailable) {
-				$ShouldUpdate = $True
-				Break
-			}
-		}
 		If (
-			!$ShouldUpdate -or
+			($ConditionsAvailable -imatch $AssetIndexItem.UpdateCondition).Count -ieq 0 -or
 			(Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC) -igt $BufferTime
 		) {
 			Write-Host -Object "No need to update ``$AssetDirectory/$($AssetIndexItem.Name)``."
