@@ -474,6 +474,7 @@ neo23x0/gen-gobfuscate		neo23x0/yara/gen_gobfuscate.yar	https://github.com/Neo23
 neo23x0/gen-google-anomaly		neo23x0/yara/gen_google_anomaly.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-07-10T01:58:26Z
 neo23x0/gen-gpp-cpassword		neo23x0/yara/gen_gpp_cpassword.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-07-10T01:58:26Z
 neo23x0/gen-hawkeye		neo23x0/yara/gen_hawkeye.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-07-10T01:58:26Z
+neo23x0/gen-hktl-koh-tokenstealer		neo23x0/yara/gen_hktl_koh_tokenstealer.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-07-10T01:58:26Z
 neo23x0/gen-hktl-roothelper		neo23x0/yara/gen_hktl_roothelper.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-07-10T01:58:26Z
 neo23x0/gen-hta-anomalies		neo23x0/yara/gen_hta_anomalies.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-07-10T01:58:26Z
 neo23x0/gen-hunting-susp-rar		neo23x0/yara/gen_hunting_susp_rar.yar	https://github.com/Neo23x0/signature-base.git	flag_full; flag_yara_fast; weekday_0_hour_0	Git	2022-07-10T01:58:26Z
