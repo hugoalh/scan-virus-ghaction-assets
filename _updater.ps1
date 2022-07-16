@@ -1,5 +1,6 @@
-[String]$ErrorActionOriginalPreference = $ErrorActionPreference
-$ErrorActionPreference = 'Stop'
+#Requires -PSEdition Core
+#Requires -Version 7.2
+$Local:ErrorActionPreference = 'Stop'
 Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scope 'Local'
 [AllowEmptyString()][String]$InputEvent = ($Env:GITHUB_EVENT_NAME ?? '') -ireplace '_', '-'
 If ($Env:GITHUB_EVENT_NAME -inotin @(
@@ -151,4 +152,3 @@ ForEach ($AssetDirectory In @(
 $Metadata.Timestamp = $CommitTime
 Set-Content -LiteralPath $MetadataFullName -Value ($Metadata | ConvertTo-Json -Depth 100 -Compress) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$CommitTime"
-$ErrorActionPreference = $ErrorActionOriginalPreference

@@ -1,3 +1,5 @@
+#Requires -PSEdition Core
+#Requires -Version 7.2
 Function Get-Csv {
 	[CmdletBinding()]
 	[OutputType([PSCustomObject[]])]
