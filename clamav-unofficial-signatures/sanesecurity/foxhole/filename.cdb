@@ -3167,3 +3167,5 @@ Sanesecurity.Foxhole.Rar_fs3180:CL_TYPE_RAR:*:(?i)^shipping doc\.exe$:*:*:*:1:*:
 Sanesecurity.Foxhole.Zip_fs3181:CL_TYPE_ZIP:*:(?i)^invoice .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3182:CL_TYPE_ZIP:*:(?i)^noa and inv\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3183:CL_TYPE_ZIP:*:(?i)^shipping documents1\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Tar_fs3184:CL_TYPE_POSIX_TAR:*:(?i)^sarpi ref-.{0,30}\.exe:*:*:0:1:0:*
+Sanesecurity.Foxhole.Zip_fs3185:CL_TYPE_ZIP:*:(?i)^mt103.{0,30}\.exe$:*:*:*:1:*:*
