@@ -65,6 +65,7 @@ neo23x0/apt-blackenergy-installer		neo23x0/yara/apt_blackenergy_installer.yar	ht
 neo23x0/apt-bluetermite-emdivi		neo23x0/yara/apt_bluetermite_emdivi.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/apt-bronze-butler		neo23x0/yara/apt_bronze_butler.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/apt-buckeye		neo23x0/yara/apt_buckeye.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
+neo23x0/apt-candiru		neo23x0/yara/apt_candiru.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/apt-carbon-paper-turla		neo23x0/yara/apt_carbon_paper_turla.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/apt-casper		neo23x0/yara/apt_casper.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/apt-cheshirecat		neo23x0/yara/apt_cheshirecat.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
@@ -605,6 +606,7 @@ neo23x0/thor-inverse-matches		neo23x0/yara/thor_inverse_matches.yar	https://gith
 neo23x0/thor-webshells		neo23x0/yara/thor-webshells.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/threat-lenovo-superfish		neo23x0/yara/threat_lenovo_superfish.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/vul-backdoor-anti-theft-web		neo23x0/yara/vul_backdoor_antitheftweb.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
+neo23x0/vul-confluence-questions-plugin-cve-2022-26138		neo23x0/yara/vul_confluence_questions_plugin_cve_2022_26138.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/vul-cve-2020-0688		neo23x0/yara/vul_cve_2020_0688.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/vul-cve-2020-1938		neo23x0/yara/vul_cve_2020_1938.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
 neo23x0/vul-cve-2021-3438-printdriver		neo23x0/yara/vul_cve_2021_3438_printdriver.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-07-24T01:57:43Z
