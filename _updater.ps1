@@ -1,25 +1,29 @@
 #Requires -PSEdition Core
 #Requires -Version 7.2
-$Local:ErrorActionPreference = 'Stop'
-Import-Module -Name (Join-Path -Path $PSScriptRoot -ChildPath '_csv.psm1') -Scope 'Local'
+Write-Host -Object 'Starting.'
+$Script:ErrorActionPreference = 'Stop'
+[Hashtable]$TsvParameters = @{
+	Delimiter = "`t"
+	Encoding = 'UTF8NoBOM'
+}
+[DateTime]$TimeInvoke = Get-Date -AsUTC
+[DateTime]$TimeBuffer = (Get-Date -Date $TimeInvoke -AsUTC).AddMinutes(-30)
+[String]$TimeCommit = Get-Date -Date $TimeInvoke -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
+Write-Host -Object "$($PSStyle.Bold)Commit/Invoke Time:$($PSStyle.BoldOff) $TimeCommit"
+Write-Host -Object 'Import updater event trigger.'
 [AllowEmptyString()][String]$InputEvent = ($Env:GITHUB_EVENT_NAME ?? '') -ireplace '_', '-'
-If ($Env:GITHUB_EVENT_NAME -inotin @(
+If ($InputEvent -inotin @(
 	'schedule',
 	'workflow-dispatch'
 )) {
 	Write-Host -Object "::error::``$InputEvent`` is not a valid updater event trigger!"
 	Exit 1
 }
-[DateTime]$ExecuteTime = Get-Date -AsUTC
-[DateTime]$BufferTime = (Get-Date -Date $ExecuteTime -AsUTC).AddMinutes(-30)
-[String]$CommitTime = Get-Date -Date $ExecuteTime -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
-Write-Host -Object "$($PSStyle.Bold)Commit/Execute Time:$($PSStyle.BoldOff) $CommitTime"
 [String[]]$ConditionsAvailable = @(
-	'any',
-	"event:$Env:GITHUB_EVENT_NAME"
+	"event:$InputEvent"
 )
+Write-Host -Object 'Import updater flags.'
 [AllowEmptyString()][String]$InputFlags = $Env:INPUT_FLAGS
-[AllowEmptyString()][String]$InputSchedule = $Env:INPUT_SCHEDULE
 If ($InputFlags.Length -igt 0) {
 	ForEach ($Item In ([String[]]($InputFlags -isplit ';') | ForEach-Object -Process {
 		Return $_.Trim()
@@ -29,28 +33,32 @@ If ($InputFlags.Length -igt 0) {
 		$ConditionsAvailable += "flag:$Item"
 	}
 }
+Write-Host -Object 'Import updater scheduler.'
+[AllowEmptyString()][String]$InputSchedule = $Env:INPUT_SCHEDULE
 If ($InputSchedule.Length -igt 0) {
 	[String]$ScheduleHour = $InputSchedule -ireplace '^.+ (?<Hour>.+) .+ .+ .+$', '${Hour}'
-	$ConditionsAvailable += "timetoken:$(($ScheduleHour -imatch '^(?:1?\d|2[0-3])$') ? $ScheduleHour : $ExecuteTime.Hour) $($ExecuteTime.Day) $($ExecuteTime.Month) $($ExecuteTime.DayOfWeek.GetHashCode())"
+	$ConditionsAvailable += "timetoken:$(($ScheduleHour -imatch '^(?:1?\d|2[0-3])$') ? $ScheduleHour : $TimeInvoke.Hour) $($TimeInvoke.Day) $($TimeInvoke.Month) $($TimeInvoke.DayOfWeek.GetHashCode())"
 }
 $ConditionsAvailable = ($ConditionsAvailable | Sort-Object -Unique)
 Write-Host -Object "$($PSStyle.Bold)Conditions Available ($($ConditionsAvailable.Count)):$($PSStyle.BoldOff) $($ConditionsAvailable -join ', ')"
+Write-Host -Object 'Begin update assets.'
 ForEach ($AssetDirectory In @(
 	'clamav-signatures-ignore-presets',
 	'clamav-unofficial-signatures',
 	'yara-rules'
 )) {
 	Write-Host -Object "At ``$AssetDirectory``."
+	Write-Host -Object 'Read index.'
 	[String]$AssetRoot = Join-Path -Path $PSScriptRoot -ChildPath $AssetDirectory
 	[String]$AssetIndexFileFullPath = Join-Path -Path $AssetRoot -ChildPath 'index.tsv'
-	[PSCustomObject[]]$AssetIndex = Get-Csv -LiteralPath $AssetIndexFileFullPath -Delimiter "`t"
+	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFileFullPath @TsvParameters
 	[String[]]$GitFinishSessions = @()
 	For ($AssetIndexNumber = 0; $AssetIndexNumber -ilt $AssetIndex.Count; $AssetIndexNumber++) {
 		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexNumber]
 		Write-Host -Object "At ``$AssetDirectory/$($AssetIndexItem.Name)``."
 		If (
 			($ConditionsAvailable -imatch $AssetIndexItem.UpdateCondition).Count -ieq 0 -or
-			(Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC) -igt $BufferTime
+			(Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC) -igt $TimeBuffer
 		) {
 			Write-Host -Object "No need to update ``$AssetDirectory/$($AssetIndexItem.Name)``."
 			Continue
@@ -80,6 +88,7 @@ ForEach ($AssetDirectory In @(
 						'*.ai',
 						'*.bat',
 						'*.bmp',
+						'*.cab',
 						'*.cjs',
 						'*.db',
 						'*.diff',
@@ -90,6 +99,7 @@ ForEach ($AssetDirectory In @(
 						'*.gif',
 						'*.gz',
 						'*.html',
+						'*.iso',
 						'*.jpeg',
 						'*.jpg',
 						'*.js',
@@ -113,6 +123,7 @@ ForEach ($AssetDirectory In @(
 						'*.ts',
 						'*.txt',
 						'*.xml',
+						'*.xps',
 						'*.yaml',
 						'*.yml',
 						'*.zip',
@@ -142,13 +153,15 @@ ForEach ($AssetDirectory In @(
 		} Else {
 			Write-Host -Object "::warning::Cannot update ``$AssetDirectory/$($AssetIndexItem.Name)``, no available update method!"
 		}
-		$AssetIndex[$AssetIndexNumber].LastUpdateTime = $CommitTime
+		$AssetIndex[$AssetIndexNumber].LastUpdateTime = $TimeCommit
 	}
 	Write-Host -Object "At ``$AssetDirectory``."
-	Set-Csv -LiteralPath $AssetIndexFileFullPath -InputObject $AssetIndex -Delimiter "`t"
+	Write-Host -Object 'Write index.'
+	$AssetIndex | Export-Csv -LiteralPath $AssetIndexFileFullPath @TsvParameters -NoTypeInformation -UseQuotes 'AsNeeded' -Confirm:$False
 }
+Write-Host -Object 'Write metadata.'
 [String]$MetadataFullName = Join-Path -Path $PSScriptRoot -ChildPath 'metadata.json'
 [PSCustomObject]$Metadata = (Get-Content -LiteralPath $MetadataFullName -Raw -Encoding 'UTF8NoBOM' | ConvertFrom-Json -Depth 100)
-$Metadata.Timestamp = $CommitTime
+$Metadata.Timestamp = $TimeCommit
 Set-Content -LiteralPath $MetadataFullName -Value ($Metadata | ConvertTo-Json -Depth 100 -Compress) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
-Write-Host -Object "::set-output name=timestamp::$CommitTime"
+Write-Host -Object "::set-output name=timestamp::$TimeCommit"
