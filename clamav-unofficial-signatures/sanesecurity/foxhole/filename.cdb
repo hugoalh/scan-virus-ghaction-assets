@@ -3169,3 +3169,6 @@ Sanesecurity.Foxhole.Zip_fs3182:CL_TYPE_ZIP:*:(?i)^noa and inv\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3183:CL_TYPE_ZIP:*:(?i)^shipping documents1\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Tar_fs3184:CL_TYPE_POSIX_TAR:*:(?i)^sarpi ref-.{0,30}\.exe:*:*:0:1:0:*
 Sanesecurity.Foxhole.Zip_fs3185:CL_TYPE_ZIP:*:(?i)^mt103.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3186:CL_TYPE_ZIP:*:(?i)^bl-documents details\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3187:CL_TYPE_ISO9660:*:(?i)^price quote and availability___pdf___\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3188:CL_TYPE_ZIP:*:(?i)^overdue for .{0,30}\.exe$:*:*:*:1:*:*
