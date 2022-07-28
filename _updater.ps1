@@ -48,7 +48,7 @@ ForEach ($AssetDirectory In @(
 	'yara-rules'
 )) {
 	Write-Host -Object "At ``$AssetDirectory``."
-	Write-Host -Object 'Read index.'
+	Write-Host -Object 'Read asset index.'
 	[String]$AssetRoot = Join-Path -Path $PSScriptRoot -ChildPath $AssetDirectory
 	[String]$AssetIndexFileFullPath = Join-Path -Path $AssetRoot -ChildPath 'index.tsv'
 	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFileFullPath @TsvParameters
@@ -156,7 +156,7 @@ ForEach ($AssetDirectory In @(
 		$AssetIndex[$AssetIndexNumber].LastUpdateTime = $TimeCommit
 	}
 	Write-Host -Object "At ``$AssetDirectory``."
-	Write-Host -Object 'Write index.'
+	Write-Host -Object 'Update asset index.'
 	$AssetIndex | Export-Csv -LiteralPath $AssetIndexFileFullPath @TsvParameters -NoTypeInformation -UseQuotes 'AsNeeded' -Confirm:$False
 }
 Write-Host -Object 'Write metadata.'
