@@ -3174,3 +3174,9 @@ Sanesecurity.Foxhole.Iso_fs3187:CL_TYPE_ISO9660:*:(?i)^price quote and availabil
 Sanesecurity.Foxhole.Zip_fs3188:CL_TYPE_ZIP:*:(?i)^overdue for .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3189:CL_TYPE_ZIP:*:(?i)^shipping invoice freight\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3190:CL_TYPE_ZIP:*:(?i)^soa  .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3191:CL_TYPE_ZIP:*:(?i)^shipping document\. pdf\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3192:CL_TYPE_ZIP:*:(?i)^pre alert notice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3193:CL_TYPE_ZIP:*:(?i)^bl-shipping advice docs\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3194:CL_TYPE_RAR:*:(?i)^swift copy\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3195:CL_TYPE_ISO9660:*:(?i)^secpralpro order.{0,30}\.vns$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3196:CL_TYPE_RAR:*:(?i)^rfq#.{0,30}\.exe$:*:*:*:1:*:*
