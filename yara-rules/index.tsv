@@ -233,6 +233,7 @@ neo23x0/apt-servantshell		neo23x0/yara/apt_servantshell.yar	https://github.com/N
 neo23x0/apt-shadowpad		neo23x0/yara/apt_shadowpad.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/apt-shamoon		neo23x0/yara/apt_shamoon.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/apt-shamoon2		neo23x0/yara/apt_shamoon2.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
+neo23x0/apt-sharptongue		neo23x0/yara/apt_sharptongue.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/apt-shellcrew-streamex		neo23x0/yara/apt_shellcrew_streamex.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/apt-sidewinder		neo23x0/yara/apt_sidewinder.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/apt-silence		neo23x0/yara/apt_silence.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
@@ -447,6 +448,7 @@ neo23x0/gen-cmd-script-obfuscated		neo23x0/yara/gen_cmd_script_obfuscated.yar	ht
 neo23x0/gen-cn-hacktool-scripts		neo23x0/yara/gen_cn_hacktool_scripts.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-cn-hacktools		neo23x0/yara/gen_cn_hacktools.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-cn-webshells		neo23x0/yara/gen_cn_webshells.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
+neo23x0/gen-cobaltstrike		neo23x0/yara/gen_cobaltstrike.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-cobaltstrike-by-avast		neo23x0/yara/gen_cobaltstrike_by_avast.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-crime-bitpaymer		neo23x0/yara/gen_crime_bitpaymer.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-crimson-rat		neo23x0/yara/gen_crimson_rat.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
@@ -471,6 +473,7 @@ neo23x0/gen-floxif		neo23x0/yara/gen_floxif.yar	https://github.com/Neo23x0/signa
 neo23x0/gen-gen-cactustorch		neo23x0/yara/gen_gen_cactustorch.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-github-net-redteam-tools-guids		neo23x0/yara/gen_github_net_redteam_tools_guids.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-github-net-redteam-tools-names		neo23x0/yara/gen_github_net_redteam_tools_names.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
+neo23x0/gen-github-repo-compromise-myjino-ru		neo23x0/yara/gen_github_repo_compromise_myjino_ru.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-gobfuscate		neo23x0/yara/gen_gobfuscate.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-google-anomaly		neo23x0/yara/gen_google_anomaly.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/gen-gpp-cpassword		neo23x0/yara/gen_gpp_cpassword.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
@@ -615,6 +618,7 @@ neo23x0/vul-dell-bios-upd-driver		neo23x0/yara/vul_dell_bios_upd_driver.yar	http
 neo23x0/vul-drivecrypt		neo23x0/yara/vul_drivecrypt.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/vul-jquery-fileupload-cve-2018-9206		neo23x0/yara/vul_jquery_fileupload_cve_2018_9206.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/vul-php-zlib-backdoor		neo23x0/yara/vul_php_zlib_backdoor.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
+neo23x0/vuln-gigabyte-driver		neo23x0/yara/vuln_gigabyte_driver.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/webshell-regeorg		neo23x0/yara/webshell_regeorg.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/webshell-xsl-transform		neo23x0/yara/webshell_xsl_transform.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
 neo23x0/yara-mixed-ext-vars		neo23x0/yara/yara_mixed_ext_vars.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-08-14T01:54:19Z
