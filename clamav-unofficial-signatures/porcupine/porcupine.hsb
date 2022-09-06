@@ -1,4 +1,8 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+5a8dc0e33ef5e69f780ec2b4ee437927:437668:Porcupine.Win32.GenKryptik.FZRV.13531:73
+05c8ad5100ed475322fe5ca98f77fbda:717495:Porcupine.Unclassified.13484:73
+9098c4a0b96b473b964da3f986ca304b:79872:Porcupine.MSIL.Downloader.Agent.NDX.13483:73
+86327e24382b3bc94c4b52d61a28086b:10342:Porcupine.Unclassified.13426:73
 f1ffe12aa5b4c32954eb7c523149d8c1:33280:Porcupine.Unclassified.13211:73
 d6604e7b2c45af6647f22c0ae6fe28b1:843069:Porcupine.Unclassified.13048:73
 a610ea9783908e48ae26b4245e5f0f3a:1062912:Porcupine.MSIL.GenKryptik.FZPO.12993:73
@@ -342,17 +346,3 @@ e118a286bde22d5b14eb756319de4267:17408:Porcupine.MSIL.Downloader.Agent.MPA.11038
 137154fd9e734789c67965e59633e5cc:1829376:Porcupine.MSIL.Downloader.Agent.MXG.11036:73
 5a3f8cc7259b8c996fc01dc2fdef8600:950154:Porcupine.MSIL.GenKryptik.FYKL.11035:73
 0e79e2957aee8c7dbd162fdb7e67caec:1245184:Porcupine.Unclassified.11034:73
-a5740425509b88d9cd6938ce8d3da5eb:5567:Porcupine.MSIL.Downloader.Agent.MXH.11033:73
-fcded46d7cc1ab298a281734e1eab2dc:17408:Porcupine.MSIL.Downloader.Agent.MXH.11032:73
-55318d174725e87aa25bb0816d14c4d7:785408:Porcupine.Unclassified.11031:73
-20a85ef5e008a31e0dd5845e7bad37f1:647808:Porcupine.Unclassified.11030:73
-2536267ee221fe5642a4afe4bc408f3a:194384:Porcupine.NSIS.Injector.ASH.11029:73
-b8aa58028ab63cd408d8934f65250b31:763904:Porcupine.Unclassified.11028:73
-d17af85b667b86bf3a6bebfb468e0c60:625049:Porcupine.Unclassified.11027:73
-e9b009c08d1fc636dfea0665e6d9027e:112552:Porcupine.NSIS.Injector.ASH.11026:73
-4ad29f542f7b9469d04b17639e24e095:161895:Porcupine.NSIS.Injector.ASH.11025:73
-b9277f54b3aac9e4a23d0f09fbbb9327:275456:Porcupine.MSIL.Kryptik.AFZP.11024:73
-10425b267f021a14f48a75542059e1d7:248420:Porcupine.MSIL.Kryptik.AFZP.11023:73
-f4822db592dabb43235ef4ce4ed72d7e:248200:Porcupine.MSIL.Kryptik.AFZP.11022:73
-ad52117f24edd9ee381588a7c5e0a9ae:200824:Porcupine.NSIS.Injector.ASH.11021:73
-25455ce0f4c440e755f57ecaf4ee7996:10336:Porcupine.Unclassified.11020:73
