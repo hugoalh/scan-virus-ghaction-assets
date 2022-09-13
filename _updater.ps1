@@ -25,11 +25,11 @@ If ($InputEvent -inotin @(
 Write-Host -Object 'Import updater flags.'
 [AllowEmptyString()][String]$InputFlags = $Env:INPUT_FLAGS
 If ($InputFlags.Length -igt 0) {
-	ForEach ($Item In ([String[]]($InputFlags -isplit ';') | ForEach-Object -Process {
-		Return $_.Trim()
-	} | Where-Object -FilterScript {
-		Return ($_.Length -igt 0)
-	})) {
+	ForEach ($Item In (
+		[String[]]($InputFlags -isplit ';') |
+			ForEach-Object -Process { $_.Trim() } |
+			Where-Object -FilterScript { $_.Length -igt 0 }
+	)) {
 		$ConditionsAvailable += "flag:$Item"
 	}
 }
@@ -39,7 +39,8 @@ If ($InputSchedule.Length -igt 0) {
 	[String]$ScheduleHour = $InputSchedule -ireplace '^.+ (?<Hour>.+) .+ .+ .+$', '${Hour}'
 	$ConditionsAvailable += "timetoken:$(($ScheduleHour -imatch '^(?:1?\d|2[0-3])$') ? $ScheduleHour : $TimeInvoke.Hour) $($TimeInvoke.Day) $($TimeInvoke.Month) $($TimeInvoke.DayOfWeek.GetHashCode())"
 }
-$ConditionsAvailable = ($ConditionsAvailable | Sort-Object -Unique)
+$ConditionsAvailable = $ConditionsAvailable |
+	Sort-Object -Unique
 Write-Host -Object "$($PSStyle.Bold)Conditions Available ($($ConditionsAvailable.Count)):$($PSStyle.BoldOff) $($ConditionsAvailable -join ', ')"
 Write-Host -Object 'Begin update assets.'
 ForEach ($AssetDirectory In @(
@@ -64,12 +65,14 @@ ForEach ($AssetDirectory In @(
 			Continue
 		}
 		Write-Host -Object "Need to update ``$AssetDirectory/$($AssetIndexItem.Name)``."
-		if ($AssetIndexItem.UpdateMethod -ieq 'Git') {
-			[String]$GitName = ($AssetIndexItem.Location -split '[\\\/]')[0]
+		If ($AssetIndexItem.UpdateMethod -ieq 'Git') {
+			[String]$GitName = $AssetIndexItem.Location -split '[\\\/]' |
+				Select-Object -First 1
 			[String]$GitSession = "$GitName::$($AssetIndexItem.Source)"
 			If ($GitFinishSessions -icontains $GitSession) {
 				Write-Host -Object "Skip update ``$AssetDirectory/$($AssetIndexItem.Name)``, repeated Git repository ``$($AssetIndexItem.Source)``."
-			} Else {
+			}
+			Else {
 				Write-Host -Object "Update ``$AssetDirectory/$($AssetIndexItem.Name)`` via Git repository ``$($AssetIndexItem.Source)``."
 				[String]$GitWorkingDirectoryRoot = Join-Path -Path $AssetRoot -ChildPath $GitName
 				If (Test-Path -LiteralPath $GitWorkingDirectoryRoot) {
@@ -78,9 +81,13 @@ ForEach ($AssetDirectory In @(
 				Set-Location -LiteralPath $AssetRoot
 				Try {
 					Invoke-Expression -Command "git --no-pager clone --quiet --recurse-submodules `"$($AssetIndexItem.Source)`" `"$GitName`""
-					Remove-Item -LiteralPath @(
-						(Join-Path -Path $GitWorkingDirectoryRoot -ChildPath '.git'),
-						(Join-Path -Path $GitWorkingDirectoryRoot -ChildPath '.github')
+					Remove-Item -LiteralPath (
+						@(
+							'.git',
+							'.github',
+							'.vscode'
+						) |
+							ForEach-Object -Process { Join-Path -Path $GitWorkingDirectoryRoot -ChildPath $_ }
 					) -Recurse -Force -Confirm:$False
 					Get-ChildItem -LiteralPath $GitWorkingDirectoryRoot -Include @(
 						'.dockerignore',
@@ -130,13 +137,16 @@ ForEach ($AssetDirectory In @(
 						'Dockerfile',
 						'makefile',
 						'Makefile'
-					) -Recurse -Force | Remove-Item -Force -Confirm:$False
-				} Catch {
+					) -Recurse -Force |
+						Remove-Item -Force -Confirm:$False
+				}
+				Catch {
 					Write-Host -Object "::warning::$_"
 				}
 				$GitFinishSessions += $GitSession
 			}
-		} ElseIf ($AssetIndexItem.UpdateMethod -ieq 'WebRequest') {
+		}
+		ElseIf ($AssetIndexItem.UpdateMethod -ieq 'WebRequest') {
 			Write-Host -Object "Update ``$AssetDirectory/$($AssetIndexItem.Name)`` via web request ``$($AssetIndexItem.Source)``."
 			[String]$OutFileFullName = Join-Path -Path $AssetRoot -ChildPath $AssetIndexItem.Location
 			[String]$OutFileRoot = Split-Path -Path $OutFileFullName -Parent
@@ -146,22 +156,29 @@ ForEach ($AssetDirectory In @(
 			Start-Sleep -Seconds 1
 			Try {
 				Invoke-WebRequest -Uri $AssetIndexItem.Source -UseBasicParsing -MaximumRedirection 1 -MaximumRetryCount 3 -RetryIntervalSec 10 -Method 'Get' -OutFile $OutFileFullName
-			} Catch {
+			}
+			Catch {
 				Write-Host -Object "::warning::$_"
 			}
 			Start-Sleep -Seconds 1
-		} Else {
+		}
+		Else {
 			Write-Host -Object "::warning::Cannot update ``$AssetDirectory/$($AssetIndexItem.Name)``, no available update method!"
 		}
 		$AssetIndex[$AssetIndexNumber].LastUpdateTime = $TimeCommit
 	}
 	Write-Host -Object "At ``$AssetDirectory``."
 	Write-Host -Object 'Update asset index.'
-	$AssetIndex | Export-Csv -LiteralPath $AssetIndexFileFullPath @TsvParameters -NoTypeInformation -UseQuotes 'AsNeeded' -Confirm:$False
+	$AssetIndex |
+		Export-Csv -LiteralPath $AssetIndexFileFullPath @TsvParameters -NoTypeInformation -UseQuotes 'AsNeeded' -Confirm:$False
 }
 Write-Host -Object 'Write metadata.'
 [String]$MetadataFullName = Join-Path -Path $PSScriptRoot -ChildPath 'metadata.json'
-[PSCustomObject]$Metadata = (Get-Content -LiteralPath $MetadataFullName -Raw -Encoding 'UTF8NoBOM' | ConvertFrom-Json -Depth 100)
+[PSCustomObject]$Metadata = Get-Content -LiteralPath $MetadataFullName -Raw -Encoding 'UTF8NoBOM' |
+	ConvertFrom-Json -Depth 100
 $Metadata.Timestamp = $TimeCommit
-Set-Content -LiteralPath $MetadataFullName -Value ($Metadata | ConvertTo-Json -Depth 100 -Compress) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
+Set-Content -LiteralPath $MetadataFullName -Value (
+	$Metadata |
+		ConvertTo-Json -Depth 100 -Compress
+) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$TimeCommit"
