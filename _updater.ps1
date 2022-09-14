@@ -1,7 +1,8 @@
 #Requires -PSEdition Core
 #Requires -Version 7.2
-Write-Host -Object 'Starting.'
+Write-Host -Object 'Begin process.'
 $Script:ErrorActionPreference = 'Stop'
+[String[]]$GitIgnore = Get-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_updater_gitignore.txt') -Encoding 'UTF8NoBOM'
 [Hashtable]$TsvParameters = @{
 	Delimiter = "`t"
 	Encoding = 'UTF8NoBOM'
@@ -66,7 +67,7 @@ ForEach ($AssetDirectory In @(
 		}
 		Write-Host -Object "Need to update ``$AssetDirectory/$($AssetIndexItem.Name)``."
 		If ($AssetIndexItem.UpdateMethod -ieq 'Git') {
-			[String]$GitName = $AssetIndexItem.Location -split '[\\\/]' |
+			[String]$GitName = $AssetIndexItem.Location -isplit '[\\\/]' |
 				Select-Object -First 1
 			[String]$GitSession = "$GitName::$($AssetIndexItem.Source)"
 			If ($GitFinishSessions -icontains $GitSession) {
@@ -81,68 +82,13 @@ ForEach ($AssetDirectory In @(
 				Set-Location -LiteralPath $AssetRoot
 				Try {
 					Invoke-Expression -Command "git --no-pager clone --quiet --recurse-submodules `"$($AssetIndexItem.Source)`" `"$GitName`""
-					Remove-Item -LiteralPath (
-						@(
-							'.git',
-							'.github',
-							'.vscode'
-						) |
-							ForEach-Object -Process { Join-Path -Path $GitWorkingDirectoryRoot -ChildPath $_ }
-					) -Recurse -Force -Confirm:$False
-					Get-ChildItem -LiteralPath $GitWorkingDirectoryRoot -Include @(
-						'.dockerignore',
-						'*.[0-9][0-9][0-9]',
-						'*.ai',
-						'*.bat',
-						'*.bmp',
-						'*.cab',
-						'*.cjs',
-						'*.db',
-						'*.diff',
-						'*.dll',
-						'*.egg',
-						'*.eml',
-						'*.exe',
-						'*.gif',
-						'*.gz',
-						'*.html',
-						'*.iso',
-						'*.jpeg',
-						'*.jpg',
-						'*.js',
-						'*.lnk',
-						'*.log',
-						'*.mjs',
-						'*.pdf',
-						'*.pkg',
-						'*.png',
-						'*.ps',
-						'*.ps1',
-						'*.psd',
-						'*.psd1',
-						'*.psm1',
-						'*.py',
-						'*.rar',
-						'*.rb',
-						'*.sh',
-						'*.tar.gz',
-						'*.tar',
-						'*.ts',
-						'*.txt',
-						'*.xml',
-						'*.xps',
-						'*.yaml',
-						'*.yml',
-						'*.zip',
-						'Dockerfile',
-						'makefile',
-						'Makefile'
-					) -Recurse -Force |
-						Remove-Item -Force -Confirm:$False
+					Get-ChildItem -LiteralPath $GitWorkingDirectoryRoot -Include $GitIgnore -Recurse -Force |
+						Remove-Item -Recurse -Force -Confirm:$False
 				}
 				Catch {
 					Write-Host -Object "::warning::$_"
 				}
+				Set-Location -LiteralPath $PSScriptRoot
 				$GitFinishSessions += $GitSession
 			}
 		}
@@ -151,7 +97,8 @@ ForEach ($AssetDirectory In @(
 			[String]$OutFileFullName = Join-Path -Path $AssetRoot -ChildPath $AssetIndexItem.Location
 			[String]$OutFileRoot = Split-Path -Path $OutFileFullName -Parent
 			If (!(Test-Path -LiteralPath $OutFileRoot -PathType 'Container')) {
-				New-Item -Path $OutFileRoot -ItemType 'Directory' -Confirm:$False
+				New-Item -Path $OutFileRoot -ItemType 'Directory' -Confirm:$False |
+					Out-Null
 			}
 			Start-Sleep -Seconds 1
 			Try {
@@ -182,3 +129,4 @@ Set-Content -LiteralPath $MetadataFullName -Value (
 		ConvertTo-Json -Depth 100 -Compress
 ) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
 Write-Host -Object "::set-output name=timestamp::$TimeCommit"
+Write-Host -Object 'End process.'
