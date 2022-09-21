@@ -400,6 +400,7 @@ neo23x0/crime-ryuk-ransomware		neo23x0/yara/crime_ryuk_ransomware.yar	https://gi
 neo23x0/crime-shifu-trojan		neo23x0/yara/crime_shifu_trojan.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-09-18T02:23:53Z
 neo23x0/crime-snarasite		neo23x0/yara/crime_snarasite.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-09-18T02:23:53Z
 neo23x0/crime-socgholish		neo23x0/yara/crime_socgholish.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-09-18T02:23:53Z
+neo23x0/crime-stealer-exfil-zip		neo23x0/yara/crime_stealer_exfil_zip.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-09-18T02:23:53Z
 neo23x0/crime-teledoor		neo23x0/yara/crime_teledoor.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-09-18T02:23:53Z
 neo23x0/crime-trickbot		neo23x0/yara/crime_trickbot.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-09-18T02:23:53Z
 neo23x0/crime-upatre-oct15		neo23x0/yara/crime_upatre_oct15.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-09-18T02:23:53Z
