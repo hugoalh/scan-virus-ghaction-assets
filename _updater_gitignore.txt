@@ -50,6 +50,7 @@
 *.tar
 *.tar.gz
 *.tar.gzip
+*.tgz
 *.tmp
 *.ts
 *.txt
