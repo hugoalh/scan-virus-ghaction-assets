@@ -294,6 +294,7 @@ neo23x0/apt-uboat-rat		neo23x0/yara/apt_uboat_rat.yar	https://github.com/Neo23x0
 neo23x0/apt-unc1151-ua		neo23x0/yara/apt_unc1151_ua.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-02T02:11:44Z
 neo23x0/apt-unc2447-sombrat		neo23x0/yara/apt_unc2447_sombrat.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-02T02:11:44Z
 neo23x0/apt-unc2546-dewmode		neo23x0/yara/apt_unc2546_dewmode.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-02T02:11:44Z
+neo23x0/apt-unc3886-virtual-pita		neo23x0/yara/apt_unc3886_virtualpita.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-02T02:11:44Z
 neo23x0/apt-unit78020-malware		neo23x0/yara/apt_unit78020_malware.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-02T02:11:44Z
 neo23x0/apt-uscert-ta17-1117a		neo23x0/yara/apt_uscert_ta17-1117a.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-02T02:11:44Z
 neo23x0/apt-venom-linux-rootkit		neo23x0/yara/apt_venom_linux_rootkit.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-02T02:11:44Z
