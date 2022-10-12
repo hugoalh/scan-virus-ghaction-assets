@@ -1,4 +1,8 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+20055a1a98cbf8669fdafa37e6d4718f:1245184:Porcupine.Win32.Injector.ESDD.28571:73
+24583a237a82536673d34096067c484d:87479:Porcupine.Java.TrojanDropper.Agent.GG.28403:73
+1462f57727fd81825030ebd3d68334c1:87436:Porcupine.Java.TrojanDropper.Agent.GG.28402:73
+ba8ccbdb6fca3ba1b2dd537fc6455bde:1245184:Porcupine.Unclassified.28343:73
 5f97f723443e3960f0edbf35ab527e75:59392:Porcupine.Unclassified.28211:73
 4ed39f400faacc9bd984bc0c4219b2b4:1507328:Porcupine.Unclassified.28064:73
 f2a0c40afb2eb1ea467926f03a71caf2:50581:Porcupine.Unclassified.28018:73
@@ -321,4 +325,3 @@ cd308fce6f05fdc2721e4de02ef4c336:1245184:Porcupine.NSIS.Injector.BHQ.15781:73
 ec85a435fb931e2b388d1329bcea4211:915456:Porcupine.Unclassified.15779:73
 c27b17d15de8235e8457c7816a425b63:581632:Porcupine.Unclassified.15774:73
 d3895b45869be8305e5f1b63689f199c:606881:Porcupine.Unclassified.15749:73
-beb1ba67fa830413400ab21914ac370b:116618:Porcupine.NSIS.Injector.ASH.15637:73
