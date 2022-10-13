@@ -1,4 +1,16 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+a31f039bfd2f16a47a1530afd6a6df97:150072:Porcupine.Win32.Exploit.CVE-2017-11882.F.28825:73
+a29b805e92c5e77b848119a95498dbdf:17920:Porcupine.Win32.Exploit.CVE-2017-11882.F.28824:73
+59aadf0a612d4356352e6789a6411f69:4717:Porcupine.Unclassified.28823:73
+1e7cc6ab757fc2c5eaa50e7c8612db69:59392:Porcupine.Unclassified.28776:73
+fd544f9bd0ce115f50d33cd567190ed3:671601:Porcupine.Win32.Injector.ESDC.28724:73
+25e1e09dd126f0aa7e781450eebc3a6b:520399:Porcupine.Win32.Injector.ESDC.28723:73
+af2ddf3e513129eb5f1100b6e70275b2:92213:Porcupine.Unclassified.28696:73
+c7736edadd6ff5a0dc0ed08800f11a02:61440:Porcupine.MSIL.Downloader.Agent.NRV.28651:73
+90a1ecde8f63d4516c746eb24916351a:832599:Porcupine.Unclassified.28650:73
+00e4a12c3e72f0337a8a408e3c447e07:894976:Porcupine.Unclassified.28621:73
+109ba4720e84783d0bf3d089db1ca8f2:613676:Porcupine.MSIL.Downloader.Agent.NRO.28620:73
+4cf2cb8a146f027aada052208ffe7e8c:1690624:Porcupine.MSIL.Downloader.Agent.NRO.28619:73
 20055a1a98cbf8669fdafa37e6d4718f:1245184:Porcupine.Win32.Injector.ESDD.28571:73
 24583a237a82536673d34096067c484d:87479:Porcupine.Java.TrojanDropper.Agent.GG.28403:73
 1462f57727fd81825030ebd3d68334c1:87436:Porcupine.Java.TrojanDropper.Agent.GG.28402:73
