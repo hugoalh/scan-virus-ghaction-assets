@@ -128,5 +128,5 @@ Set-Content -LiteralPath $MetadataFullName -Value (
 	$Metadata |
 		ConvertTo-Json -Depth 100 -Compress
 ) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
-Write-Host -Object "::set-output name=timestamp::$TimeCommit"
+Add-Content -LiteralPath $Env:GITHUB_OUTPUT -Value "timestamp=$TimeCommit"
 Write-Host -Object 'End process.'
