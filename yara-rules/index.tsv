@@ -253,6 +253,7 @@ neo23x0/apt-sofacy-zebrocy		neo23x0/yara/apt_sofacy_zebrocy.yar	https://github.c
 neo23x0/apt-solarwinds-sunburst		neo23x0/yara/apt_solarwinds_sunburst.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/apt-solarwinds-susp-sunburst		neo23x0/yara/apt_solarwinds_susp_sunburst.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/apt-sphinx-moth		neo23x0/yara/apt_sphinx_moth.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
+neo23x0/apt-stealer-cisa-ar22-277a		neo23x0/yara/apt_stealer_cisa_ar22_277a.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/apt-stonedrill		neo23x0/yara/apt_stonedrill.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/apt-strider		neo23x0/yara/apt_strider.yara	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/apt-stuxnet		neo23x0/yara/apt_stuxnet.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
@@ -599,6 +600,7 @@ neo23x0/mal-cryp-rat		neo23x0/yara/mal_cryp_rat.yar	https://github.com/Neo23x0/s
 neo23x0/mal-lnx-implant-may22		neo23x0/yara/mal_lnx_implant_may22.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/mal-netsha		neo23x0/yara/mal_netsha.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/mal-passwordstate-backdoor		neo23x0/yara/mal_passwordstate_backdoor.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
+neo23x0/mal-qbot-payloads		neo23x0/yara/mal_qbot_payloads.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/mal-ransom-lorenz		neo23x0/yara/mal_ransom_lorenz.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/pua-cryptocoin-miner		neo23x0/yara/pua_cryptocoin_miner.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
 neo23x0/pua-xmrig-monero-miner		neo23x0/yara/pua_xmrig_monero_miner.yar	https://github.com/Neo23x0/signature-base.git	^(?:flag:yara-fast|timetoken:0 .+ .+ 0)$	Git	2022-10-09T02:02:58Z
