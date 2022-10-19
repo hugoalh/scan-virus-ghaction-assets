@@ -1,4 +1,15 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+8249c738a16400d4874cc0624f150f64:874496:Porcupine.NSIS.Injector.ASH.31445:73
+420090d09a56b549197ff50fec868da5:823248:Porcupine.NSIS.Injector.ASH.31444:73
+ecb3a611b75f3fdb9bbe91fbfbf29655:691865:Porcupine.NSIS.Injector.ASH.31443:73
+1f737bca1aa26d1c09a5029a69377c86:662214:Porcupine.Unclassified.31315:73
+7cddf3fea7413bf333f01be4dcbe71d3:1079296:Porcupine.Unclassified.31314:73
+6b452be4d0ff3b8bacc0f2d9716f78fc:156050:Porcupine.Unclassified.31306:73
+8839536420ca3902a2d53da66dc3bce7:172415:Porcupine.Unclassified.31305:73
+bd67be79db43d2484b0fa7c762e9fd33:1247678:Porcupine.Win32.Packed.Autoit.NAC.31304:73
+e0d31c00f2b81f4008001b7ae6599a13:1393235:Porcupine.Win32.Packed.Autoit.NAC.31303:73
+f8c2c1407c2bd650d4bb2eafb4fb4152:1438163:Porcupine.Win32.Packed.Autoit.NAC.31302:73
+fa68a9844cf840fc7371db6a5df21570:139930:Porcupine.Unclassified.31297:73
 75d13dd0c8cc1f67057842c8e2eae9f4:260817:Porcupine.Unclassified.31296:73
 9e91341c4a4bee1a955a004a013a706d:244806:Porcupine.Unclassified.31295:73
 b67fda23eab36ad83fa3d3ce71cceb9f:580847:Porcupine.Unclassified.31277:73
@@ -351,4 +362,3 @@ b49052657a488b3af77cc8058eb4c150:575729:Porcupine.MSIL.Kryptik.AGLZ.18240:73
 c80e9d81fe257be5bbae121864210457:379602:Porcupine.Win32.Downloader.Delf.DLX.18215:73
 be65f99135c22a4a761f8261cd991632:69201:Porcupine.Unclassified.18182:73
 4e1b8d8fb2bdc3a9b5589fa56970f37b:23584:Porcupine.Win32.Exploit.CVE-2017-11882.BQF.18181:73
-cfbc544c315b5453a87de81be03f9c93:10361:Porcupine.Unclassified.18157:73
