@@ -1,4 +1,18 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+8fc8e7259b37114a64134118d4d6a062:10384:Porcupine.VBA.Subdoc.B.34834:73
+0c2a5c35f448ab960e8a5b2f9a341c03:442108:Porcupine.MSIL.Kryptik.AGVX.34833:73
+a236a3b675b5086ad8a9082c603dc419:620886:Porcupine.NSIS.Injector.ASH.34690:73
+ac17da0b15266f10b675b3dbe2153d26:377523:Porcupine.NSIS.Injector.ASH.34689:73
+6cb4897f41ffb8f4ed2e4afd1177e2fa:189264:Porcupine.Unclassified.34688:73
+32ea1a4baac4cab40ebc6a1a1131c9fa:10379:Porcupine.VBA.Subdoc.B.34687:73
+819414f16e8b180ded8e9aa7fb3bf880:514626:Porcupine.MSIL.GenKryptik.GBMM.34671:73
+beedfac9536e22890094eeaeda195afa:514627:Porcupine.MSIL.GenKryptik.GBMM.34670:73
+cecab4a32a3eece2a068d651c4188662:534123:Porcupine.Unclassified.34669:73
+8b8367c93bd0331c8b4907b97c712520:534115:Porcupine.MSIL.GenKryptik.GBMM.34668:73
+2b9e74c5b8d373d953253a2d6e16ccf0:245969:Porcupine.Unclassified.34636:73
+dcc6dec7aa230601e372545ade6f9bae:363993:Porcupine.Unclassified.34635:73
+d601c863935c248eccef0077415ebf48:381240:Porcupine.Unclassified.34634:73
+9340272579b0c8c4f0ca419edea2d5a7:2108:Porcupine.JS.Kryptik.CGZ.34536:73
 72a4cbcb6a28a32bedfd22da23ca7d0d:114671:Porcupine.Unclassified.34482:73
 9921fadcbb5f24805e34c351542bdad3:1245184:Porcupine.Unclassified.34192:73
 97246c1c50fb7b39a80b44ececdc22d4:382824:Porcupine.Unclassified.34191:73
@@ -341,6 +355,3 @@ e58e35df690a20cec720266a711144be:279352:Porcupine.Win32.Injector.ESBA.21434:73
 6c9ba54d9e3a68b9e2611955021bc939:885362:Porcupine.Unclassified.21329:73
 2b7201db52bca439a8ddfce3f96d165e:546816:Porcupine.Unclassified.21262:73
 4a468db73737fb02d3a76a23d2d19dfc:77824:Porcupine.MSIL.Downloader.Agent.NLO.21240:73
-d17f7a0a0eb4ac6390390dbe19be3073:762675:Porcupine.MSIL.Kryptik.AGMN.21209:73
-9d30424c6444b6bb8a41a9d64185e109:800768:Porcupine.Unclassified.21154:73
-146a35481caee8551f17b2f02c725aba:594348:Porcupine.Unclassified.21153:73
