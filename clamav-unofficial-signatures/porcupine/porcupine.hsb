@@ -1,4 +1,11 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+6168786557bff0a138548373b966f3bf:554038:Porcupine.Trojan.Spy.MSIL.Noon.gen.46522:73
+1faf93250b047f1e76b0c269ba2bea07:626176:Porcupine.Trojan.Spy.MSIL.Noon.gen.46426:73
+96fa170d9e63a781abff13c78cd51ec1:554050:Porcupine.Trojan.PSW.MSIL.Agensla.gen.46425:73
+f01681958124697353b949c8199bffcb:487214:Porcupine.MSIL.Kryptik_AGen.ABZ.46424:73
+a86e2d0d02bd9fb929ec5c89fefcfc41:487656:Porcupine.MSIL.Kryptik_AGen.ABZ.46373:73
+1900ed01d90bb98f1b1f6c402f8fa8ad:510837:Porcupine.Backdoor.MSIL.Androm.gen.46348:73
+ad0420c4a75e79fe39f5e4c9decf880b:523776:Porcupine.Win32.Exploit.CVE-2017-11882.C.46334:73
 d720b60e4c983aef2120921567cd2fb2:78448:Porcupine.Unclassified.46065:73
 a896178c49b6f7607c99ab24500ae0fa:1822484:Porcupine.Unclassified.45273:73
 d80ddc00cf4c966dbdbdd6517e629c8e:1822941:Porcupine.Unclassified.45272:73
@@ -496,14 +503,3 @@ f70801680227f8ebbf7d86a20ce37e19:795648:Porcupine.Unclassified.30978:73
 a5d60f1b426ab9702ca2d526dd79d867:786944:Porcupine.Unclassified.30823:73
 96334e4f8d0dda20b51e1e2110b0baf7:498671:Porcupine.Unclassified.30822:73
 e34513d29bac2c2a763e63e8f6cc4ebe:57344:Porcupine.Unclassified.30809:73
-edccf1b86cf61af4259db90bcd909a11:1154:Porcupine.Unclassified.30310:73
-523ca3f2ebf61412d374b045e4e6521f:1158744:Porcupine.Unclassified.30309:73
-1e69f50db3b0032615bc6363f212f107:757:Porcupine.Unclassified.30296:73
-47999eaf878614b431d9a62ded9f7419:726409:Porcupine.MSIL.Spy.AgentTesla.C.30295:73
-f9c80d47548f88715c01bf110bcae203:726421:Porcupine.MSIL.Spy.AgentTesla.C.30294:73
-fc28e0bdbbebf3b88ab64f537cb96371:957440:Porcupine.MSIL.Kryptik.AGTQ.30265:73
-99fbf053e821f75d35c6586f53853b22:527468:Porcupine.MSIL.Kryptik.AGTQ.30264:73
-dc6c01c651fcdb0a03d871d6ae713a49:1627841:Porcupine.Win32.Exploit.CVE-2017-11882.C.30157:73
-9af90317703a5975e9594c496f369dae:90112:Porcupine.Unclassified.30156:73
-bf5582943b6c4172786c69621d6dc44d:251038:Porcupine.Unclassified.30155:73
-64e5c13fd683b6bee94fc948ecd7bd0a:595820:Porcupine.Unclassified.30120:73
