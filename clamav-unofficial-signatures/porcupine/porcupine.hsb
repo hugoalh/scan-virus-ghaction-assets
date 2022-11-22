@@ -1,4 +1,16 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+ddd8972da604a1ba2c9a894888c40d62:458871:Porcupine.Win32.Kryptik.HEQY.51136:73
+01d8dae0deb6f48937b39331a09c0d60:1909760:Porcupine.Win32.Kryptik.HEQY.51135:73
+bafcc91950a1f5c9923746dd28852d57:23656:Porcupine.Unclassified.51134:73
+c1ee91ce30474ed597b717322ebd1f11:646144:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.51133:73
+8d1b7816cc05250d9773a922ca59211b:592384:Porcupine.MSIL.Downloader.Agent.OAP.51107:73
+dd85f78d787889bd44f64552357bc35c:536306:Porcupine.Unclassified.51024:73
+3c4097ae13702b652de4a231f349e8d4:809256:Porcupine.Unclassified.51023:73
+8adef204222f1f04ca7cab99cc19acd0:997888:Porcupine.Trojan.Spy.MSIL.Noon.gen.51022:73
+bef8cbe725d0ed537dcce535d2e9487d:59392:Porcupine.MSIL.Downloader.Agent.LYC.50940:73
+da57b34b41f5072b3cd28f6188c2e2f5:708096:Porcupine.Trojan.Spy.MSIL.Noon.gen.50912:73
+45dc72cf3a3b799a42191839da02dc95:522784:Porcupine.Trojan.Spy.MSIL.Noon.gen.50911:73
+742e01d4694eeddc0bc05e9e964a0f43:461056:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.50874:73
 f6e6ddb172af756146408470dca2d25e:150275:Porcupine.MSIL.Downloader.Agent.OAP.49941:73
 95a64deec60b27989f262b493055fae5:881152:Porcupine.Trojan.Spy.MSIL.Noon.gen.49930:73
 fd86f8472c9063e0a55c31a86298b03a:622573:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.49929:73
@@ -463,9 +475,3 @@ a2035fd07d4b8f043a44dc96e624144a:245493:Porcupine.Unclassified.33772:73
 59095d66efbd67d1966b7fc79edccafd:10383:Porcupine.VBA.Subdoc.B.33771:73
 0025a27c8cb0d10e7751c7249d80bd59:384569:Porcupine.Unclassified.33760:73
 4e19adca6c6b242a511ac3ab38590fc4:59392:Porcupine.Unclassified.33094:73
-c0b7b897a67d106dd1da820a8657a590:689526:Porcupine.Unclassified.32761:73
-2c45658b33a12223f393b77a6a306f60:345289:Porcupine.NSIS.Injector.ASH.32721:73
-891e8fe2f57528f9de8ef17ee8591e6b:471316:Porcupine.NSIS.Injector.ASH.32720:73
-deee9437cde5b676cc91179b6fe69e18:600576:Porcupine.Unclassified.32719:73
-87544027de5ba83ad6c0c9840e7a78ad:413696:Porcupine.Unclassified.32648:73
-d4710ef6f51fe98446596315089982d4:646491:Porcupine.Unclassified.32574:73
