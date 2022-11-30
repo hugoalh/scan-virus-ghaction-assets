@@ -1,4 +1,6 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+beb0086e2e43e4741e038daf97ddc537:1140:Porcupine.Unclassified.54684:73
+1ba6b27bfe5bdfb66c164520da4a9246:1130496:Porcupine.Win32.Exploit.CVE-2017-11882.C.54623:73
 e950756018a56094561637a7f5e67bbe:929280:Porcupine.Trojan.Spy.MSIL.Noon.gen.54466:73
 96d9eac61beb75a35b0d33f5808b7c98:831942:Porcupine.Trojan.Spy.MSIL.Noon.gen.54465:73
 e7adfe572d35e16a2d7b644f5b9e4875:900472:Porcupine.Trojan.MSIL.NanoBot.gen.54432:73
@@ -420,5 +422,3 @@ cddb308b71aa8f2e0107f3b028c89b3f:324616:Porcupine.NSIS.Injector.ASH.37863:73
 dc0579995956f1c34cb8c92ed09d8adb:659737:Porcupine.VBS.Agent.QKS.37782:73
 4acb789acfb502c3e4b282a2b0199a80:454807:Porcupine.VBS.Agent.QKS.37781:73
 8f6746d145c934898e6ea3436b57e430:509192:Porcupine.Backdoor.MSIL.Androm.gen.37747:73
-7e59efb7bbf6eb99d0e7be69372a5df7:546974:Porcupine.Trojan.Spy.Win32.Noon.37237:73
-efaed436b1191fee738133b2ee7e0896:794112:Porcupine.Trojan.Spy.Win32.Noon.37236:73
