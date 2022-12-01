@@ -1,4 +1,8 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+851f9e2f7b0d4fa901235b7dae7741b9:956:Porcupine.Trojan.Script.SAgent.gen.55089:73
+984dc7c203dddcb25f81fad70bea9803:3384576:Porcupine.Win32.Kryptik_AGen.APY.55048:73
+353d5fd482d72f490430bcbf05fd0497:1507328:Porcupine.Trojan.Win32.Generic.55027:73
+327a4dde6d82b52eda8a27d731b805fd:516096:Porcupine.Trojan.Downloader.MSIL.Seraph.gen.55005:73
 beb0086e2e43e4741e038daf97ddc537:1140:Porcupine.Unclassified.54684:73
 1ba6b27bfe5bdfb66c164520da4a9246:1130496:Porcupine.Win32.Exploit.CVE-2017-11882.C.54623:73
 e950756018a56094561637a7f5e67bbe:929280:Porcupine.Trojan.Spy.MSIL.Noon.gen.54466:73
@@ -407,18 +411,3 @@ fcabdd426e17eea71c33bf4ee32340e6:240003:Porcupine.Trojan.Downloader.Win32.Minix.
 f8178d76e9a470f1987eee2934890ab0:240448:Porcupine.Trojan.MSIL.Injuke.gen.38334:73
 8d0e5a7060b59bcab702016a5ab8e4ed:13312:Porcupine.Trojan.MSIL.Scar.gen.38272:73
 9d14d5ed86b34ec6b89dd6433bdbc103:1960:Porcupine.JS.Kryptik.CGZ.38271:73
-f720322934907df6566d7fd72872b05e:963072:Porcupine.Unclassified.37891:73
-d68161056180bbe74336d23a9a01d346:568832:Porcupine.MSIL.Kryptik_AGen.ABW.37890:73
-020590e7fbe39ab3486f1f06a28243f5:215024:Porcupine.Trojan.Downloader.Win32.Minix.gen.37871:73
-f962ba8e976875b9b344bab42b545b9a:234408:Porcupine.Unclassified.37870:73
-ec546c6fb4880cf83041ee96115ce2e2:862698:Porcupine.MSIL.Kryptik.AGXZ.37868:73
-491066406db17e15ba0856060cad6f53:1096704:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.37867:73
-b1fb93e39c0642470c49121d231e4b59:252208:Porcupine.Trojan.Downloader.Win32.Minix.gen.37866:73
-ac8c597bd0995c2e1d2c2cb1d9aed67c:112128:Porcupine.MSIL.Downloader.Agent.NXG.37865:73
-710a92807a20b352493b9c98e2173a3a:1245184:Porcupine.Unclassified.37864:73
-cddb308b71aa8f2e0107f3b028c89b3f:324616:Porcupine.NSIS.Injector.ASH.37863:73
-475d16c74596c0c0e3585e052adafa9a:1129472:Porcupine.MSIL.Kryptik.AGXX.37862:73
-51b2f8ee51a451da3291b8ef6eaf216a:673981:Porcupine.MSIL.Kryptik.AGXX.37861:73
-dc0579995956f1c34cb8c92ed09d8adb:659737:Porcupine.VBS.Agent.QKS.37782:73
-4acb789acfb502c3e4b282a2b0199a80:454807:Porcupine.VBS.Agent.QKS.37781:73
-8f6746d145c934898e6ea3436b57e430:509192:Porcupine.Backdoor.MSIL.Androm.gen.37747:73
