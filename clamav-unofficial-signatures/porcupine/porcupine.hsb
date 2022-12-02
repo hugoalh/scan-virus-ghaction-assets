@@ -1,4 +1,6 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+7a375aec2a04b79e55fb8a2b5ae787c7:284672:Porcupine.MSIL.Kryptik.AEPI.56332:73
+e6a04c32f9bc4e9362d7ebd99fe671f4:140642:Porcupine.MSIL.Kryptik.AEPI.56331:73
 8615e506348fe38e5a859b8405676e82:888728:Porcupine.Trojan.PSW.MSIL.Agensla.gen.56034:73
 32137b4f6b64351ef56c71cbd28dad29:1093632:Porcupine.Trojan.PSW.MSIL.Agensla.gen.56033:73
 9eab5c8646e1bf17a5eb7c7fa7277404:188390:Porcupine.VBS.Kryptik.SS.55314:73
@@ -404,16 +406,3 @@ fa6355afd1d0191095e83185974a8ed0:966144:Porcupine.MSIL.Kryptik.AGYZ.38777:73
 a407749f61bb350bd8e4d47c57ea6cac:75776:Porcupine.MSIL.Downloader.Agent_AGen.AHH.38696:73
 1fab12a196bb072c25d5950c478452bd:410374:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.38669:73
 22c43fa79028af9f6890de1a0382f429:443904:Porcupine.MSIL.Kryptik.AGYX.38668:73
-61238f7fcdeabbaa8f5028c9322621fe:71680:Porcupine.MSIL.Downloader.Agent.NXW.38600:73
-e59f14d509ee1e52a1b8f8cdadfeeee5:2040:Porcupine.JS.Kryptik.CGZ.38599:73
-0cdd737c2d6fd6af3b1c0bcfb082bfbe:467687:Porcupine.Unclassified.38598:73
-badd42c9d4fb83c47f2924e15f4b42ce:373637:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.38597:73
-25401c6bb804c6f72dc88a53f244ab3a:4405248:Porcupine.MSIL.Downloader.Agent.NXW.38501:73
-83d7641d54e32be4f2abdf8b1c4116fb:4382720:Porcupine.MSIL.Downloader.Agent.NXY.38467:73
-c0f4ed4b3996197abe6d5189efc0c1a1:609345:Porcupine.Trojan.Spy.MSIL.Noon.gen.38396:73
-3c86b1a8001af25c5efdb7e139badc4f:645632:Porcupine.Trojan.Spy.MSIL.Noon.gen.38395:73
-35686c9daf4f6f09c3cf73dd2ddf2e54:1249792:Porcupine.Unclassified.38336:73
-fcabdd426e17eea71c33bf4ee32340e6:240003:Porcupine.Trojan.Downloader.Win32.Minix.gen.38335:73
-f8178d76e9a470f1987eee2934890ab0:240448:Porcupine.Trojan.MSIL.Injuke.gen.38334:73
-8d0e5a7060b59bcab702016a5ab8e4ed:13312:Porcupine.Trojan.MSIL.Scar.gen.38272:73
-9d14d5ed86b34ec6b89dd6433bdbc103:1960:Porcupine.JS.Kryptik.CGZ.38271:73
