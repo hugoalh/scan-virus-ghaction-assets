@@ -1,4 +1,9 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+5a1b2ab49d1a8d208a0bbf786b952ea9:1039360:Porcupine.Trojan.PSW.MSIL.Agensla.gen.63118:73
+2e631c932b8509f83611deee021a42b6:853800:Porcupine.Trojan.PSW.MSIL.Agensla.gen.63117:73
+875a8c5cb15887e24121947d9bc4c0d7:386836:Porcupine.MSIL.Kryptik_AGen.AFD.63094:73
+5260669d2e32619c9c2c0e1fb6c33db6:452096:Porcupine.MSIL.Kryptik_AGen.AFD.63093:73
+91747364dc3f35b9fe337aa27824fb37:390428:Porcupine.MSIL.Kryptik_AGen.AFD.63092:73
 cc15d96eb266035433bbb90cbcf32a61:222366:Porcupine.Trojan.Win32.Formbook.gen.62890:73
 31e1d320329b549212a5425517c34980:862040:Porcupine.Trojan.MSIL.Crypt.gen.62818:73
 bcb109a71e7980e54e9c18fbb9b77f64:1040896:Porcupine.Trojan.MSIL.Crypt.gen.62817:73
@@ -238,16 +243,3 @@ cc083b13b3459bd2f581f4afcaef5051:523776:Porcupine.Win32.Exploit.CVE-2017-11882.C
 3bb0110a1aa6092dd2b92a52699ede8c:295456:Porcupine.NSIS.Injector.BQI.47041:73
 4de8a6537dcaa2947798cb4699bf6e79:276771:Porcupine.NSIS.Injector.BQI.47040:73
 ec41ccafaf32179b3a9b7b0a524bca1c:523776:Porcupine.Win32.Exploit.CVE-2017-11882.C.46990:73
-04ed8b9d17c2e11f1ea1da1aa797eb1c:487625:Porcupine.Unclassified.46693:73
-0a0a77490d6f9636c5bc990b78a83d69:1194974:Porcupine.Unclassified.46574:73
-6f840e4e53e4ee72279d76ce9c578762:370008:Porcupine.Unclassified.46573:73
-d72d445d59765b0acddb99b904d6967c:6535:Porcupine.Unclassified.46572:73
-b162a30b2fb5f93bb0954871eeab8e66:433752:Porcupine.Unclassified.46571:73
-b0b8c1a3c52c3eebb14478d5bed843e2:407552:Porcupine.Trojan.PSW.MSIL.Agensla.gen.46570:73
-c4bc4b7a93a3fa13826463e48bb7ae4f:241370:Porcupine.Unclassified.46569:73
-6168786557bff0a138548373b966f3bf:554038:Porcupine.Trojan.Spy.MSIL.Noon.gen.46522:73
-1faf93250b047f1e76b0c269ba2bea07:626176:Porcupine.Trojan.Spy.MSIL.Noon.gen.46426:73
-96fa170d9e63a781abff13c78cd51ec1:554050:Porcupine.Trojan.PSW.MSIL.Agensla.gen.46425:73
-f01681958124697353b949c8199bffcb:487214:Porcupine.MSIL.Kryptik_AGen.ABZ.46424:73
-a86e2d0d02bd9fb929ec5c89fefcfc41:487656:Porcupine.MSIL.Kryptik_AGen.ABZ.46373:73
-1900ed01d90bb98f1b1f6c402f8fa8ad:510837:Porcupine.Backdoor.MSIL.Androm.gen.46348:73
