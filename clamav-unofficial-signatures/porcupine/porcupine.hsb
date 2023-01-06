@@ -1,4 +1,5 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+ab527fd240d5a9f2c1ce4ff561d45247:1245184:Porcupine.Trojan.PSW.MSIL.Agensla.gen.70974:73
 ee2ae59dd1ca86333366dfac23af3870:836096:Porcupine.Generik.DCDFAUK.69204:73
 58a8aa4a36feab467de4cc04f75b45e4:74240:Porcupine.MSIL.Downloader.Agent.OIT.69203:73
 7d4657496f4c127382b228b65462d0fa:193536:Porcupine.MSIL.Downloader.Small.CYA.68981:73
@@ -153,19 +154,3 @@ cfb4e9c89785c163a44e27d07ddf302d:597257:Porcupine.MSIL.Kryptik.AHIY.59701:73
 387199e25e2e6a601d21b4a8302f6493:4688:Porcupine.MSIL.Downloader.Agent.OFZ.59686:73
 ea294f193deb4bdaf288e25d7144fd89:233928:Porcupine.Trojan.Downloader.Win32.Minix.gen.59653:73
 c7030c612b3a06fbf89f859bf879414f:224318:Porcupine.Trojan.Downloader.Win32.Minix.gen.59652:73
-5b60c86665bc00bff33b3287a7540bcc:294737:Porcupine.Unclassified.59591:73
-0096434371fec7c2352199a7c5d746d8:1618944:Porcupine.Win32.Exploit.CVE-2017-11882.C.59559:73
-f354c850bf5cf670fe91ebf945c6c6bd:574976:Porcupine.MSIL.Kryptik.AHIJ.59459:73
-446ba9eab0de2b880b8cc1c2b0fa06c7:1245184:Porcupine.Trojan.Win32.FormBook.gen.59398:73
-44d628546ab1eff55064627d70a3cb27:230413:Porcupine.Trojan.Win32.Formbook.gen.59397:73
-e4cb55ed853f084e0bda30bfecac8f78:676864:Porcupine.MSIL.Kryptik.AHIL.59375:73
-e4dc61288af4a3c0e3b229abf8ed79c9:523504:Porcupine.MSIL.Kryptik.AHIL.59374:73
-328390fe28bc38f2040849607f7872b0:458240:Porcupine.Win32.Formbook.AK.59373:73
-7e3b980b4ad2ec5acf41cae01909cd6d:509952:Porcupine.Unclassified.59341:73
-37fc5a6baec8c513a58e4493abc444f7:448000:Porcupine.Unclassified.59340:73
-b4dc31b626190a4e9f319684950e0837:1245184:Porcupine.Trojan.Win32.Formbook.gen.59339:73
-47b24b8f0958e6139b703ad4dee06a57:704000:Porcupine.Trojan.PSW.MSIL.Agensla.gen.59338:73
-3612f0d16f09c488935c853bbc41d18a:552372:Porcupine.Trojan.PSW.MSIL.Agensla.gen.59337:73
-3e1293ee8cdb1b7383339fcc7d7a4cd0:676352:Porcupine.Trojan.Spy.MSIL.Noon.gen.59236:73
-e480ce51a0b93e06ac3ca7e85644bb50:519774:Porcupine.Trojan.Spy.MSIL.Noon.gen.59235:73
-c1084cdfa127a0c5770aff7f617a976d:228352:Porcupine.Win32.Exploit.CVE-2017-11882.C.59205:73
