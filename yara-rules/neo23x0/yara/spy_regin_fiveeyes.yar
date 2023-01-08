@@ -26,8 +26,8 @@ rule Regin_APT_KernelDriver_Generic_A {
 		$s0 = "atapi.sys" fullword wide
 		$s1 = "disk.sys" fullword wide
 		$s3 = "h.data" fullword ascii
-		$s4 = "\\system32" fullword ascii
-		$s5 = "\\SystemRoot" fullword ascii
+		$s4 = "\\system32" ascii
+		$s5 = "\\SystemRoot" ascii
 		$s6 = "system" fullword ascii
 		$s7 = "temp" fullword ascii
 		$s8 = "windows" fullword ascii
@@ -64,16 +64,16 @@ rule Regin_APT_KernelDriver_Generic_B {
 		$s3 = "INIT" fullword ascii
 		$s4 = "ntoskrnl.exe" fullword ascii
 
-		$v1 = "\\system32" fullword ascii
-		$v2 = "\\SystemRoot" fullword ascii
+		$v1 = "\\system32" ascii
+		$v2 = "\\SystemRoot" ascii
 		$v3 = "KeServiceDescriptorTable" fullword ascii
 
-		$w1 = "\\system32" fullword ascii
-		$w2 = "\\SystemRoot" fullword ascii
+		$w1 = "\\system32" ascii
+		$w2 = "\\SystemRoot" ascii
 		$w3 = "LRich6" fullword ascii
 
-		$x1 = "_snprintf" fullword ascii
-		$x2 = "_except_handler3" fullword ascii
+		$x1 = "_snprintf" ascii
+		$x2 = "_except_handler3" ascii
 
 		$y1 = "mbstowcs" fullword ascii
 		$y2 = "wcstombs" fullword ascii
@@ -128,7 +128,7 @@ rule Regin_sig_svcsstat {
 		hash = "5164edc1d54f10b7cb00a266a1b52c623ab005e2"
 	strings:
 		$s0 = "Service Control Manager" fullword ascii
-		$s1 = "_vsnwprintf" fullword ascii
+		$s1 = "_vsnwprintf" ascii
 		$s2 = "Root Agency" fullword ascii
 		$s3 = "Root Agency0" fullword ascii
 		$s4 = "StartServiceCtrlDispatcherA" fullword ascii
@@ -172,12 +172,12 @@ rule Regin_Sample_2 {
 		date = "26.11.14"
 		hash = "a7b285d4b896b66fce0ebfcd15db53b3a74a0400"
 	strings:
-		$s0 = "\\SYSTEMROOT\\system32\\lsass.exe" fullword wide
+		$s0 = "\\SYSTEMROOT\\system32\\lsass.exe" wide
 		$s1 = "atapi.sys" fullword wide
 		$s2 = "disk.sys" fullword wide
 		$s3 = "IoGetRelatedDeviceObject" fullword ascii
 		$s4 = "HAL.dll" fullword ascii
-		$s5 = "\\Registry\\Machine\\System\\CurrentControlSet\\Services" fullword ascii
+		$s5 = "\\Registry\\Machine\\System\\CurrentControlSet\\Services" ascii
 		$s6 = "PsGetCurrentProcessId" fullword ascii
 		$s7 = "KeGetCurrentIrql" fullword ascii
 		$s8 = "\\REGISTRY\\Machine\\System\\CurrentControlSet\\Control\\Session Manager" wide
@@ -201,16 +201,16 @@ rule Regin_Sample_3 {
 		hash = "fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129"
 	strings:
 		$s0 = "Service Pack x" fullword wide
-		$s1 = "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
-		$s2 = "\\REGISTRY\\Machine\\Software\\Microsoft\\Windows NT\\CurrentVersion\\HotFix" fullword wide
+		$s1 = "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion" wide
+		$s2 = "\\REGISTRY\\Machine\\Software\\Microsoft\\Windows NT\\CurrentVersion\\HotFix" wide
 		$s3 = "mntoskrnl.exe" fullword wide
-		$s4 = "\\REGISTRY\\Machine\\System\\CurrentControlSet\\Control\\Session Manager\\Memory Management" fullword wide
+		$s4 = "\\REGISTRY\\Machine\\System\\CurrentControlSet\\Control\\Session Manager\\Memory Management" wide
 		$s5 = "Memory location: 0x%p, size 0x%08x" wide fullword
 		$s6 = "Service Pack" fullword wide
 		$s7 = ".sys" fullword wide
 		$s8 = ".dll" fullword wide
 
-		$s10 = "\\REGISTRY\\Machine\\Software\\Microsoft\\Updates" fullword wide
+		$s10 = "\\REGISTRY\\Machine\\Software\\Microsoft\\Updates" wide
 		$s11 = "IoGetRelatedDeviceObject" fullword ascii
 		$s12 = "VMEM.sys" fullword ascii
 		$s13 = "RtlGetVersion" fullword wide
@@ -219,7 +219,7 @@ rule Regin_Sample_3 {
 		uint32(0) == 0xfedcbafe and all of ($s*) and filesize > 160KB and filesize < 200KB
 }
 
-rule Regin_Sample_Set_1 {
+rule Regin_Sample_Set_2 {
 	meta:
 		description = "Auto-generated rule - file SHF-000052 and ndisips.sys"
 		author = "@MalwrSignatures"
@@ -234,7 +234,7 @@ rule Regin_Sample_Set_1 {
 		$s4 = "ntkrnlpa.exe" fullword ascii
 		$s5 = "\\REGISTRY\\Machine\\System\\CurrentControlSet\\Control\\Session Manager" wide
 		$s6 = "ConnectMultiplePorts" fullword wide
-		$s7 = "\\SYSTEMROOT" fullword wide
+		$s7 = "\\SYSTEMROOT" wide
 		$s8 = "IoWriteErrorLogEntry" fullword ascii
 		$s9 = "KeQueryPerformanceCounter" fullword ascii
 		$s10 = "KeServiceDescriptorTable" fullword ascii
@@ -252,11 +252,12 @@ rule Regin_Sample_Set_1 {
 		filesize < 40KB and filesize > 30KB and all of them
 }
 
-rule Regin_Sample_Set_2 {
+rule Regin_Sample_Set_1 {
 	meta:
 		description = "Detects Regin Backdoor sample"
 		author = "@MalwrSignatures"
 		date = "27.11.14"
+		modified = "2023-01-06"
 		hash1 = "4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be"
 		hash2 = "e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935"
 	strings:
@@ -265,7 +266,6 @@ rule Regin_Sample_Set_2 {
 		$s0 = "d%ls%ls" fullword wide
 		$s1 = "\\\\?\\UNC" fullword wide
 		$s2 = "Software\\Microsoft\\Windows\\CurrentVersion" fullword wide
-		$s3 = "\\\\?\\UNC\\" fullword wide
 		$s4 = "SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-BFC1-08002BE10318}" fullword wide
 		$s5 = "System\\CurrentControlSet\\Services\\Tcpip\\Linkage" wide fullword
 		$s6 = "\\\\.\\Global\\%s" fullword wide

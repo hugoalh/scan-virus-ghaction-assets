@@ -34,7 +34,7 @@ rule DragonFly_APT_Sep17_1 {
       date = "2017-09-12"
       hash1 = "fc54d8afd2ce5cb6cc53c46783bf91d0dd19de604308d536827320826bc36ed9"
    strings:
-      $s1 = "\\Update\\Temp\\ufiles.txt" fullword wide
+      $s1 = "\\Update\\Temp\\ufiles.txt" wide
       $s2 = "%02d.%02d.%04d %02d:%02d" fullword wide
       $s3 = "*pass*.*" fullword wide
    condition:
@@ -44,19 +44,19 @@ rule DragonFly_APT_Sep17_1 {
 rule DragonFly_APT_Sep17_2 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
+      modified = "2023-01-06"
       hash1 = "178348c14324bc0a3e57559a01a6ae6aa0cb4013aabbe324b51f906dcf5d537e"
    strings:
-      $s1 = "\\AppData\\Roaming\\Opera Software\\Opera Stable\\Login Data" fullword wide
+      $s1 = "\\AppData\\Roaming\\Opera Software\\Opera Stable\\Login Data" wide
       $s2 = "C:\\Users\\Public\\Log.txt" fullword wide
       $s3 = "SELECT hostname, encryptedUsername, encryptedPassword FROM moz_logins" fullword wide
       $s4 = "***************** Mozilla Firefox ****************" fullword wide
       $s5 = "********************** Opera *********************" fullword wide
-      $s6 = "\\AppData\\Local\\Microsoft\\Credentials\\" fullword wide
-      $s7 = "\\Appdata\\Local\\Google\\Chrome\\User Data\\Default\\" fullword wide
+      $s6 = "\\AppData\\Local\\Microsoft\\Credentials\\" wide
+      $s7 = "\\Appdata\\Local\\Google\\Chrome\\User Data\\Default\\" wide
       $s8 = "**************** Internet Explorer ***************" fullword wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 3000KB and 3 of them )

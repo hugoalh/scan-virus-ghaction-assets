@@ -12,7 +12,7 @@ rule FakeM_Generic {
 		author = "Florian Roth"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
 		date = "2016-01-25"
-		modified = "2022-12-21"
+		modified = "2023-01-06"
 		score = 85
 		hash1 = "631fc66e57acd52284aba2608e6f31ba19e2807367e33d8704f572f6af6bd9c3"
 		hash2 = "3d9bd26f5bd5401efa17690357f40054a3d7b438ce8c91367dbf469f0d9bd520"
@@ -26,22 +26,22 @@ rule FakeM_Generic {
 		hash10 = "53cecc0d0f6924eacd23c49d0d95a6381834360fbbe2356778feb8dd396d723e"
 		hash11 = "523ad50b498bfb5ab688d9b1958c8058f905b634befc65e96f9f947e40893e5b"
 	strings:
-		$a1 = "\\system32\\kernel32.dll" fullword ascii
-		$a2 = "\\boot.lnk" fullword ascii
+		$a1 = "\\system32\\kernel32.dll" ascii
+		$a2 = "\\boot.lnk" ascii
 		$a3 = "%USERPROFILE%" fullword ascii /* Goodware String - occured 16 times */
 
 		$b1 = "Wizard.EXE" fullword wide
 		$b2 = "CommandLineA" fullword ascii
 
-		$c1 = "\\system32\\kernel32.dll" fullword ascii
-		$c2 = "\\aapz.tmp" fullword ascii
+		$c1 = "\\system32\\kernel32.dll" ascii
+		$c2 = "\\aapz.tmp" ascii
 
-		$e1 = "C:\\Documents and Settings\\A\\" fullword ascii
-		$e2 = "\\svchost.exe" fullword ascii
+		$e1 = "C:\\Documents and Settings\\A\\" ascii
+		$e2 = "\\svchost.exe" ascii
 		$e3 = "\\Perform\\Release\\Perform.pdb" ascii
 
 		$f1 = "Browser.EXE" fullword wide
-		$f2 = "\\browser.exe" fullword ascii
+		$f2 = "\\browser.exe" ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 100KB and
 		( all of ($a*) or all of ($b*) or all of ($c*) or all of ($e*) or 1 of ($f*) )

@@ -49,7 +49,7 @@ rule Emdivi_Gen1 {
 		$s2 = "http://www.msftncsi.com" fullword wide
 		$s3 = "net use | find /i \"c$\"" fullword wide
 		$s4 = " /del /y & " fullword wide
-		$s5 = "\\auto.cfg" fullword wide
+		$s5 = "\\auto.cfg" wide
 		$s6 = "/ncsi.txt" fullword wide
 		$s7 = "Dcmd /c" fullword wide
 		$s8 = "/PROXY" fullword wide
@@ -69,10 +69,10 @@ rule Emdivi_Gen2 {
 		hash2 = "a5be7cb1f37030c9f9211c71e0fbe01dae19ff0e6560c5aab393621f18a7d012"
 		hash3 = "9183abb9b639699cd2ad28d375febe1f34c14679b7638d1a79edb49d920524a4"
 	strings:
-		$s1 = "%TEMP%\\IELogs\\" fullword ascii
+		$s1 = "%TEMP%\\IELogs\\" ascii
 		$s2 = "MSPUB.EXE" fullword ascii
 		$s3 = "%temp%\\" fullword ascii
-		$s4 = "\\NOTEPAD.EXE" fullword ascii
+		$s4 = "\\NOTEPAD.EXE" ascii
 		$s5 = "%4d-%02d-%02d %02d:%02d:%02d " fullword ascii
 		$s6 = "INTERNET_OPEN_TYPE_PRECONFIG" fullword ascii
 		$s7 = "%4d%02d%02d%02d%02d%02d" fullword ascii
@@ -80,31 +80,32 @@ rule Emdivi_Gen2 {
 		uint16(0) == 0x5a4d and filesize < 1300KB and 6 of them
 }
 
-rule Emdivi_Gen3 {
-	meta:
-		description = "Detects Emdivi Malware"
-		author = "Florian Roth @Cyber0ps"
-		reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
-		date = "2015-08-20"
-		super_rule = 1
-		score = 80
-		hash1 = "008f4f14cf64dc9d323b6cb5942da4a99979c4c7d750ec1228d8c8285883771e"
-		hash2 = "a94bf485cebeda8e4b74bbe2c0a0567903a13c36b9bf60fab484a9b55207fe0d"
-	strings:
-		$x1 = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727.42)" fullword ascii
+rule MAL_Emdivi_Gen3 {
+   meta:
+      description = "Detects Emdivi Malware"
+      author = "Florian Roth"
+      reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
+      date = "2015-08-20"
+      modified = "2023-01-06"
+      super_rule = 1
+      score = 80
+      hash1 = "008f4f14cf64dc9d323b6cb5942da4a99979c4c7d750ec1228d8c8285883771e"
+      hash2 = "a94bf485cebeda8e4b74bbe2c0a0567903a13c36b9bf60fab484a9b55207fe0d"
+   strings:
+      $x1 = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727.42)" fullword ascii
 
-		$s2 = "\\Mozilla\\Firefox\\Profiles\\" fullword ascii
-		$s4 = "\\auto.cfg" fullword ascii
-		$s5 = "/ncsi.txt" fullword ascii
-		$s6 = "/en-us/default.aspx" fullword ascii
-		$s7 = "cmd /c" fullword ascii
-		$s9 = "APPDATA" fullword ascii /* Goodware String - occured 25 times */
-	condition:
-		uint16(0) == 0x5a4d and filesize < 850KB and
-		(
-			( $x1 and 1 of ($s*) ) or
-			( 4 of ($s*) )
-		)
+      $s2 = "\\Mozilla\\Firefox\\Profiles\\" ascii
+      $s4 = "\\auto.cfg" ascii
+      $s5 = "/ncsi.txt" fullword ascii
+      $s6 = "/en-us/default.aspx" fullword ascii
+      $s7 = "cmd /c" fullword ascii
+      $s9 = "APPDATA" fullword ascii /* Goodware String - occured 25 times */
+   condition:
+      uint16(0) == 0x5a4d and filesize < 850KB and
+      (
+         ( $x1 and 1 of ($s*) ) or
+         ( 4 of ($s*) )
+      )
 }
 
 rule Emdivi_Gen4 {

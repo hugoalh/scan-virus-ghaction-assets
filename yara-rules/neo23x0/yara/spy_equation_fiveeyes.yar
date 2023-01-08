@@ -18,6 +18,7 @@ rule apt_equation_exploitlib_mutexes {
         (($mz at 0) and any of ($a*))
 }
 
+/* Disabled by FR due to $a2 string
 rule apt_equation_doublefantasy_genericresource {
     meta:
         copyright = "Kaspersky Lab"
@@ -33,6 +34,7 @@ rule apt_equation_doublefantasy_genericresource {
     condition:
         (($mz at 0) and all of ($a*)) and filesize < 500000
 }
+*/
 
 rule apt_equation_equationlaser_runtimeclasses {
 	meta:
@@ -152,7 +154,7 @@ rule Equation_Kaspersky_GROK_Keylogger {
 		$x8 = "R0omp4ar" fullword ascii
 
 		$z1 = "H.text" fullword ascii
-		$z2 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
+		$z2 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" wide
 		$z4 = "\\registry\\machine\\SYSTEM\\ControlSet001\\Control\\Session Manager\\Environment" wide fullword
 	condition:
 		uint16(0) == 0x5a4d and filesize < 250000 and
@@ -188,7 +190,7 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 		date = "2015/02/16"
 		hash = "61fab1b8451275c7fd580895d9c68e152ff46417"
 	strings:
-		$s0 = "\\system32\\win32k.sys" fullword wide
+		$s0 = "\\system32\\win32k.sys" wide
 		$s1 = "ALL_FIREWALLS" fullword ascii
 
 		$x1 = "@prkMtx" fullword wide
@@ -203,63 +205,65 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 }
 
 rule Equation_Kaspersky_EquationLaserInstaller {
-	meta:
-		description = "Equation Group Malware - EquationLaser Installer"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		reference = "http://goo.gl/ivt8EW"
-		date = "2015/02/16"
-		hash = "5e1f56c1e57fbff96d4999db1fd6dd0f7d8221df"
-	strings:
-		$s0 = "Failed to get Windows version" fullword ascii
-		$s1 = "lsasrv32.dll and lsass.exe" fullword wide
-		$s2 = "\\\\%s\\mailslot\\%s" fullword ascii
-		$s3 = "%d-%d-%d %d:%d:%d Z" fullword ascii
-		$s4 = "lsasrv32.dll" fullword ascii
-		$s5 = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" fullword ascii
-		$s6 = "%s %02x %s" fullword ascii
-		$s7 = "VIEWERS" fullword ascii
-		$s8 = "5.2.3790.220 (srv03_gdr.040918-1552)" fullword wide
-	condition:
-		uint16(0) == 0x5a4d and filesize < 250000 and 6 of ($s*)
+   meta:
+      description = "Equation Group Malware - EquationLaser Installer"
+      author = "Florian Roth"
+      reference = "http://goo.gl/ivt8EW"
+      date = "2015/02/16"
+      hash = "5e1f56c1e57fbff96d4999db1fd6dd0f7d8221df"
+      score = 80
+   strings:
+      $s0 = "Failed to get Windows version" fullword ascii
+      $s1 = "lsasrv32.dll and lsass.exe" fullword wide
+      $s2 = "\\\\%s\\mailslot\\%s" fullword ascii
+      $s3 = "%d-%d-%d %d:%d:%d Z" fullword ascii
+      $s4 = "lsasrv32.dll" fullword ascii
+      /* $s5 = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" fullword ascii */ /* Modified by Florian Roth */
+      $s6 = "%s %02x %s" fullword ascii
+      $s7 = "VIEWERS" fullword ascii
+      $s8 = "5.2.3790.220 (srv03_gdr.040918-1552)" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d ) and filesize < 250000 and 6 of ($s*)
 }
 
 rule Equation_Kaspersky_FannyWorm {
-	meta:
-		description = "Equation Group Malware - Fanny Worm"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		reference = "http://goo.gl/ivt8EW"
-		date = "2015/02/16"
-		hash = "1f0ae54ac3f10d533013f74f48849de4e65817a7"
-	strings:
-		$s1 = "x:\\fanny.bmp" fullword ascii
-		$s2 = "32.exe" fullword ascii
-		$s3 = "d:\\fanny.bmp" fullword ascii
+   meta:
+      description = "Equation Group Malware - Fanny Worm"
+      author = "Florian Roth"
+      reference = "http://goo.gl/ivt8EW"
+      date = "2015-02-16"
+      modified = "2023-01-06"
+      hash = "1f0ae54ac3f10d533013f74f48849de4e65817a7"
+      score = 80
+   strings:
 
-		$x1 = "c:\\windows\\system32\\kernel32.dll" fullword ascii
-		$x2 = "System\\CurrentControlSet\\Services\\USBSTOR\\Enum" fullword ascii
-		$x3 = "System\\CurrentControlSet\\Services\\PartMgr\\Enum" fullword ascii
-		$x4 = "\\system32\\win32k.sys" fullword wide
-		$x5 = "\\AGENTCPD.DLL" fullword ascii
-		$x6 = "agentcpd.dll" fullword ascii
-		$x7 = "PADupdate.exe" fullword ascii
-		$x8 = "dll_installer.dll" fullword ascii
-		$x9 = "\\restore\\" fullword ascii
-		$x10 = "Q:\\__?__.lnk" fullword ascii
-		$x11 = "Software\\Microsoft\\MSNetMng" fullword ascii
-		$x12 = "\\shelldoc.dll" fullword ascii
-		$x13 = "file size = %d bytes" fullword ascii
-		$x14 = "\\MSAgent" fullword ascii
-		$x15 = "Global\\RPCMutex" fullword ascii
-		$x16 = "Global\\DirectMarketing" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 300000 and
-		(
-			( 2 of ($s*) ) or
-			( 1 of ($s*) and 6 of ($x*) ) or
-			( 14 of ($x*) )
-		)
+      $s1 = "x:\\fanny.bmp" fullword ascii
+      $s2 = "32.exe" fullword ascii
+      $s3 = "d:\\fanny.bmp" fullword ascii
+
+      $x1 = "c:\\windows\\system32\\kernel32.dll" fullword ascii
+      $x2 = "System\\CurrentControlSet\\Services\\USBSTOR\\Enum" fullword ascii
+      $x3 = "System\\CurrentControlSet\\Services\\PartMgr\\Enum" fullword ascii
+      $x4 = "\\system32\\win32k.sys" wide
+      $x5 = "\\AGENTCPD.DLL" ascii
+      $x6 = "agentcpd.dll" fullword ascii
+      $x7 = "PADupdate.exe" fullword ascii
+      $x8 = "dll_installer.dll" fullword ascii
+      $x9 = "\\restore\\" ascii
+      $x10 = "Q:\\__?__.lnk" fullword ascii
+      $x11 = "Software\\Microsoft\\MSNetMng" fullword ascii
+      $x12 = "\\shelldoc.dll" ascii
+      $x13 = "file size = %d bytes" fullword ascii
+      $x14 = "\\MSAgent" ascii
+      $x15 = "Global\\RPCMutex" fullword ascii
+      $x16 = "Global\\DirectMarketing" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d ) and filesize < 300000 and
+      (
+         ( 2 of ($s*) ) or
+         ( 1 of ($s*) and 6 of ($x*) ) or
+         ( 14 of ($x*) )
+      )
 }
 
 rule Equation_Kaspersky_HDD_reprogramming_module {
@@ -348,23 +352,24 @@ rule Equation_Kaspersky_SuspiciousString {
 /* EquationDrug Update 11.03.2015 - http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/ */
 
 rule EquationDrug_NetworkSniffer1 {
-	meta:
-		description = "EquationDrug - Backdoor driven by network sniffer - mstcp32.sys, fat32.sys"
-		author = "Florian Roth @4nc4p"
-		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
-		date = "2015/03/11"
-		hash = "26e787997a338d8111d96c9a4c103cf8ff0201ce"
-	strings:
-		$s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
-		$s1 = "\\Registry\\User\\CurrentUser\\" fullword wide
-		$s3 = "sys\\mstcp32.dbg" fullword ascii
-		$s7 = "mstcp32.sys" fullword wide
-		$s8 = "p32.sys" fullword ascii
-		$s9 = "\\Device\\%ws_%ws" fullword wide
-		$s10 = "\\DosDevices\\%ws" fullword wide
-		$s11 = "\\Device\\%ws" fullword wide
-	condition:
-		all of them
+   meta:
+      description = "EquationDrug - Backdoor driven by network sniffer - mstcp32.sys, fat32.sys"
+      author = "Florian Roth"
+      reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
+      date = "2015/03/11"
+      modified = "2023-01-06"
+      hash = "26e787997a338d8111d96c9a4c103cf8ff0201ce"
+   strings:
+      $s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
+      $s1 = "\\Registry\\User\\CurrentUser\\" wide
+      $s3 = "sys\\mstcp32.dbg" fullword ascii
+      $s7 = "mstcp32.sys" fullword wide
+      $s8 = "p32.sys" fullword ascii
+      $s9 = "\\Device\\%ws_%ws" wide
+      $s10 = "\\DosDevices\\%ws" wide
+      $s11 = "\\Device\\%ws" wide
+   condition:
+      all of them
 }
 
 rule EquationDrug_CompatLayer_UnilayDLL {
@@ -406,9 +411,9 @@ rule EquationDrug_NetworkSniffer2 {
 		$s2 = "tdip.sys" fullword wide
 		$s3 = "sys\\tdip.dbg" fullword ascii
 		$s4 = "dip.sys" fullword ascii
-		$s5 = "\\Device\\%ws_%ws" fullword wide
-		$s6 = "\\DosDevices\\%ws" fullword wide
-		$s7 = "\\Device\\%ws" fullword wide
+		$s5 = "\\Device\\%ws_%ws" wide
+		$s6 = "\\DosDevices\\%ws" wide
+		$s7 = "\\Device\\%ws" wide
 	condition:
 		all of them
 }
@@ -445,23 +450,24 @@ rule EquationDrug_VolRec_Driver {
 }
 
 rule EquationDrug_KernelRootkit {
-	meta:
-		description = "EquationDrug - Kernel mode stage 0 and rootkit (Windows 2000 and above) - msndsrv.sys"
-		author = "Florian Roth @4nc4p"
-		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
-		date = "2015/03/11"
-		hash = "597715224249e9fb77dc733b2e4d507f0cc41af6"
-	strings:
-		$s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
-		$s1 = "Parmsndsrv.dbg" fullword ascii
-		$s2 = "\\Registry\\User\\CurrentUser\\" fullword wide
-		$s3 = "msndsrv.sys" fullword wide
-		$s5 = "\\REGISTRY\\MACHINE\\System\\CurrentControlSet\\Control\\Windows" fullword wide
-		$s6 = "\\Device\\%ws_%ws" fullword wide
-		$s7 = "\\DosDevices\\%ws" fullword wide
-		$s9 = "\\Device\\%ws" fullword wide
-	condition:
-		all of them
+   meta:
+      description = "EquationDrug - Kernel mode stage 0 and rootkit (Windows 2000 and above) - msndsrv.sys"
+      author = "Florian Roth"
+      reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
+      date = "2015/03/11"
+      modified = "2023-01-06"
+      hash = "597715224249e9fb77dc733b2e4d507f0cc41af6"
+   strings:
+      $s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
+      $s1 = "Parmsndsrv.dbg" fullword ascii
+      $s2 = "\\Registry\\User\\CurrentUser\\" wide
+      $s3 = "msndsrv.sys" fullword wide
+      $s5 = "\\REGISTRY\\MACHINE\\System\\CurrentControlSet\\Control\\Windows" wide
+      $s6 = "\\Device\\%ws_%ws" wide
+      $s7 = "\\DosDevices\\%ws" wide
+      $s9 = "\\Device\\%ws" wide
+   condition:
+      all of them
 }
 
 rule EquationDrug_Keylogger {
@@ -472,36 +478,37 @@ rule EquationDrug_Keylogger {
 		date = "2015/03/11"
 		hash = "b93aa17b19575a6e4962d224c5801fb78e9a7bb5"
 	strings:
-		$s0 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
+		$s0 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" wide
 		$s2 = "\\registry\\machine\\SYSTEM\\ControlSet001\\Control\\Session Manager\\En" wide
-		$s3 = "\\DosDevices\\Gk" fullword wide
-		$s5 = "\\Device\\Gk0" fullword wide
+		$s3 = "\\DosDevices\\Gk" wide
+		$s5 = "\\Device\\Gk0" wide
 	condition:
 		all of them
 }
 
 rule EquationDrug_NetworkSniffer4 {
-	meta:
-		description = "EquationDrug - Network-sniffer/patcher - atmdkdrv.sys"
-		author = "Florian Roth @4nc4p"
-		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
-		date = "2015/03/11"
-		hash = "cace40965f8600a24a2457f7792efba3bd84d9ba"
-	strings:
-		$s0 = "Copyright 1999 RAVISENT Technologies Inc." fullword wide
-		$s1 = "\\systemroot\\" fullword ascii
-		$s2 = "RAVISENT Technologies Inc." fullword wide
-		$s3 = "Created by VIONA Development" fullword wide
-		$s4 = "\\Registry\\User\\CurrentUser\\" fullword wide
-		$s5 = "\\device\\harddiskvolume" fullword wide
-		$s7 = "ATMDKDRV.SYS" fullword wide
-		$s8 = "\\Device\\%ws_%ws" fullword wide
-		$s9 = "\\DosDevices\\%ws" fullword wide
-		$s10 = "CineMaster C 1.1 WDM Main Driver" fullword wide
-		$s11 = "\\Device\\%ws" fullword wide
-		$s13 = "CineMaster C 1.1 WDM" fullword wide
-	condition:
-		all of them
+   meta:
+      description = "EquationDrug - Network-sniffer/patcher - atmdkdrv.sys"
+      author = "Florian Roth"
+      reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
+      date = "2015/03/11"
+      modified = "2023-01-06"
+      hash = "cace40965f8600a24a2457f7792efba3bd84d9ba"
+   strings:
+      $s0 = "Copyright 1999 RAVISENT Technologies Inc." fullword wide
+      $s1 = "\\systemroot\\" ascii
+      $s2 = "RAVISENT Technologies Inc." fullword wide
+      $s3 = "Created by VIONA Development" fullword wide
+      $s4 = "\\Registry\\User\\CurrentUser\\" wide
+      $s5 = "\\Device\\harddiskvolume" wide
+      $s7 = "ATMDKDRV.SYS" fullword wide
+      $s8 = "\\Device\\%ws_%ws" wide
+      $s9 = "\\DosDevices\\%ws" wide
+      $s10 = "CineMaster C 1.1 WDM Main Driver" fullword wide
+      $s11 = "\\Device\\%ws" wide
+      $s13 = "CineMaster C 1.1 WDM" fullword wide
+   condition:
+      all of them
 }
 
 rule EquationDrug_PlatformOrchestrator {
@@ -513,7 +520,7 @@ rule EquationDrug_PlatformOrchestrator {
 		hash = "febc4f30786db7804008dc9bc1cebdc26993e240"
 	strings:
 		$s0 = "SERVICES.EXE" fullword wide
-		$s1 = "\\command.com" fullword wide
+		$s1 = "\\command.com" wide
 		$s2 = "Microsoft(R) Windows (TM) Operating System" fullword wide
 		$s3 = "LSASS.EXE" fullword wide
 		$s4 = "Windows Configuration Services" fullword wide
@@ -523,21 +530,22 @@ rule EquationDrug_PlatformOrchestrator {
 }
 
 rule EquationDrug_NetworkSniffer5 {
-	meta:
-		description = "EquationDrug - Network-sniffer/patcher - atmdkdrv.sys"
-		author = "Florian Roth @4nc4p"
-		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
-		date = "2015/03/11"
-		hash = "09399b9bd600d4516db37307a457bc55eedcbd17"
-	strings:
-		$s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
-		$s1 = "\\Registry\\User\\CurrentUser\\" fullword wide
-		$s2 = "atmdkdrv.sys" fullword wide
-		$s4 = "\\Device\\%ws_%ws" fullword wide
-		$s5 = "\\DosDevices\\%ws" fullword wide
-		$s6 = "\\Device\\%ws" fullword wide
-	condition:
-		all of them
+   meta:
+      description = "EquationDrug - Network-sniffer/patcher - atmdkdrv.sys"
+      author = "Florian Roth"
+      reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
+      date = "2015/03/11"
+      modified = "2023-01-06"
+      hash = "09399b9bd600d4516db37307a457bc55eedcbd17"
+   strings:
+      $s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
+      $s1 = "\\Registry\\User\\CurrentUser\\" wide
+      $s2 = "atmdkdrv.sys" fullword wide
+      $s4 = "\\Device\\%ws_%ws" wide
+      $s5 = "\\DosDevices\\%ws" wide
+      $s6 = "\\Device\\%ws" wide
+   condition:
+      all of them
 }
 
 rule EquationDrug_FileSystem_Filter {
