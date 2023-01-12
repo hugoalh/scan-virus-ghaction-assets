@@ -1,4 +1,9 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+1b917243d3fee1f25a674c2c6051b8f9:896512:Porcupine.Win32.Exploit.CVE-2017-11882.C.73774:73
+91ea2262339eca7d76118889d583f009:11967:Porcupine.MSIL.Kryptik.AHBU.73773:73
+01964c4688c6fd3e14e14b5cbfbea305:127488:Porcupine.MSIL.Kryptik.AHBU.73772:73
+3bd8f265d1fff426f1fbd2078ac4aedc:1124352:Porcupine.MSIL.Kryptik.AHBU.73758:73
+1e3a5ebca731c123d0a82ca30cca2c0c:1245184:Porcupine.Trojan.PSW.MSIL.Stealer.gen.73723:73
 dcf792548876298f042a4ba272b3bfbb:851456:Porcupine.Trojan.PSW.MSIL.Agensla.gen.73545:73
 b944fdd799b5e8c34095c0ecd2a5d2c4:687186:Porcupine.Trojan.PSW.MSIL.Agensla.gen.73544:73
 5531f1b0a51ec002f27b542b5921ced6:1121280:Porcupine.Win32.Exploit.CVE-2017-11882.C.73371:73
@@ -115,8 +120,3 @@ c9308dafeae2a0e40549d75ded3cc181:25490:Porcupine.HTML.Phishing.Microsoft.LO.6217
 0b12c3a43d50484252030f5a78a11fe9:465920:Porcupine.MSIL.GenKryptik.GDNJ.62135:73
 105548f6747f1e8e7b7058143c286a11:309489:Porcupine.MSIL.GenKryptik.GDNJ.62134:73
 3faf8993b2030bce958903821ee65c9e:25499:Porcupine.HTML.Phishing.Microsoft.LO.62133:73
-e4aba1ac0cdb9246cdcdb1ca14d1d9cc:899072:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.62097:73
-e5e4b8027d4d7b5ad7cfdf79d552efc4:1507328:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.62096:73
-68a71b60b99f76079f8d8c5d20eb3ed8:608909:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.62095:73
-f64bcab3076be810acb9f457c7c2bdc6:959488:Porcupine.Trojan.Spy.MSIL.Noon.gen.62094:73
-54fa243c4b0490395ce610e3bc6e60ff:671013:Porcupine.Trojan.Spy.MSIL.Noon.gen.62093:73
