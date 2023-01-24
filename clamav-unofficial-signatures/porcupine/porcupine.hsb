@@ -1,4 +1,13 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+1c8919262f3cc209a3af709712c23a4c:1203200:Porcupine.MSIL.Kryptik.AHUN.78724:73
+3c0bd49507a4537360f75a4faa35aeb4:453989:Porcupine.MSIL.Kryptik.AHVD.78656:73
+8c0f2a4063f4a3e30ecb2b58085072eb:532480:Porcupine.MSIL.Kryptik.AHVD.78655:73
+362aeb8d00aa9a76ca7ba60561e08950:454001:Porcupine.MSIL.Kryptik.AHVD.78654:73
+79aece7fdac353d093ac770fd6340b75:581463:Porcupine.Trojan.PSW.MSIL.Agensla.gen.78653:73
+602b55c11678a2cb0bafdbff6fdcbe58:580010:Porcupine.Trojan.PSW.MSIL.Agensla.gen.78652:73
+8ad8c615dab288132971594224aa8f4e:43423:Porcupine.Exploit.MSOffice.CVE.2018.0802.gen.78651:73
+6effe82bd7bb8580271872672fee2bd2:329233:Porcupine.Trojan.PSW.Win32.Agensla.gen.78583:73
+e5b65c6f26e895a2ccc08b2700d48d99:344863:Porcupine.Trojan.PSW.Win32.Agensla.gen.78582:73
 319002abdd10d33520da5bff5bd87aac:396807:Porcupine.Win32.Formbook.AK.77683:73
 d5819c62de7eed2ed35854d3cfd68fda:1498461:Porcupine.Win32.Exploit.CVE-2017-11882.C.77522:73
 9bb7774bbe36b38c70a732cc2cdf52a4:973:Porcupine.VBS.Downloader.Agent.WUN.77294:73
@@ -87,4 +96,3 @@ ee2ae59dd1ca86333366dfac23af3870:836096:Porcupine.Generik.DCDFAUK.69204:73
 bb468a442458f7bd8ce08fb198836a54:27580:Porcupine.Exploit.MSOffice.CVE.2018.0802.gen.68956:73
 60cfe1080875e9dc48b203904a5f5cc9:664032:Porcupine.Trojan.MSIL.PowerShell.gen.68330:73
 5ffd4ac28de47ca49e87cf5176665d6a:822272:Porcupine.MSIL.Kryptik.AHOG.67356:73
-0eb20d35a8b31273fd15bdd424744635:51249:Porcupine.Phishing.67038:73
