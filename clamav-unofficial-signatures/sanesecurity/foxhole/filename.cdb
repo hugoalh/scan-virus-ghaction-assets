@@ -3180,3 +3180,14 @@ Sanesecurity.Foxhole.Zip_fs3193:CL_TYPE_ZIP:*:(?i)^bl-shipping advice docs\.exe$
 Sanesecurity.Foxhole.Rar_fs3194:CL_TYPE_RAR:*:(?i)^swift copy\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3195:CL_TYPE_ISO9660:*:(?i)^secpralpro order.{0,30}\.vns$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs3196:CL_TYPE_RAR:*:(?i)^rfq#.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3197:CL_TYPE_ZIP:*:(?i)^pricing inquiry\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3198:CL_TYPE_ZIP:*:(?i)^asean shipping documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3199:CL_TYPE_ZIP:*:(?i)^shipping advice#asean\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3200:CL_TYPE_ZIP:*:(?i)^bl-invoice shipping docs\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3201:CL_TYPE_ZIP:*:(?i)^products needed\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3202:CL_TYPE_ZIP:*:(?i)^pre alert notice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3203:CL_TYPE_ZIP:*:(?i)^swift\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3204:CL_TYPE_ZIP:*:(?i)^bank tt request\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3205:CL_TYPE_ZIP:*:(?i)^documents asean\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3206:CL_TYPE_ISO9660:*:(?i)^tt_swift\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3207:CL_TYPE_ISO9660:*:(?i)^soa\.exe$:*:*:*:*:*:*
