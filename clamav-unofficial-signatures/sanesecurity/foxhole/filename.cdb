@@ -3191,3 +3191,5 @@ Sanesecurity.Foxhole.Zip_fs3204:CL_TYPE_ZIP:*:(?i)^bank tt request\.exe$:*:*:*:1
 Sanesecurity.Foxhole.Zip_fs3205:CL_TYPE_ZIP:*:(?i)^documents asean\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3206:CL_TYPE_ISO9660:*:(?i)^tt_swift\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs3207:CL_TYPE_ISO9660:*:(?i)^soa\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3208:CL_TYPE_ZIP:*:(?i)^shipping bill\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3209:CL_TYPE_ZIP:*:(?i)^shipping  docs\.exe$:*:*:*:1:*:*
