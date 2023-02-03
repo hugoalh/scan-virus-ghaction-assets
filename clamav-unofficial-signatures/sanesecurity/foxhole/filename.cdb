@@ -3193,3 +3193,5 @@ Sanesecurity.Foxhole.Iso_fs3206:CL_TYPE_ISO9660:*:(?i)^tt_swift\.exe$:*:*:*:*:*:
 Sanesecurity.Foxhole.Iso_fs3207:CL_TYPE_ISO9660:*:(?i)^soa\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs3208:CL_TYPE_ZIP:*:(?i)^shipping bill\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3209:CL_TYPE_ZIP:*:(?i)^shipping  docs\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3210:CL_TYPE_ZIP:*:(?i)^union trans\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3211:CL_TYPE_ZIP:*:(?i)^s o a -.{0,30}\.exe$:*:*:*:1:*:*
