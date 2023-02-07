@@ -3225,3 +3225,4 @@ Sanesecurity.Foxhole.Iso_fs3188:CL_TYPE_ISO9660:*:(?i)^zahlung_\.exe$:*:*:*:*:*:
 Sanesecurity.Foxhole.Iso_fs3189:CL_TYPE_ISO9660:*:(?i)^purchase\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs3140:CL_TYPE_ISO9660:*:(?i)^shipping-document\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs3141:CL_TYPE_ISO9660:*:(?i)^revised_\.exe$:*:*:*:*:*:*                                        
+Sanesecurity.Foxhole.Iso_fs3142:CL_TYPE_ISO9660:*:(?i)^transfer.exe$:*:*:*:*:*:*
