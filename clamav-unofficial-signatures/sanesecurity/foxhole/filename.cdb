@@ -3221,8 +3221,18 @@ Sesecurity.Foxhole.Zip_fs3234:CL_TYPE_ZIP:*:(?i)^union trans\.exe$:*:*:*:1:*:*
 Sesecurity.Foxhole.Zip_fs3235:CL_TYPE_ZIP:*:(?i)^zellepayment#1\.htm$:*:*:*:1:*:*
 Sesecurity.Foxhole.Zip_fs3236:CL_TYPE_ZIP:*:(?i)^urgent request\.exe$:*:*:*:1:*:*
 Sesecurity.Foxhole.Zip_fs3237:CL_TYPE_ZIP:*:(?i)^urgent price request.{0,30}\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Iso_fs3188:CL_TYPE_ISO9660:*:(?i)^zahlung_\.exe$:*:*:*:*:*:*
-Sanesecurity.Foxhole.Iso_fs3189:CL_TYPE_ISO9660:*:(?i)^purchase\.exe$:*:*:*:*:*:*
-Sanesecurity.Foxhole.Iso_fs3140:CL_TYPE_ISO9660:*:(?i)^shipping-document\.exe$:*:*:*:*:*:*
-Sanesecurity.Foxhole.Iso_fs3141:CL_TYPE_ISO9660:*:(?i)^revised_\.exe$:*:*:*:*:*:*                                        
-Sanesecurity.Foxhole.Iso_fs3142:CL_TYPE_ISO9660:*:(?i)^transfer.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3238:CL_TYPE_ISO9660:*:(?i)^zahlung_\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3239:CL_TYPE_ISO9660:*:(?i)^purchase\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3240:CL_TYPE_ISO9660:*:(?i)^shipping-document\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3241:CL_TYPE_ISO9660:*:(?i)^revised_\.exe$:*:*:*:*:*:*                                        
+Sanesecurity.Foxhole.Iso_fs3242:CL_TYPE_ISO9660:*:(?i)^transfer.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3243:CL_TYPE_ISO9660:*:(?i)^invoice_\.vbs$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3244:CL_TYPE_RAR:*:(?i)^transfer confirmation\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3244:CL_TYPE_RAR:*:(?i)^new shipment\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3244:CL_TYPE_RAR:*:(?i)^original shipping documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3244:CL_TYPE_RAR:*:(?i)^fact .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3244:CL_TYPE_RAR:*:(?i)^payment copy for.{0,50}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.7Zip_fs3245:CL_TYPE_7Z:*:(?i)^commercial invoice_.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.7Zip_fs3246:CL_TYPE_7Z:*:(?i)^credit note\.pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.7Zip_fs3247:CL_TYPE_7Z:*:(?i)^30% proforma invoice\.pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.7Zip_fs3248:CL_TYPE_7Z:*:(?i)^packing list\.exe$:*:*:*:*:*:*
