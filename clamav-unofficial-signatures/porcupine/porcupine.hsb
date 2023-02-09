@@ -1,4 +1,13 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+f7abf9414b03194e3014371cfeb9be56:5611715:Porcupine.Exploit.OLE2.Generic.86417:73
+182b8294e229dd47d379a5589d3cbd0a:13312:Porcupine.Trojan.MSIL.Inject.gen.86376:73
+29fad68d4ff9961570ee552b0a1c651b:1088000:Porcupine.Win32.Exploit.CVE-2017-11882.C.86375:73
+bcf241c28db36b39add1c809627133d0:37431:Porcupine.Exploit.MSOffice.Generic.86339:73
+c4979c20119145f63a39c4a08f5055f3:277390:Porcupine.Win32.Injector.ESQU.86284:73
+b689e14090199197041d68d09627b0ce:722780:Porcupine.Trojan.PSW.MSIL.Stealer.gen.86200:73
+b628ab729d8e28ce21d1968800e74028:922112:Porcupine.Trojan.PSW.MSIL.Stealer.gen.86199:73
+5ae742172ddeab8da8d3139098aa4544:928768:Porcupine.Trojan.PSW.MSIL.Agensla.gen.86198:73
+650b17f5035e2bb261e0eed7bda30922:728954:Porcupine.Trojan.PSW.MSIL.Agensla.gen.86197:73
 5024700fd5f7e52bf567e82ebdb80e14:1511936:Porcupine.Trojan.PSW.MSIL.Stealer.gen.86080:73
 6736e783f18f8fa9efbe5a4cf39ab322:455413:Porcupine.Trojan.PSW.MSIL.Stealer.gen.86079:73
 3b6d4bfaee1ec02d40aea7e72a7019c9:1182720:Porcupine.Trojan.PSW.MSIL.Stealer.gen.86009:73

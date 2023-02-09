@@ -3238,3 +3238,14 @@ Sanesecurity.Foxhole.7Zip_fs3247:CL_TYPE_7Z:*:(?i)^30% proforma invoice\.pdf\.ex
 Sanesecurity.Foxhole.7Zip_fs3248:CL_TYPE_7Z:*:(?i)^packing list\.exe$:*:*:*:*:*:*
 Sesecurity.Foxhole.Zip_fs3249:CL_TYPE_ZIP:*:(?i)^pr_.{0,30} pdf\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3250:CL_TYPE_RAR:*:(?i)^ttres.{0,30}\.exe$:*:*:*:1:*:*
+Sesecurity.Foxhole.Zip_fs3251:CL_TYPE_ZIP:*:(?i)^pre alert docs\.exe$:*:*:*:1:*:*
+Sesecurity.Foxhole.Zip_fs3252:CL_TYPE_ZIP:*:(?i)^shipping doc\(1\)\.exe$:*:*:*:1:*:*
+Sesecurity.Foxhole.Zip_fs3253:CL_TYPE_ZIP:*:(?i)^tt slip\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.7Zip_fs3254:CL_TYPE_7Z:*:(?i)^swift_copy\.pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.7Zip_fs3255:CL_TYPE_7Z:*:(?i)^invoice for part shipped.{0,30}\.exe$$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3256:CL_TYPE_ISO9660:*:(?i)^long_ove\.exe$:*:*:*:*:*:*
+Sesecurity.Foxhole.Zip_fs3257:CL_TYPE_ZIP:*:(?i)^soa .{0,30}pdf\.exe$:*:*:*:1:*:*
+Sesecurity.Foxhole.Zip_fs3258:CL_TYPE_ZIP:*:(?i)^pre alert shipping docs\.exe$:*:*:*:1:*:*
+Sesecurity.Foxhole.Zip_fs3259:CL_TYPE_ZIP:*:(?i)^quote .{0,30}\.exe$:*:*:*:1:*:*
+Sesecurity.Foxhole.Zip_fs3260:CL_TYPE_ZIP:*:(?i)^sbl-shipping document\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3261:CL_TYPE_RAR:*:(?i)^soa\.exe$:*:*:*:1:*:*
