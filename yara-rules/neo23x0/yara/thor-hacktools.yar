@@ -30,21 +30,24 @@ rule WindowsCredentialEditor
        all of them
 }
 
-rule Amplia_Security_Tool
+rule HKTL_Amplia_Security_Tool
 {
     meta:
-      description = "Amplia Security Tool"
+      description = "Detects Amplia Security Tool like Windows Credential Editor"
       score = 60
       nodeepdive = 1
+      author = "Florian Roth"
+      date = "2013-01-01"
+      modified = "2023-02-10"
     strings:
       $a = "Amplia Security"
       $c = "getlsasrvaddr.exe"
       $d = "Cannot get PID of LSASS.EXE"
       $e = "extract the TGT session key"
       $f = "PPWDUMP_DATA"
-    condition: 1 of them
+    condition:
+      3 of them
 }
-
 /* pwdump/fgdump */
 
 rule PwDump
@@ -4423,3 +4426,20 @@ rule PAExec {
    condition:
       ( uint16(0) == 0x5a4d and filesize < 600KB and 1 of ($x*) ) or ( 3 of them )
 }
+
+rule HKTL_DomainPasswordSpray {
+   meta:
+      description = "Detects the Powershell password spray tool DomainPasswordSpray"
+      author = "Arnim Rupp"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      reference = "https://github.com/dafthack/DomainPasswordSpray"
+      date = "2023-01-13"
+      score = 60
+      hash1 = "44d4c0ae5673d2a076f3b5acdc83063aca49d58e6dd7cf73d0b927f83d359247"
+   strings:
+      $s = "Invoke-DomainPasswordSpray" fullword ascii wide
+   condition:
+      filesize < 100KB and
+      all of them
+}
+

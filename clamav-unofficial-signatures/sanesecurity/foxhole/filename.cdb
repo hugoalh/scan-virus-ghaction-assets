@@ -3256,3 +3256,6 @@ Sanesecurity.Foxhole.Zip_fs3265:CL_TYPE_ZIP:*:(?i)^shipping advice notice\.exe$:
 Sanesecurity.Foxhole.Zip_fs3265:CL_TYPE_ZIP:*:(?i)^draft copy\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3266:CL_TYPE_ISO9660:*:(?i)^30__paym\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs3267:CL_TYPE_ZIP:*:(?i)^invocie\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3268:CL_TYPE_ZIP:*:(?i)_inv\+pl.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3269:CL_TYPE_ZIP:*:(?i)^document_.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3270:CL_TYPE_RAR:*:(?i)^order specification\.exe$:*:*:*:1:*:*
