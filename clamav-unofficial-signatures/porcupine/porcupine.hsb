@@ -1,4 +1,18 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+e07f455b8d4f8b1ab6d02403f5faa8e1:422797:Porcupine.MSIL.Kryptik.AIBB.90035:73
+3c958ab298cdd1450a9f243348a5c3fb:618496:Porcupine.MSIL.Kryptik.AIBB.90034:73
+f42a478954c0f950a07f3d14b4d76dbe:422797:Porcupine.MSIL.Kryptik.AIBB.90033:73
+ef65458ffdf59a0c050278492fa91e01:842240:Porcupine.Trojan.PSW.MSIL.Stealer.gen.89986:73
+4359b71b75684422c5670f5b6aed9638:725151:Porcupine.Trojan.PSW.MSIL.Stealer.gen.89985:73
+ecbfb5fb0eda1d1f9bbfcf88823257cb:1702793:Porcupine.Exploit.MSOffice.Generic.89914:73
+71114256ac06eb82304f457bafbc021e:10355:Porcupine.Unclassified.89873:73
+e45a35c278403f8c530a7e5665e30245:703364:Porcupine.Trojan.PSW.MSIL.Agensla.gen.89837:73
+5e90e5825b4faf2042b304e619d4fbba:772096:Porcupine.Trojan.PSW.MSIL.Agensla.gen.89836:73
+04f53ca34b3052b2af707c484497a737:989184:Porcupine.MSIL.Kryptik.AHQJ.89835:73
+0893ee5d9a9168dc3a85348d6d3cea09:706560:Porcupine.Trojan.PSW.MSIL.Stealer.gen.89708:73
+2a2911f43963ca8d7f0f2c95cd84d042:712192:Porcupine.Trojan.PSW.MSIL.Stealer.gen.89707:73
+e4706d86fd6df70d8827c254fd550560:581043:Porcupine.Trojan.PSW.MSIL.Stealer.gen.89706:73
+58aa1b5bcf333f429367eb5a9352eaee:586869:Porcupine.Trojan.PSW.MSIL.Stealer.gen.89705:73
 f63005f8d57dfa0f51d82a502a601d17:292914:Porcupine.Win32.Injector_AGen.RG.88656:73
 0b45a8e433fd597e95e0d44437b8cffb:1245184:Porcupine.Win32.Injector_AGen.RG.88655:73
 8ad9e568a9dbcff0bfdbba2ec0ec6e33:271128:Porcupine.Win32.Injector_AGen.RG.88654:73
@@ -216,8 +230,3 @@ ad87bd083a67450e2abf378d5dd3e24a:909312:Porcupine.Backdoor.MSIL.Androm.gen.75585
 d75394290a7a884a3879dbafb95e155f:724596:Porcupine.Backdoor.MSIL.Androm.gen.75584:73
 cd3004ac063ffe2d656d3a108b66cdea:915456:Porcupine.Trojan.PSW.MSIL.Stealer.gen.75577:73
 024659370d0c5da3b8fc5cf5af965ab9:730710:Porcupine.Trojan.PSW.MSIL.Stealer.gen.75576:73
-201841e401237e9e8747ec860b58c31b:922112:Porcupine.MSIL.Spy.AgentTesla.F.74806:73
-26573cb67a3f09bac2a92c464ac19f9c:674348:Porcupine.Exploit.Win32.BypassUAC.gen.74805:73
-07e2c78ee6efab5e5ea55d79bae39658:12369:Porcupine.HTML.Phishing.Agent.DEN.74757:73
-b4ae985c66f8a57e8244d20ba011ccd6:280841:Porcupine.Trojan.Spy.Win32.Noon.gen.74756:73
-e5b9ff03ba8b7a364c7a60278f1304dc:442725:Porcupine.Trojan.Spy.Win32.Noon.gen.74755:73

@@ -3262,3 +3262,5 @@ Sanesecurity.Foxhole.Rar_fs3270:CL_TYPE_RAR:*:(?i)^order specification\.exe$:*:*
 Sanesecurity.Foxhole.Zip_fs3271:CL_TYPE_ZIP:*:(?i)^soa.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3272:CL_TYPE_ZIP:*:(?i)^mbl\+hbl notice.\exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3273:CL_TYPE_ISO9660:*:(?i)^document\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3274:CL_TYPE_ZIP:*:(?i)^mv lady flora.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3275:CL_TYPE_ZIP:*:(?i)^[0-9]{0,10} pdf\.exe$:*:*:*:1:*:*
