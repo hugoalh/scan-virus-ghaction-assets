@@ -3264,3 +3264,14 @@ Sanesecurity.Foxhole.Zip_fs3272:CL_TYPE_ZIP:*:(?i)^mbl\+hbl notice.\exe$:*:*:*:1
 Sanesecurity.Foxhole.Iso_fs3273:CL_TYPE_ISO9660:*:(?i)^document\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs3274:CL_TYPE_ZIP:*:(?i)^mv lady flora.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3275:CL_TYPE_ZIP:*:(?i)^[0-9]{0,10} pdf\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3276:CL_TYPE_ZIP:*:(?i)\.2023\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3277:CL_TYPE_RAR:*:(?i)^payment notice_.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3278:CL_TYPE_ISO9660:*:(?i)^ref.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3279:CL_TYPE_ZIP:*:(?i)^doc .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3280:CL_TYPE_ZIP:*:(?i)^urgent request\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3281:CL_TYPE_ZIP:*:(?i)^proforma invoice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3282:CL_TYPE_ZIP:*:(?i)^mbl\+hbl notice.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3283:CL_TYPE_ZIP:*:(?i)^fact.{0,30}\.msi$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3284:CL_TYPE_ZIP:*:(?i)^awb no.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3285:CL_TYPE_RAR:*:(?i)\.pdf\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3286:CL_TYPE_RAR:*:(?i)^skmbt.{0,30}\.exe$:*:*:*:1:*:*
