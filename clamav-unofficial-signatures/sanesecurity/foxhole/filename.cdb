@@ -3278,3 +3278,6 @@ Sanesecurity.Foxhole.Rar_fs3286:CL_TYPE_RAR:*:(?i)^skmbt.{0,30}\.exe$:*:*:*:1:*:
 Sanesecurity.Foxhole.Rar_fs3287:CL_TYPE_RAR:*:(?i)\.txt\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3288:CL_TYPE_ZIP:*:(?i)\.txt\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3289:CL_TYPE_ZIP:*:(?i)-usd.{0,30}\.exe$$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3290:CL_TYPE_RAR:*:(?i)^salary receipt\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3291:CL_TYPE_RAR:*:(?i)\ txt\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3292:CL_TYPE_ZIP:*:(?i)\ txt\.exe$:*:*:*:1:*:*
