@@ -989,7 +989,7 @@ Sanesecurity.Foxhole.Zip_fs770:CL_TYPE_ZIP:*:(?i)\/scan_[0-9]{3,10}\.vbs$:*:*:*:
 Sanesecurity.Foxhole.Zip_fs771:CL_TYPE_ZIP:*:(?i)_2017_.{0,25}\.pdf\.jar$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs772:CL_TYPE_ZIP:*:(?i)\/scan_[0-9]{3,10}\.exe$:*:*:*:2:*:*
 Sanesecurity.Foxhole.Mail.fn8:CL_TYPE_MAIL:*:(?i)^tnt_receipt_pdf\.7z:*:*:0:0:0:00000000
-Sanesecurity.Foxhole.Rar_fs773:CL_TYPE_RAR:*:(?i)^shipping documents\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs773:CL_TYPE_RAR:*:(?i)^shipping documents.{0,50}\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs774:CL_TYPE_RAR:*:(?i)build\\build\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs772:CL_TYPE_ZIP:*:(?i)\/scan_[0-9]{3,10}\.exe$:*:*:*:2:*:*
 Sanesecurity.Foxhole.Zip_fs773:CL_TYPE_ZIP:*:(?i)\fedex-parcel-id.{0,25}\.doc\.js$:*:*:*:2:*:*
@@ -1013,7 +1013,7 @@ Sanesecurity.Foxhole.Zip_fs787:CL_TYPE_ZIP:*:\/Main\$Q_.{3,5}_\.class$:*:*:*:34:
 Sanesecurity.Foxhole.Mail.fn9:CL_TYPE_MAIL:*:(?i)^pl.\pdf\.jar:*:*:0:0:0:00000000
 Sanesecurity.Foxhole.Mail.fn10:CL_TYPE_MAIL:*:(?i)payment_swift_copy_pdf\.gz:*:*:0:0:0:00000000
 Sanesecurity.Foxhole.Zip_fs788:CL_TYPE_ZIP:*:(?i)[0-9]{4}2017\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs789:CL_TYPE_ZIP:*:(?i)^shipping documents\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs789:CL_TYPE_ZIP:*:(?i)^shipping documents.{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_badexts44:CL_TYPE_ZIP:*:(?i)\) \. pdf\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.7Zip_fs790:CL_TYPE_7Z:*:(?i)^HSBC BANK TT COPY\.jar$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs791:CL_TYPE_ZIP:*:(?i)^LIST OF PRODUCTS\.bat$:*:*:*:1:*:*
@@ -3281,3 +3281,7 @@ Sanesecurity.Foxhole.Zip_fs3289:CL_TYPE_ZIP:*:(?i)-usd.{0,30}\.exe$$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3290:CL_TYPE_RAR:*:(?i)^salary receipt\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3291:CL_TYPE_RAR:*:(?i)\ txt\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3292:CL_TYPE_ZIP:*:(?i)\ txt\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3293:CL_TYPE_ZIP:*:(?i)^tt .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3294:CL_TYPE_ZIP:*:(?i)^shipserv .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3296:CL_TYPE_ZIP:*:(?i)__\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3297:CL_TYPE_ZIP:*:(?i)^revised po.{0,50}\.exe$:*:*:*:1:*:*
