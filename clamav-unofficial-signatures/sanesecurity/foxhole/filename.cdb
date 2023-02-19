@@ -3285,3 +3285,6 @@ Sanesecurity.Foxhole.Zip_fs3293:CL_TYPE_ZIP:*:(?i)^tt .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3294:CL_TYPE_ZIP:*:(?i)^shipserv .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3296:CL_TYPE_ZIP:*:(?i)__\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3297:CL_TYPE_ZIP:*:(?i)^revised po.{0,50}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3298:CL_TYPE_ZIP:*:(?i)usd\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3299:CL_TYPE_ZIP:*:(?i)^asia shipping\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3300:CL_TYPE_ZIP:*:(?i)^doc20.{0,50}\.exe$:*:*:*:1:*:*
