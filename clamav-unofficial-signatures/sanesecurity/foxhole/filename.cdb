@@ -3290,3 +3290,5 @@ Sanesecurity.Foxhole.Zip_fs3299:CL_TYPE_ZIP:*:(?i)^asia shipping\.exe$:*:*:*:1:*
 Sanesecurity.Foxhole.Zip_fs3300:CL_TYPE_ZIP:*:(?i)^doc20.{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3301:CL_TYPE_ZIP:*:(?i)^payment instructions copy\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3202:CL_TYPE_RAR:*:(?i)^urgent.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3203:CL_TYPE_ISO9660:*:(?i)shipment invoice\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3204:CL_TYPE_RAR:*:(?i)\2023\.com$:*:*:*:1:*:*
