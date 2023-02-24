@@ -3294,3 +3294,4 @@ Sanesecurity.Foxhole.Iso_fs3203:CL_TYPE_ISO9660:*:(?i)shipment invoice\.exe$:*:*
 Sanesecurity.Foxhole.Rar_fs3204:CL_TYPE_RAR:*:(?i)\2023\.com$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3205:CL_TYPE_RAR:*:(?i)^po invoice.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3206:CL_TYPE_RAR:*:(?i)^doc\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3207:CL_TYPE_ZIP:*:(?i)^invoice.vb$:*:*:*:1:*:*
