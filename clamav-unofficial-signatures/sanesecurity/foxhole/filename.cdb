@@ -330,7 +330,7 @@ Sanesecurity.Foxhole.Zip_jsnum37:CL_TYPE_ZIP:*:(?i)^invoice\([0-9]{3,7}\)\.js$:*
 Sanesecurity.Foxhole.Zip_fs231:CL_TYPE_ZIP:*:^Purchase Order\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fsdte10:CL_TYPE_ZIP:*:2016_.{0,10}_.{0,10}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs232:CL_TYPE_ZIP:*:^[0-9]{0,2}\.js$:0-512000:*:0:1:*:*
-Sanesecurity.Foxhole.Zip_fs233:CL_TYPE_ZIP:*:^statement of accounts_.{0,30}\.bat$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs233:CL_TYPE_ZIP:*:^statement of account.{0,30}\.bat$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs224:CL_TYPE_ZIP:*:^customers.{0,30}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs225:CL_TYPE_ZIP:*:(?i)^img_.{0,10}\.jar$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs226:CL_TYPE_ZIP:*:(?i)^order\.jar$:*:*:*:*:*:*
@@ -2145,7 +2145,7 @@ Sanesecurity.Foxhole.Rar_fs1865:CL_TYPE_RAR:*:(?i)^dhl delievery receipt\.exe$:*
 Sanesecurity.Foxhole.Rar_fs1866:CL_TYPE_RAR:*:(?i)^dhl delievery recipt\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs1867:CL_TYPE_RAR:*:(?i)^fedex receipt\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs1868:CL_TYPE_RAR:*:(?i)^fedex receipt\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Rar_fs1869:CL_TYPE_RAR:*:(?i)^new orders #.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs1869:CL_TYPE_RAR:*:(?i)^new order.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs1870:CL_TYPE_RAR:*:(?i)^po $.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs1871:CL_TYPE_RAR:*:(?i)^po 6.{0,30}(po .{0,30})\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs1872:CL_TYPE_RAR:*:(?i)^profoma inv\.exe$:*:*:*:1:*:*
@@ -3296,3 +3296,9 @@ Sanesecurity.Foxhole.Rar_fs3205:CL_TYPE_RAR:*:(?i)^po invoice.{0,30}\.exe$:*:*:*
 Sanesecurity.Foxhole.Rar_fs3206:CL_TYPE_RAR:*:(?i)^doc\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3207:CL_TYPE_ZIP:*:(?i)^invoice\.vb$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3208:CL_TYPE_ZIP:*:(?i)^new order list is attached\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3209:CL_TYPE_RAR:*:(?i)\.pdf!\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3210:CL_TYPE_RAR:*:(?i)^payment_advice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3211:CL_TYPE_RAR:*:(?i)^urgent_inquiry\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3212:CL_TYPE_RAR:*:(?i)tt-soa remittance final da\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3213:CL_TYPE_RAR:*:(?i)^withdrawal notification\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3214:CL_TYPE_ZIP:*:(?i)^return payment tt\.exe$:*:*:*:1:*:*
