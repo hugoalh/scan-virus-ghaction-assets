@@ -1,4 +1,5 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+356ce3c9a870e3f2d75c55ed46e44306:226685:Porcupine.JS.TrojanDropper.Agent.OOM.98301:73
 68baa18aa152cdfadd7e90deea9b2359:1245184:Porcupine.Win32.Injector_AGen.SQ.98009:73
 5f040295665116c2a8dfdab41b095bef:269824:Porcupine.MSIL.Kryptik.AHUA.97905:73
 466f22059072a6a25eda3da22ad18389:182905:Porcupine.MSIL.Kryptik.AHUA.97904:73
@@ -312,6 +313,3 @@ fc1d75f2a3cbf7f06b90768c02531fab:478715:Porcupine.Trojan.PSW.Win32.Stealer.gen.8
 53f537081349ccc8746f0d2e17890f19:811008:Porcupine.Trojan.Win32.Generic.84715:73
 ba094f5a630a1f3ded9f712602998667:1440683:Porcupine.Unclassified.84693:73
 b37dbb5c4b13c2368c5ef4fa00ed5090:556946:Porcupine.Worm.Win32.VBNA.gen.84632:73
-aeed488e6394c5d997f850007a3812c2:472:Porcupine.Unclassified.83958:73
-ce971abeaf8c215b2042caa63f9f122b:594076:Porcupine.Trojan.Spy.MSIL.SnakeLogger.gen.83864:73
-46416c390bfef9baeca9634e431f4658:10372:Porcupine.Unclassified.83681:73
