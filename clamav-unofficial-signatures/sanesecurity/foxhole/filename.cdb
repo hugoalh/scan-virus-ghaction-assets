@@ -3302,3 +3302,5 @@ Sanesecurity.Foxhole.Rar_fs3211:CL_TYPE_RAR:*:(?i)^urgent_inquiry\.exe$:*:*:*:1:
 Sanesecurity.Foxhole.Rar_fs3212:CL_TYPE_RAR:*:(?i)tt-soa remittance final da\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3213:CL_TYPE_RAR:*:(?i)^withdrawal notification\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3214:CL_TYPE_ZIP:*:(?i)^return payment tt\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3215:CL_TYPE_ZIP:*:(?i)^shipping  document\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3216:CL_TYPE_RAR:*:(?i)^scan by xerox_.{0,30}\.js$:*:*:*:1:*:*
