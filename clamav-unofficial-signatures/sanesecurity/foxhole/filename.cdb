@@ -3310,3 +3310,6 @@ Sanesecurity.Foxhole.Rar_fs3219:CL_TYPE_RAR:*:(?i) pdf \.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Tar_fs3220:CL_TYPE_POSIX_TAR:*:(?i)_pdf\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs3221:CL_TYPE_ZIP:*:(?i)^r f q .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3222:CL_TYPE_RAR:*:(?i)^remittance.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3223:CL_TYPE_ZIP:*:(?i)^rfq\.img\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3224:CL_TYPE_ZIP:*:(?i)^version.{0,30}\.js$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3225:CL_TYPE_ZIP:*:(?i)^new order list\.com$:*:*:*:1:*:*
