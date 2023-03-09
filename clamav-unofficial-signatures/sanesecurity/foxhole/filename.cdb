@@ -3313,3 +3313,7 @@ Sanesecurity.Foxhole.Rar_fs3222:CL_TYPE_RAR:*:(?i)^remittance.{0,30}\.exe$:*:*:*
 Sanesecurity.Foxhole.Zip_fs3223:CL_TYPE_ZIP:*:(?i)^rfq\.img\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3224:CL_TYPE_ZIP:*:(?i)^version.{0,30}\.js$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3225:CL_TYPE_ZIP:*:(?i)^new order list\.com$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3226:CL_TYPE_ZIP:*:(?i)^2pkgs 702kgs 1\.44cbm\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3327:CL_TYPE_ZIP:*:(?i)^swift{0,50}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3328:CL_TYPE_ISO9660:*:(?i)document\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Iso_fs3329:CL_TYPE_ISO9660:*:(?i)pago_de_\.exe$:*:*:*:*:*:*
