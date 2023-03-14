@@ -3318,3 +3318,7 @@ Sanesecurity.Foxhole.Zip_fs3327:CL_TYPE_ZIP:*:(?i)^swift{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3328:CL_TYPE_ISO9660:*:(?i)document\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs3329:CL_TYPE_ISO9660:*:(?i)pago_de_\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Tar_fs3230:CL_TYPE_POSIX_TAR:*:(?i)pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3231:CL_TYPE_RAR:*:(?i)^quotation_copy\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3232:CL_TYPE_RAR:*:(?i)^cv\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3233:CL_TYPE_RAR:*:(?i)^pt\. meidoh indonesia\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.7Zip_fs3234:CL_TYPE_7Z:*:(?i)^inv-.{0,30}pdf\.exe$:*:*:*:*:*:*
