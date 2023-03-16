@@ -3329,3 +3329,10 @@ Sanesecurity.Foxhole.7Zip_fs3328:CL_TYPE_7Z:*:(?i)^booking information\.exe$:*:*
 Sanesecurity.Foxhole.7Zip_fs3329:CL_TYPE_7Z:*:(?i)_pdf\.scr$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs3330:CL_TYPE_ZIP:*:(?i)^statement-.{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3331:CL_TYPE_ZIP:*:(?i)^copper bronze accessories\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3332:CL_TYPE_ZIP:*:(?i)^dociumentdocquatro\.msi$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3333:CL_TYPE_ZIP:*:(?i)^new inquiry\.com$:*:*:*:1:*:*
+Sanesecurity.Foxhole.7Zip_fs3334:CL_TYPE_7Z:*:(?i)^invoice .{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.7Zip_fs3335:CL_TYPE_7Z:*:(?i)^delivery note .{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3336:CL_TYPE_RAR:*:(?i),pdf\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3337:CL_TYPE_ZIP:*:(?i)^factura.{0,30}\.exe\.gz$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3338:CL_TYPE_ZIP:*:(?i)^ayment_.{0,30}\.exe$:*:*:*:1:*:*
