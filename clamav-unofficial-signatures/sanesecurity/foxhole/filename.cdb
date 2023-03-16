@@ -3314,7 +3314,18 @@ Sanesecurity.Foxhole.Zip_fs3223:CL_TYPE_ZIP:*:(?i)^rfq\.img\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3224:CL_TYPE_ZIP:*:(?i)^version.{0,30}\.js$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3225:CL_TYPE_ZIP:*:(?i)^new order list\.com$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3226:CL_TYPE_ZIP:*:(?i)^2pkgs 702kgs 1\.44cbm\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs3327:CL_TYPE_ZIP:*:(?i)^swift{0,50}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3327:CL_TYPE_ZIP:*:(?i)^swift.{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3328:CL_TYPE_ISO9660:*:(?i)document\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Iso_fs3329:CL_TYPE_ISO9660:*:(?i)pago_de_\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Tar_fs3230:CL_TYPE_POSIX_TAR:*:(?i)pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3231:CL_TYPE_RAR:*:(?i)^quotation_copy\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3232:CL_TYPE_RAR:*:(?i)^cv\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3233:CL_TYPE_RAR:*:(?i)^pt\. meidoh indonesia\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.7Zip_fs3234:CL_TYPE_7Z:*:(?i)^inv-.{0,30}pdf\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3235:CL_TYPE_RAR:*:(?i)^shipping docs\.vbs$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3236:CL_TYPE_RAR:*:(?i)^weiss technik\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3327:CL_TYPE_ISO9660:*:(?i)rrq_.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.7Zip_fs3328:CL_TYPE_7Z:*:(?i)^booking information\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.7Zip_fs3329:CL_TYPE_7Z:*:(?i)_pdf\.scr$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3330:CL_TYPE_ZIP:*:(?i)^statement-.{0,50}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3331:CL_TYPE_ZIP:*:(?i)^copper bronze accessories\.exe$:*:*:*:1:*:*
