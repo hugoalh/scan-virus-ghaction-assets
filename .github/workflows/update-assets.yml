@@ -1,8 +1,7 @@
-name: "Update Assets"
+name: "Update - Assets"
 on:
   schedule:
     - cron: "0 0 * * *"
-    - cron: "0 12 * * *"
   workflow_dispatch:
     inputs:
       flags:
@@ -13,29 +12,19 @@ concurrency:
   cancel-in-progress: false
 jobs:
   update-assets:
-    name: "Update Assets"
+    name: "Update - Assets"
     runs-on: "ubuntu-latest"
     steps:
       - name: "Checkout Repository"
         uses: "actions/checkout@v3.4.0"
         with:
           fetch-depth: 0
-      - name: "Config Git"
-        run: |
-          git --no-pager config user.name github-actions
-          git --no-pager config user.email github-actions@github.com
-        shell: "sh"
+      - name: "Setup PowerShell Toolkit"
+        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@1.1.0"
       - name: "Invoke Updater"
-        id: "updater"
         run: |
-          pwsh -NonInteractive ./_updater.ps1 -Verbose
+          pwsh -NonInteractive ./_updater.ps1
         env:
           INPUT_FLAGS: "${{github.event.inputs.flags}}"
           INPUT_SCHEDULE: "${{github.event.schedule}}"
-        shell: "sh"
-      - name: "Push Git Commit"
-        run: |
-          git --no-pager add --all
-          git --no-pager commit --message="Update assets on ${{steps.updater.outputs.timestamp}}"
-          git --no-pager push
         shell: "sh"
