@@ -20,11 +20,23 @@ jobs:
         with:
           fetch-depth: 0
       - name: "Setup PowerShell Toolkit"
-        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@1.1.0"
+        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.1.0"
+      - name: "Config Git"
+        run: |
+          git --no-pager config user.name github-actions
+          git --no-pager config user.email github-actions@github.com
+        shell: "sh"
       - name: "Invoke Updater"
+        id: "updater"
         run: |
           pwsh -NonInteractive ./_updater.ps1
         env:
           INPUT_FLAGS: "${{github.event.inputs.flags}}"
           INPUT_SCHEDULE: "${{github.event.schedule}}"
+        shell: "sh"
+      - name: "Push Git Commit"
+        run: |
+          git --no-pager add --all
+          git --no-pager commit --message="Update assets on ${{steps.updater.outputs.timestamp}}"
+          git --no-pager push
         shell: "sh"

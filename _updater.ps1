@@ -1,5 +1,4 @@
-#Requires -PSEdition Core
-#Requires -Version 7.2
+#Requires -PSEdition Core -Version 7.2
 $Script:ErrorActionPreference = 'Stop'
 Import-Module -Name 'hugoalh.GitHubActionsToolkit' -Scope 'Local'
 Write-Host -Object 'Initialize.'
@@ -14,9 +13,6 @@ Write-Host -Object 'Initialize.'
 [DateTime]$TimeBuffer = (Get-Date -Date $TimeInvoke -AsUTC).AddMinutes(-30)
 [String]$TimeCommit = Get-Date -Date $TimeInvoke -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
 Write-Host -Object "$($PSStyle.Bold)Commit/Invoke Time: $($PSStyle.Reset)$TimeCommit"
-Write-Host -Object 'Config Git.'
-git --no-pager config 'user.name' 'github-actions'
-git --no-pager config 'user.email' 'github-actions@github.com'
 Write-Host -Object 'Import updater event trigger.'
 [AllowEmptyString()][String]$InputEvent = ($Env:GITHUB_EVENT_NAME ?? '') -ireplace '_', '-'
 If ($InputEvent -inotin @('schedule', 'workflow-dispatch')) {
@@ -127,7 +123,5 @@ Set-Content -LiteralPath $MetadataFilePath -Value (
 	$Metadata |
 		ConvertTo-Json -Depth 100 -Compress
 ) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
-Write-Host -Object 'Push Git commit.'
-git --no-pager add --all
-Invoke-Expression -Command "git --no-pager commit --message=`"Update assets on $TimeCommit`""
-git --no-pager push
+Write-Host -Object 'Conclusion.'
+Set-GitHubActionsOutput -Name 'timestamp' -Value $TimeCommit
