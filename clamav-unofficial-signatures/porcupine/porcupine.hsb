@@ -1,4 +1,5 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+724f7aa94d430ad41ef9020765b7fad0:702059:Porcupine.VBA.Downloader.Agent.YVU.104411:73
 e15bc0d72cc20fd4ed320a5c64dd92f5:710210:Porcupine.VBA.Downloader.Agent.YVU.104270:73
 7b3b169cc4b35c27866538814f311dc4:708168:Porcupine.VBA.Downloader.Agent.YVU.104269:73
 ddb629b20d423dda3e6faee23b9a4a9e:724466:Porcupine.VBA.Downloader.Agent.YVU.104245:73
@@ -403,10 +404,3 @@ d3e650f0f23e54a6505072d5d000e67c:43320:Porcupine.Unclassified.93993:73
 7089c3843e40bd4502f95937460da237:403526:Porcupine.Trojan.Win32.Guloader.gen.93992:73
 c647ab911862f2b75ceb0d762334f055:293888:Porcupine.Win32.Exploit.CVE-2017-11882.F.93987:73
 0d61295fe2cae597e4f68c5b29191cd3:854670:Porcupine.Trojan.PSW.MSIL.Agensla.gen.93976:73
-54696803ea251092d5a61aa76e3a8156:378940:Porcupine.Trojan.PSW.Win32.Agensla.gen.93971:73
-25f85c69d6b5a454ba28b108f3919031:394600:Porcupine.Trojan.PSW.Win32.Agensla.gen.93970:73
-92c58afe23acd76e5f0ab0c8f0f0394e:11803:Porcupine.VBA.Subdoc.B.93968:73
-e69184bad1707288436272353f3f92d5:385855:Porcupine.Trojan.93963:73
-de6ba93107b11c0183db0163dfaeec87:29040:Porcupine.PDF.Phishing.A.Gen.93784:73
-1be03d974e83f103f440c31ba2d3bf6a:290316:Porcupine.JS.Downloader.Agent.ZLI.93753:73
-5d6cc3be61be6da345351e77e0e2d364:260096:Porcupine.Win32.Formbook.AK.93752:73

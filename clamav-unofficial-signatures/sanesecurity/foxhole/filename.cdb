@@ -3335,7 +3335,8 @@ Sanesecurity.Foxhole.7Zip_fs3334:CL_TYPE_7Z:*:(?i)^invoice .{0,30}\.exe$:*:*:*:*
 Sanesecurity.Foxhole.7Zip_fs3335:CL_TYPE_7Z:*:(?i)^delivery note .{0,30}\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs3336:CL_TYPE_RAR:*:(?i),pdf\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3337:CL_TYPE_ZIP:*:(?i)^factura.{0,30}\.exe\.gz$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs3338:CL_TYPE_ZIP:*:(?i)^ayment_.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3338:CL_TYPE_ZIP:*:(?i)^payment_.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Cab_fs3339:CL_TYPE_MSCAB:*:(?i)^po.{1,30}[\.*]exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3340:CL_TYPE_RAR:*:(?i)^urgent reguest\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3341:CL_TYPE_RAR:*:(?i)^invoice and packing list\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3342:CL_TYPE_ZIP:*:(?i)^latest rate\.exe$:*:*:*:1:*:*
