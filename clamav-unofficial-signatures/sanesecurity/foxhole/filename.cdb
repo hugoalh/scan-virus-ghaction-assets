@@ -3340,3 +3340,6 @@ Sanesecurity.Foxhole.Cab_fs3339:CL_TYPE_MSCAB:*:(?i)^po.{1,30}[\.*]exe$:*:*:*:1:
 Sanesecurity.Foxhole.Rar_fs3340:CL_TYPE_RAR:*:(?i)^urgent reguest\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3341:CL_TYPE_RAR:*:(?i)^invoice and packing list\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3342:CL_TYPE_ZIP:*:(?i)^latest rate\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3343:CL_TYPE_RAR:*:(?i)^fedex receipt.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Iso_fs3344:CL_TYPE_ISO9660:*:(?i)-[0-9]{0,10}\.vbs$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3345:CL_TYPE_RAR:*:(?i)rfq-.{0,30}\.exe$:*:*:*:1:*:*
