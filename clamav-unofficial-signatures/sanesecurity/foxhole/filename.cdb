@@ -3343,3 +3343,14 @@ Sanesecurity.Foxhole.Zip_fs3342:CL_TYPE_ZIP:*:(?i)^latest rate\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3343:CL_TYPE_RAR:*:(?i)^fedex receipt.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Iso_fs3344:CL_TYPE_ISO9660:*:(?i)-[0-9]{0,10}\.vbs$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs3345:CL_TYPE_RAR:*:(?i)rfq-.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3346:CL_TYPE_ZIP:*:(?i)^creatures\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3347:CL_TYPE_ZIP:*:(?i)^dolorem.js$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3348:CL_TYPE_ZIP:*:(?i)^contratos.{0,30}\.iso$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3349:CL_TYPE_ZIP:*:(?i)^agenzia/agenzia\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3350:CL_TYPE_ZIP:*:(?i)^azienda/azienda\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3351:CL_TYPE_ZIP:*:(?i)^transf-a4-simplex.{0,30}\.msi$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3352:CL_TYPE_ZIP:*:(?i)^loader_planner_5d\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.7Zip_fs3353:CL_TYPE_7Z:*:(?i)^dhl po.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3354:CL_TYPE_RAR:*:(?i) pdf\.vbs$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3355:CL_TYPE_RAR:*:(?i)doc_factura\.cmd$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3356:CL_TYPE_RAR:*:(?i)shipment_notification\.exe$:*:*:*:1:*:*
