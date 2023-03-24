@@ -3354,3 +3354,12 @@ Sanesecurity.Foxhole.7Zip_fs3353:CL_TYPE_7Z:*:(?i)^dhl po.{0,30}\.exe$:*:*:*:*:*
 Sanesecurity.Foxhole.Rar_fs3354:CL_TYPE_RAR:*:(?i) pdf\.vbs$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3355:CL_TYPE_RAR:*:(?i)doc_factura\.cmd$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3356:CL_TYPE_RAR:*:(?i)shipment_notification\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3357:CL_TYPE_ZIP:*:(?i)^agenzia_entrate/agenzia_entrate\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3358:CL_TYPE_ZIP:*:(?i)^cliente/cliente\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3359:CL_TYPE_ZIP:*:(?i)^documenti/documenti\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3360:CL_TYPE_ZIP:*:(?i)^funzioni/funzioni\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3361:CL_TYPE_ZIP:*:(?i)^impresa/impresa\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3362:CL_TYPE_ZIP:*:(?i)^informazioni/informazioni\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3363:CL_TYPE_ZIP:*:(?i)^normativa/normativa\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3364:CL_TYPE_ZIP:*:(?i)^organizzazione/organizzazione\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3365:CL_TYPE_ZIP:*:(?i)^servizi/servizi\.url$:*:*:*:2:*:*
