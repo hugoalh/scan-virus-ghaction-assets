@@ -3363,3 +3363,9 @@ Sanesecurity.Foxhole.Zip_fs3362:CL_TYPE_ZIP:*:(?i)^informazioni/informazioni\.ur
 Sanesecurity.Foxhole.Zip_fs3363:CL_TYPE_ZIP:*:(?i)^normativa/normativa\.url$:*:*:*:2:*:*
 Sanesecurity.Foxhole.Zip_fs3364:CL_TYPE_ZIP:*:(?i)^organizzazione/organizzazione\.url$:*:*:*:2:*:*
 Sanesecurity.Foxhole.Zip_fs3365:CL_TYPE_ZIP:*:(?i)^servizi/servizi\.url$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Zip_fs3366:CL_TYPE_ZIP:*:(?i)^doc\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3367:CL_TYPE_ZIP:*:(?i)^soa\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3368:CL_TYPE_ZIP:*:(?i)^iv.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3369:CL_TYPE_ZIP:*:(?i)^payment.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3370:CL_TYPE_RAR:*:(?i)^po#.{0,30}\.com$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3371:CL_TYPE_RAR:*:(?i)^invoice#.{0,30}\.com$:*:*:*:1:*:*
