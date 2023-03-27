@@ -2,6 +2,7 @@
 $Script:ErrorActionPreference = 'Stop'
 Import-Module -Name 'hugoalh.GitHubActionsToolkit' -Scope 'Local'
 Write-Host -Object 'Initialize.'
+$CurrentWorkingDirectory = Get-Location
 [String[]]$GitIgnores = Get-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_updater_gitignore.txt') -Encoding 'UTF8NoBOM' |
 	Where-Object -FilterScript { $_.Length -igt 0 }
 [Hashtable]$ImportCsvParameters_Tsv = @{
@@ -10,118 +11,90 @@ Write-Host -Object 'Initialize.'
 }
 [String]$MetadataFilePath = Join-Path -Path $PSScriptRoot -ChildPath 'metadata.json'
 [DateTime]$TimeInvoke = Get-Date -AsUTC
-[DateTime]$TimeBuffer = (Get-Date -Date $TimeInvoke -AsUTC).AddMinutes(-30)
+[DateTime]$TimeBuffer = $TimeInvoke.AddHours(-1)
 [String]$TimeCommit = Get-Date -Date $TimeInvoke -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
-Write-Host -Object "$($PSStyle.Bold)Commit/Invoke Time: $($PSStyle.Reset)$TimeCommit"
-Write-Host -Object 'Import updater event trigger.'
-[AllowEmptyString()][String]$InputEvent = ($Env:GITHUB_EVENT_NAME ?? '') -ireplace '_', '-'
-If ($InputEvent -inotin @('schedule', 'workflow-dispatch')) {
-	Write-GitHubActionsFail -Message "``$InputEvent`` is not a valid updater event trigger!"
-	Exit 1
-}
-[String[]]$ConditionsAvailable = @(
-	"event:$InputEvent"
-)
-Write-Host -Object 'Import updater flags.'
-[AllowEmptyString()][String]$InputFlags = $Env:INPUT_FLAGS
-If ($InputFlags.Length -igt 0) {
-	ForEach ($Item In (
-		[String[]]($InputFlags -isplit ';') |
-			ForEach-Object -Process { $_.Trim() } |
-			Where-Object -FilterScript { $_.Length -igt 0 }
-	)) {
-		$ConditionsAvailable += "flag:$Item"
-	}
-}
-Write-Host -Object 'Import updater scheduler.'
-[AllowEmptyString()][String]$InputSchedule = $Env:INPUT_SCHEDULE
-If ($InputSchedule.Length -igt 0) {
-	[String]$ScheduleHour = $InputSchedule -ireplace '^.+ (?<Hour>.+) .+ .+ .+$', '${Hour}'
-	$ConditionsAvailable += "timetoken:$(($ScheduleHour -imatch '^(?:1?\d|2[0-3])$') ? $ScheduleHour : $TimeInvoke.Hour) $($TimeInvoke.Day) $($TimeInvoke.Month) $($TimeInvoke.DayOfWeek.GetHashCode())"
-}
-$ConditionsAvailable = $ConditionsAvailable |
-	Sort-Object -Unique
-Write-Host -Object "$($PSStyle.Bold)Conditions Available ($($ConditionsAvailable.Count)): $($PSStyle.BoldOff)$(
-	$ConditionsAvailable |
-		Join-String -Separator ', '
-)"
-Write-Host -Object 'Begin update assets.'
-ForEach ($AssetDirectory In @('clamav-signatures-ignore-presets', 'clamav-unofficial-signatures', 'yara-rules')) {
-	Write-Host -Object "At ``$AssetDirectory``."
-	Write-Host -Object 'Read asset index.'
-	[String]$AssetRoot = Join-Path -Path $PSScriptRoot -ChildPath $AssetDirectory
-	[String]$AssetIndexFileFullPath = Join-Path -Path $AssetRoot -ChildPath 'index.tsv'
-	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFileFullPath @ImportCsvParameters_Tsv
-	[String[]]$GitFinishSessions = @()
-	For ($AssetIndexNumber = 0; $AssetIndexNumber -ilt $AssetIndex.Count; $AssetIndexNumber++) {
-		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexNumber]
-		Write-Host -Object "At ``$AssetDirectory/$($AssetIndexItem.Name)``."
-		If (
-			($ConditionsAvailable -imatch $AssetIndexItem.UpdateCondition).Count -ieq 0 -or
-			(Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC) -igt $TimeBuffer
-		) {
-			Write-Host -Object "No need to update ``$AssetDirectory/$($AssetIndexItem.Name)``."
-			Continue
-		}
-		Write-Host -Object "Need to update ``$AssetDirectory/$($AssetIndexItem.Name)``."
-		If ($AssetIndexItem.UpdateMethod -ieq 'Git') {
-			[String]$GitName = $AssetIndexItem.Location -isplit '[\\\/]' |
-				Select-Object -First 1
-			[String]$GitSession = "$GitName::$($AssetIndexItem.Source)"
-			If ($GitFinishSessions -icontains $GitSession) {
-				Write-Host -Object "Skip update ``$AssetDirectory/$($AssetIndexItem.Name)``, repeated Git repository ``$($AssetIndexItem.Source)``."
+Write-Host -Object "$($PSStyle.Bold)Timestamp: $($PSStyle.Reset)$TimeCommit"
+Function ConvertTo-JsonTabIndent {
+	[CmdletBinding()]
+	[OutputType([String])]
+	Param (
+		[Parameter(Mandatory = $True, Position = 0)][Alias('Input', 'Object')]$InputObject
+	)
+	(ConvertTo-Json -InputObject $InputObject -Depth 100) -isplit '\r?\n' |
+		ForEach-Object -Process {
+			If ($_ -imatch '^(?:  )+') {
+				$_ -ireplace "^$($Matches[0])", ("`t" * ($Matches[0].Length / 2)) |
+					Write-Output
 			}
 			Else {
-				Write-Host -Object "Update ``$AssetDirectory/$($AssetIndexItem.Name)`` via Git repository ``$($AssetIndexItem.Source)``."
-				[String]$GitWorkingDirectoryRoot = Join-Path -Path $AssetRoot -ChildPath $GitName
-				If (Test-Path -LiteralPath $GitWorkingDirectoryRoot) {
-					Remove-Item -LiteralPath $GitWorkingDirectoryRoot -Recurse -Force -Confirm:$False
-				}
-				Set-Location -LiteralPath $AssetRoot
-				Try {
-					Invoke-Expression -Command "git --no-pager clone --quiet --recurse-submodules `"$($AssetIndexItem.Source)`" `"$GitName`""
-					Get-ChildItem -LiteralPath $GitWorkingDirectoryRoot -Include $GitIgnores -Recurse -Force |
-						Remove-Item -Recurse -Force -Confirm:$False
-				}
-				Catch {
-					Write-GitHubActionsWarning -Message $_
-				}
-				Set-Location -LiteralPath $PSScriptRoot
-				$GitFinishSessions += $GitSession
+				Write-Output -InputObject $_
 			}
+		} |
+		Join-String -Separator "`n"
+}
+Write-Host -Object 'Update assets.'
+ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara')) {
+	[String]$AssetDirectoryPath = Join-Path -Path $PSScriptRoot -ChildPath $AssetDirectoryName
+	Write-Host -Object "Read ``$AssetDirectoryName`` asset index."
+	[String]$AssetIndexFilePath = Join-Path -Path $AssetDirectoryPath -ChildPath 'index.tsv'
+	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFilePath @ImportCsvParameters_Tsv
+	For ($AssetIndexRow = 0; $AssetIndexRow -ilt $AssetIndex.Count; $AssetIndexRow++) {
+		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexRow]
+		If ($AssetIndexItem.Group.Length -igt 0) {
+			Continue
 		}
-		ElseIf ($AssetIndexItem.UpdateMethod -ieq 'WebRequest') {
-			Write-Host -Object "Update ``$AssetDirectory/$($AssetIndexItem.Name)`` via web request ``$($AssetIndexItem.Source)``."
-			[String]$OutFileFullName = Join-Path -Path $AssetRoot -ChildPath $AssetIndexItem.Location
-			[String]$OutFileRoot = Split-Path -Path $OutFileFullName -Parent
-			If (!(Test-Path -LiteralPath $OutFileRoot -PathType 'Container')) {
-				New-Item -Path $OutFileRoot -ItemType 'Directory' -Confirm:$False |
-					Out-Null
+		Enter-GitHubActionsLogGroup -Title "At ``$AssetDirectoryName/$($AssetIndexItem.Name)``."
+		If ((Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC) -igt $TimeBuffer) {
+			Write-Host -Object 'No need to update.'
+			Exit-GitHubActionsLogGroup
+			Continue
+		}
+		Write-Host -Object 'Need to update.'
+		If ($AssetIndexItem.Remote -imatch '^https:\/\/github\.com\/[\da-z_.-]+\/[\da-z_.-]+\.git$') {
+			[String]$GitWorkingDirectoryName = $AssetIndexItem.Path -isplit '[\\\/]' |
+				Select-Object -First 1
+			[String]$GitWorkingDirectoryPath = Join-Path -Path $AssetDirectoryPath -ChildPath $GitWorkingDirectoryName
+			If (Test-Path -LiteralPath $GitWorkingDirectoryPath) {
+				Write-Host -Object "Remove old assets."
+				Remove-Item -LiteralPath $GitWorkingDirectoryPath -Recurse -Force -Confirm:$False
+			}
+			Write-Host -Object "Update via Git repository ``$($AssetIndexItem.Remote)``."
+			Set-Location -LiteralPath $AssetDirectoryPath
+			Try {
+				Invoke-Expression -Command "git --no-pager clone --quiet --recurse-submodules `"$($AssetIndexItem.Remote)`" `"$GitWorkingDirectoryName`""
+				Get-ChildItem -LiteralPath $GitWorkingDirectoryPath -Include $GitIgnores -Recurse -Force |
+					Remove-Item -Force -Confirm:$False -ErrorAction 'Continue'
+			}
+			Catch {
+				Write-GitHubActionsWarning -Message $_
+			}
+			Set-Location -LiteralPath $CurrentWorkingDirectory.Path
+		}
+		Else {
+			Write-Host -Object "Update via web request ``$($AssetIndexItem.Remote)``."
+			[String]$OutFilePath = Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path
+			[String]$OutFilePathParent = Split-Path -Path $OutFilePath -Parent
+			If (!(Test-Path -LiteralPath $OutFilePathParent -PathType 'Container')) {
+				$Null = New-Item -Path $OutFilePathParent -ItemType 'Directory' -Confirm:$False
 			}
 			Try {
-				Invoke-WebRequest -Uri $AssetIndexItem.Source -UseBasicParsing -MaximumRedirection 1 -MaximumRetryCount 3 -RetryIntervalSec 10 -Method 'Get' -OutFile $OutFileFullName
+				Invoke-WebRequest -Uri $AssetIndexItem.Remote -UseBasicParsing -MaximumRedirection 5 -MaximumRetryCount 5 -RetryIntervalSec 10 -Method 'Get' -OutFile $OutFilePath
 			}
 			Catch {
 				Write-GitHubActionsWarning -Message $_
 			}
 		}
-		Else {
-			Write-GitHubActionsWarning -Message "Unable to update ``$AssetDirectory/$($AssetIndexItem.Name)``, no available update method!"
-		}
-		$AssetIndex[$AssetIndexNumber].LastUpdateTime = $TimeCommit
+		$AssetIndex[$AssetIndexRow].Timestamp = $TimeCommit
+		Exit-GitHubActionsLogGroup
 	}
-	Write-Host -Object "At ``$AssetDirectory``."
-	Write-Host -Object 'Update asset index.'
+	Write-Host -Object "Update ``$AssetDirectoryName`` asset index."
 	$AssetIndex |
-		Export-Csv -LiteralPath $AssetIndexFileFullPath @ImportCsvParameters_Tsv -NoTypeInformation -UseQuotes 'AsNeeded' -Confirm:$False
+		Export-Csv -LiteralPath $AssetIndexFilePath @ImportCsvParameters_Tsv -NoTypeInformation -UseQuotes 'AsNeeded' -Confirm:$False
 }
-Write-Host -Object 'Write metadata.'
+Write-Host -Object 'Update metadata.'
 [PSCustomObject]$Metadata = Get-Content -LiteralPath $MetadataFilePath -Raw -Encoding 'UTF8NoBOM' |
 	ConvertFrom-Json -Depth 100
 $Metadata.Timestamp = $TimeCommit
-Set-Content -LiteralPath $MetadataFilePath -Value (
-	$Metadata |
-		ConvertTo-Json -Depth 100 -Compress
-) -Confirm:$False -NoNewline -Encoding 'UTF8NoBOM'
+Set-Content -LiteralPath $MetadataFilePath -Value (ConvertTo-JsonTabIndent -InputObject $Metadata) -Confirm:$False -Encoding 'UTF8NoBOM'
 Write-Host -Object 'Conclusion.'
 Set-GitHubActionsOutput -Name 'timestamp' -Value $TimeCommit

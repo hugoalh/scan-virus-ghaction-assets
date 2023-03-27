@@ -1,18 +1,17 @@
-name: "Update - Assets"
+name: "Update Assets"
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-    inputs:
-      flags:
-        description: "{String[]} Flags."
-        required: true
 concurrency:
   group: "scan-virus-ghaction-assets-updater"
   cancel-in-progress: false
+defaults:
+  run:
+    shell: "sh"
 jobs:
   update-assets:
-    name: "Update - Assets"
+    name: "Update Assets"
     runs-on: "ubuntu-latest"
     steps:
       - name: "Checkout Repository"
@@ -23,20 +22,14 @@ jobs:
         uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.1.0"
       - name: "Config Git"
         run: |
-          git --no-pager config user.name github-actions
-          git --no-pager config user.email github-actions@github.com
-        shell: "sh"
+          git --no-pager config "user.name" "github-actions"
+          git --no-pager config "user.email" "github-actions@github.com"
       - name: "Invoke Updater"
         id: "updater"
         run: |
           pwsh -NonInteractive ./_updater.ps1
-        env:
-          INPUT_FLAGS: "${{github.event.inputs.flags}}"
-          INPUT_SCHEDULE: "${{github.event.schedule}}"
-        shell: "sh"
       - name: "Push Git Commit"
         run: |
           git --no-pager add --all
           git --no-pager commit --message="Update assets on ${{steps.updater.outputs.timestamp}}"
           git --no-pager push
-        shell: "sh"
