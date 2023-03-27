@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: "Setup PowerShell Toolkit"
-        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.1.0"
+        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.2.0"
       - name: "Config Git"
         run: |
           git --no-pager config "user.name" "github-actions"

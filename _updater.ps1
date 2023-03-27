@@ -44,7 +44,7 @@ ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara')) {
 			Continue
 		}
 		Enter-GitHubActionsLogGroup -Title "At ``$AssetDirectoryName/$($AssetIndexItem.Name)``."
-		If ((Get-Date -Date $AssetIndexItem.LastUpdateTime -AsUTC) -igt $TimeBuffer) {
+		If ((Get-Date -Date $AssetIndexItem.Timestamp -AsUTC) -igt $TimeBuffer) {
 			Write-Host -Object 'No need to update.'
 			Exit-GitHubActionsLogGroup
 			Continue
