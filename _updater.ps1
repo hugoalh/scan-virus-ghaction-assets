@@ -61,14 +61,14 @@ ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara')) {
 			Write-Host -Object "Update via Git repository ``$($AssetIndexItem.Remote)``."
 			Set-Location -LiteralPath $AssetDirectoryPath
 			Try {
-				Invoke-Expression -Command "git --no-pager clone --quiet --recurse-submodules `"$($AssetIndexItem.Remote)`" `"$GitWorkingDirectoryName`""
-				Get-ChildItem -LiteralPath $GitWorkingDirectoryPath -Include $GitIgnores -Recurse -Force |
-					Remove-Item -Force -Confirm:$False -ErrorAction 'Continue'
+				Invoke-Expression -Command "git --no-pager clone --recurse-submodules `"$($AssetIndexItem.Remote)`" `"$GitWorkingDirectoryName`""
 			}
 			Catch {
 				Write-GitHubActionsWarning -Message $_
 			}
 			Set-Location -LiteralPath $CurrentWorkingDirectory.Path
+			Get-ChildItem -LiteralPath $GitWorkingDirectoryPath -Include $GitIgnores -Recurse -Force |
+				Remove-Item -Force -Confirm:$False -ErrorAction 'Continue'
 		}
 		Else {
 			Write-Host -Object "Update via web request ``$($AssetIndexItem.Remote)``."
