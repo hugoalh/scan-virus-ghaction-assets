@@ -68,7 +68,14 @@ ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara')) {
 			}
 			Set-Location -LiteralPath $CurrentWorkingDirectory.Path
 			Get-ChildItem -LiteralPath $GitWorkingDirectoryPath -Include $GitIgnores -Recurse -Force |
-				Remove-Item -Force -Confirm:$False -ErrorAction 'Continue'
+				ForEach-Object -Process {
+					Try {
+						Remove-Item -LiteralPath $_.FullName -Recurse -Force -Confirm:$False -ErrorAction 'Continue'
+					}
+					Catch {
+						Write-Warning -Message $_
+					}
+				}
 		}
 		Else {
 			Write-Host -Object "Update via web request ``$($AssetIndexItem.Remote)``."
