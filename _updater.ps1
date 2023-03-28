@@ -34,7 +34,7 @@ Function ConvertTo-JsonTabIndent {
 		Join-String -Separator "`n"
 }
 Write-Host -Object 'Update assets.'
-ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara')) {
+ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara-unofficial')) {
 	[String]$AssetDirectoryPath = Join-Path -Path $PSScriptRoot -ChildPath $AssetDirectoryName
 	Write-Host -Object "Read ``$AssetDirectoryName`` asset index."
 	[String]$AssetIndexFilePath = Join-Path -Path $AssetDirectoryPath -ChildPath 'index.tsv'
