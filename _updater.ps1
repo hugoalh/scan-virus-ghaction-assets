@@ -13,6 +13,7 @@ $CurrentWorkingDirectory = Get-Location
 [DateTime]$TimeInvoke = Get-Date -AsUTC
 [DateTime]$TimeBuffer = $TimeInvoke.AddHours(-1)
 [String]$TimeCommit = Get-Date -Date $TimeInvoke -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
+[Boolean]$ShouldPush = $False
 Write-Host -Object "$($PSStyle.Bold)Timestamp: $($PSStyle.Reset)$TimeCommit"
 Function ConvertTo-JsonTabIndent {
 	[CmdletBinding()]
@@ -85,6 +86,7 @@ ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara')) {
 			}
 		}
 		$AssetIndex[$AssetIndexRow].Timestamp = $TimeCommit
+		$ShouldPush = $True
 		Exit-GitHubActionsLogGroup
 	}
 	Write-Host -Object "Update ``$AssetDirectoryName`` asset index."
@@ -97,4 +99,5 @@ Write-Host -Object 'Update metadata.'
 $Metadata.Timestamp = $TimeCommit
 Set-Content -LiteralPath $MetadataFilePath -Value (ConvertTo-JsonTabIndent -InputObject $Metadata) -Confirm:$False -Encoding 'UTF8NoBOM'
 Write-Host -Object 'Conclusion.'
+Set-GitHubActionsOutput -Name 'should_push' -Value $ShouldPush.ToString()
 Set-GitHubActionsOutput -Name 'timestamp' -Value $TimeCommit
