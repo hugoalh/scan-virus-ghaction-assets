@@ -251,3 +251,79 @@ rule MAL_3CXDesktopApp_MacOS_Backdoor_Mar23 {
       )
       or ( all of ($op*) )
 }
+
+/* 31.03.2023 */
+
+rule APT_MAL_NK_3CX_ICONIC_Stealer_Mar23_1 {
+   meta:
+      description = "Detects ICONIC stealer payload used in the 3CX incident"
+      author = "Florian Roth"
+      reference = "https://github.com/volexity/threat-intel/blob/main/2023/2023-03-30%203CX/attachments/iconicstealer.7z"
+      date = "2023-03-31"
+      score = 80
+      hash1 = "8ab3a5eaaf8c296080fadf56b265194681d7da5da7c02562953a4cb60e147423"
+   strings:
+      
+      $s1 = "{\"HostName\": \"%s\", \"DomainName\": \"%s\", \"OsVersion\": \"%d.%d.%d\"}" wide fullword
+      $s2 = "******************************** %s ******************************" wide fullword
+      $s3 = "AppData\\Local\\BraveSoftware\\Brave-Browser\\User Data" wide fullword
+      $s4 = "AppData\\Roaming\\Mozilla\\Firefox\\Profiles" wide fullword
+      $s5 = "SELECT url, title FROM urls ORDER BY id DESC LIMIT 500" wide fullword
+      $s6 = "TEXT value in %s.%s" ascii fullword
+
+      $op1 = { 48 63 d1 48 63 ce 49 03 d1 49 03 cd 4c 63 c7 e8 87 1f 09 00 8b 45 d0 44 8d 04 37 }
+      $op2 = { 48 8b c8 8b 56 f0 48 89 46 d8 e8 78 8f f8 ff e9 ec 13 00 00 c7 46 20 ff ff ff ff e9 e0 13 00 00 33 ff }
+   condition:
+      uint16(0) == 0x5a4d
+      and filesize < 4000KB 
+      and 4 of them
+      or 6 of them
+}
+
+rule APT_MAL_NK_3CX_macOS_Elextron_App_Mar23_1 {
+   meta:
+      description = "Detects macOS malware used in the 3CX incident"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2023-03-31"
+      score = 80
+      hash1 = "51079c7e549cbad25429ff98b6d6ca02dc9234e466dd9b75a5e05b9d7b95af72"
+      hash2 = "f7ba7f9bf608128894196cf7314f68b78d2a6df10718c8e0cd64dbe3b86bc730"
+   strings:
+      $a1 = "com.apple.security.cs.allow-unsigned-executable-memory" ascii
+      $a2 = "com.electron.3cx-desktop-app" ascii fullword
+
+      $s1 = "s8T/RXMlALbXfowom9qk15FgtdI=" ascii
+      $s2 = "o8NQKPJE6voVZUIGtXihq7lp0cY=" ascii
+   condition:
+      uint16(0) == 0xfacf and
+      filesize < 400KB and (
+         all of ($a*) 
+         and 1 of ($s*)
+      )
+}
+
+rule MAL_3CXDesktopApp_MacOS_UpdateAgent_Mar23 {
+   meta:
+      description = "Detects 3CXDesktopApp MacOS UpdateAgent backdoor component"
+      author = "Florian Roth"
+      reference = "https://twitter.com/patrickwardle/status/1641692164303515653?s=20"
+      date = "2023-03-30"
+      hash = "9e9a5f8d86356796162cee881c843cde9eaedfb3"
+      score = 80
+   strings:
+      $a1 = "/3CX Desktop App/.main_storage" ascii
+
+      $x1 = ";3cx_auth_token_content=%s;__tutma=true"
+
+      $s1 = "\"url\": \"https://"
+      $s3 = "/dev/null"
+      $s4 = "\"AccountName\": \""
+   condition:
+      uint16(0) == 0xfeca 
+      and filesize < 6MB
+      and (
+         1 of ($x*)
+         or ( $a1 and all of ($s*) )
+      ) or all of them
+}
