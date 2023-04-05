@@ -3375,3 +3375,8 @@ Sanesecurity.Foxhole.Iso_fs3374:CL_TYPE_ISO9660:*:(?i)^trial_or\.exe$:*:*:*:*:*:
 Sanesecurity.Foxhole.Iso_fs3375:CL_TYPE_ISO9660:*:(?i)^nr_zamow\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Cab_fs3376:CL_TYPE_MSCAB:*:(?i)^rfq ref.{0,30}\exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Cab_fs3377:CL_TYPE_MSCAB:*:(?i)^rfq\*ref.{0,30}\*exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3378:CL_TYPE_ZIP:*:(?i)^so#.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3379:CL_TYPE_ZIP:*:(?i)^nv-.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3380:CL_TYPE_RAR:*:(?i)swift.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3381:CL_TYPE_ZIP:*:(?i)^new inquiry -.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3382:CL_TYPE_RAR:*:(?i)^po_#.{0,30}\.exe$:*:*:*:1:*:*
