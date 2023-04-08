@@ -1,7 +1,7 @@
-#Requires -PSEdition Core -Version 7.2
+#Requires -PSEdition Core -Version 7.3
 $Script:ErrorActionPreference = 'Stop'
 Import-Module -Name 'hugoalh.GitHubActionsToolkit' -Scope 'Local'
-Write-Host -Object 'Initialize.'
+Enter-GitHubActionsLogGroup -Title 'Initialize.'
 $CurrentWorkingDirectory = Get-Location
 [String[]]$GitIgnores = Get-Content -LiteralPath (Join-Path -Path $PSScriptRoot -ChildPath '_updater_gitignore.txt') -Encoding 'UTF8NoBOM' |
 	Where-Object -FilterScript { $_.Length -igt 0 }
@@ -14,7 +14,7 @@ $CurrentWorkingDirectory = Get-Location
 [DateTime]$TimeBuffer = $TimeInvoke.AddHours(-1)
 [String]$TimeCommit = Get-Date -Date $TimeInvoke -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
 [Boolean]$ShouldPush = $False
-Write-Host -Object "$($PSStyle.Bold)Timestamp: $($PSStyle.Reset)$TimeCommit"
+Write-Host -Object "Timestamp: $TimeCommit"
 Function ConvertTo-JsonTabIndent {
 	[CmdletBinding()]
 	[OutputType([String])]
@@ -33,6 +33,7 @@ Function ConvertTo-JsonTabIndent {
 		} |
 		Join-String -Separator "`n"
 }
+Exit-GitHubActionsLogGroup
 Write-Host -Object 'Update assets.'
 ForEach ($AssetDirectoryName In @('clamav-unofficial', 'yara-unofficial')) {
 	[String]$AssetDirectoryPath = Join-Path -Path $PSScriptRoot -ChildPath $AssetDirectoryName
