@@ -12632,4 +12632,7 @@ Sanesecurity.Jurlbl.bb32f3:4:*:(2e|2f|40|20|3c|5f)696e747569742e62746c7933322e75
 Sanesecurity.Jurlbl.17e8ed:4:*:(2e|2f|40|20|3c|5f)68616e646d6164656b6e6965662e636664(27|22|20|2f|3d|5f|3e|0a|0d|3f|3c|25|23)
 Sanesecurity.Jurlbl.e2ade2:4:*:(2e|2f|40|20|3c|5f)7468656d73746f2e6469676974616c(27|22|20|2f|3d|5f|3e|0a|0d|3f|3c|25|23)
 Sanesecurity.Jurlbl.2ce5b0:4:*:(2e|2f|40|20|3c|5f)6e65636d61732e626f617473(27|22|20|2f|3d|5f|3e|0a|0d|3f|3c|25|23)
+Sanesecurity.Jurlbl.b4c243:4:*:(2e|2f|40|20|3c|5f)636f6e736368657374657272792e636f6d(27|22|20|2f|3d|5f|3e|0a|0d|3f|3c|25|23)
 Sanesecurity.Jurlbl.1e4bcb:4:*:(2e|2f|40|20|3c|5f)616e6572636f6d2e7275(27|22|20|2f|3d|5f|3e|0a|0d|3f|3c|25|23)
+Sanesecurity.Jurlbl.740a09:4:*:(2e|2f|40|20|3c|5f)74757361706861726d612e7573(27|22|20|2f|3d|5f|3e|0a|0d|3f|3c|25|23)
+Sanesecurity.Jurlbl.0f91ac:4:*:(2e|2f|40|20|3c|5f)7363686f6f6c65732e7573(27|22|20|2f|3d|5f|3e|0a|0d|3f|3c|25|23)
