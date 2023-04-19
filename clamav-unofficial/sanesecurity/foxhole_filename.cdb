@@ -3382,3 +3382,4 @@ Sanesecurity.Foxhole.Zip_fs3381:CL_TYPE_ZIP:*:(?i)^new inquiry -.{0,50}\.exe$:*:
 Sanesecurity.Foxhole.Rar_fs3382:CL_TYPE_RAR:*:(?i)^po_#.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3383:CL_TYPE_ZIP:*:(?i)^dhl_awb_no_#awb.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3384:CL_TYPE_ZIP:*:(?i)^catalogue profile -.{0,50}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3385:CL_TYPE_ZIP:*:(?i)^bank details -.{0,50}\.exe$:*:*:*:1:*:*
