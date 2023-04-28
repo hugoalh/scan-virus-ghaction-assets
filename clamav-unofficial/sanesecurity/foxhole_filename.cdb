@@ -3391,3 +3391,4 @@ Sanesecurity.Foxhole.Zip_fs3390:CL_TYPE_ZIP:*:(?i)\.pdf\.exe$:*:*:*:2:*:*
 Sanesecurity.Foxhole.Zip_fs3391:CL_TYPE_ZIP:*:(?i) pdf\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3392:CL_TYPE_ZIP:*:(?i)^shipping notice\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3393:CL_TYPE_ZIP:*:(?i) purchase order\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3394:CL_TYPE_ZIP:*:(?i)^ref .{0,50}\.exe$:*:*:*:1:*:*
