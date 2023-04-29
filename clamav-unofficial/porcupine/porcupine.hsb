@@ -1,4 +1,16 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+c8263d4b2696ac54364c6d96b7000ab4:1245184:Porcupine.Backdoor.Win32.Androm.gen.118960:73
+3044c4f263c5581c8d699db8be26dd38:275429:Porcupine.Trojan.Win32.Strab.gen.118932:73
+c18c7ff9bcb421f01772bf9bc0377e81:257794:Porcupine.Trojan.Win32.Strab.gen.118931:73
+0e0015ad37529829d29e2f26277ab677:94208:Porcupine.Trojan.Ransom.MSIL.Crypmodng.gen.118923:73
+8edd01f9f9a648c109fcc3f1711e330c:56997:Porcupine.Trojan.Ransom.MSIL.Crypmodng.gen.118922:73
+6f1674e8c3136544e5a6195e407661b4:31380:Porcupine.Exploit.MSOffice.CVE.2018.0802.gen.118824:73
+ba07223a894931526fd69b0c2b21221d:296754:Porcupine.VBS.Agent.OXW.118814:73
+a3ac8935c4feb0eef726668c1bd88498:72301:Porcupine.Trojan.118813:73
+f78a39cabfe10c50cbfa7fc702d40538:78260:Porcupine.Trojan.118812:73
+c5ac673f82f2bfc6ebcd19339449e47c:546013:Porcupine.Trojan.MSIL.Taskun.gen.118787:73
+72add58144a60d23afd1e51ae9480d9a:815616:Porcupine.Trojan.MSIL.Taskun.gen.118786:73
+c491e68249ff89e0907b308ebf04cf0d:2535686:Porcupine.DangerousObject.Multi.Generic.118775:73
 6e8becb739ad5acba3ac59d8882d8b0c:352053:Porcupine.Trojan.Downloader.Win32.Minix.gen.118699:73
 1b82ea9ffd34d04b7eb9dbfddbaa35be:349358:Porcupine.Trojan.Downloader.Win32.Minix.gen.118698:73
 8fc2e883931e5b10652a053fd52c372a:562240:Porcupine.Trojan.Downloader.Win32.Minix.gen.118670:73
@@ -178,10 +190,3 @@ d0c5de55d3a2a9fcb906332a87bfe116:284995:Porcupine.MSIL.Kryptik.AHUA.108359:73
 85bb1cb33b7a350c63fd44638b2df011:1245184:Porcupine.Unclassified.108324:73
 87c080f7ea89e39bde1fd8459c108db9:727110:Porcupine.Trojan.PSW.MSIL.Agensla.gen.108323:73
 250b4943ffac0d4945b45cd6c626671b:727106:Porcupine.Trojan.PSW.MSIL.Agensla.gen.108322:73
-4632d2db11245d5a21cdd5ebf2a6b057:1363968:Porcupine.BAT.Downloader.Agent.OLP.108262:73
-ade73d6c10a1ed37d2cc194f78f624b9:673324:Porcupine.BAT.Downloader.Agent.OLP.108261:73
-49940e3497ab4e1bdaf5fd2e1a061042:220656:Porcupine.Unclassified.108129:73
-d3337ba639317d23aa8747ba5c90a6b9:820224:Porcupine.Trojan.Multi.Taskun.108037:73
-411299a5fc31934084379585bc17ce03:735420:Porcupine.Trojan.Multi.Taskun.108036:73
-bb692c2529d69ab4e893ca2e30b0d8eb:810496:Porcupine.Trojan.MSIL.Taskun.gen.107927:73
-7d82cb4012eac782fba516bbdf9a3343:731352:Porcupine.Trojan.MSIL.Taskun.gen.107926:73
