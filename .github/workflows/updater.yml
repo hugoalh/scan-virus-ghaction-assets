@@ -1,7 +1,7 @@
 name: "Updater"
 on:
   schedule:
-    - cron: "0 0 * * SUN"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 defaults:
   run:
@@ -17,7 +17,7 @@ jobs:
       - name: "Checkout Repository"
         uses: "actions/checkout@v3.5.3"
       - name: "Setup PowerShell Toolkit"
-        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.3.0"
+        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.3.1"
       - name: "Config Git"
         run: |
           git --no-pager config --global "user.name" "github-actions"
