@@ -3510,3 +3510,4 @@ Sanesecurity.Foxhole.Rar_fs3509:CL_TYPE_RAR:*:(?i)^po .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3510:CL_TYPE_RAR:*:(?i)^ar\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3511:CL_TYPE_ZIP:*:(?i)^current#soa\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3512:CL_TYPE_RAR:*:(?i)^img-damage_order-reports.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3513:CL_TYPE_ZIP:*:(?i)^draft_docs_shipment_.{0,30}\.pdf\.exe$:*:*:*:1:*:*
