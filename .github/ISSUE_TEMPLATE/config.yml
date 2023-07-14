@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Scan Virus (GitHub Action)"
+    url: "https://github.com/hugoalh/scan-virus-ghaction"
+    about: "For any information, please visit the main repository `hugoalh/scan-virus-ghaction`."
