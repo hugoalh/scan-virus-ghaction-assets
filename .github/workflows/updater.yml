@@ -27,6 +27,9 @@ jobs:
         run: |
           git --no-pager config --global "user.name" "github-actions"
           git --no-pager config --global "user.email" "github-actions@users.noreply.github.com"
+          git --no-pager checkout remotes/origin/base
+          git --no-pager checkout -b base
+          git --no-pager checkout main
           git --no-pager checkout base **/*
       - name: "Update Assets"
         id: "update-assets"
