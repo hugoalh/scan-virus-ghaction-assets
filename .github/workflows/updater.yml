@@ -14,35 +14,67 @@ jobs:
     name: "Main"
     runs-on: "ubuntu-latest"
     steps:
-      - name: "Checkout Repository"
-        uses: "actions/checkout@v3.5.3"
-        with:
-          ref: "main"
-          fetch-depth: 0
       - name: "Setup PowerShell Toolkit"
         uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.4.0"
         with:
           version: "^1.6.0"
+      - name: "Checkout Repository Branch `main`"
+        uses: "actions/checkout@v3.5.3"
+        with:
+          ref: "main"
+          path: "main"
+      - name: "Checkout Repository Branch `base`"
+        uses: "actions/checkout@v3.5.3"
+        with:
+          ref: "base"
+          path: "base"
       - name: "Config Git"
         run: |
           git --no-pager config --global "user.name" "github-actions"
           git --no-pager config --global "user.email" "github-actions@users.noreply.github.com"
-          git --no-pager checkout remotes/origin/base
-          git --no-pager checkout -b base
-          git --no-pager checkout main
-          git --no-pager checkout base **/*
+      - name: "Get Branch Path"
+        id: "branch-path"
+        run: |
+          Import-Module -Name 'hugoalh.GitHubActionsToolkit' -Scope 'Local'
+          Set-GitHubActionsOutput -Name 'base' -Value (Join-Path -Path $Env:GITHUB_WORKSPACE -ChildPath 'base')
+          Set-GitHubActionsOutput -Name 'main' -Value (Join-Path -Path $Env:GITHUB_WORKSPACE -ChildPath 'main')
+        shell: "pwsh"
+      - name: "Pull File From Branch `base` To Branch `main`"
+        run: |
+          [String]$BranchBase = '${{steps.branch-path.outputs.base}}'
+          [String]$BranchMain = '${{steps.branch-path.outputs.main}}'
+          Get-ChildItem -LiteralPath $BranchBase -Recurse -Force -File |
+            Where-Object -FilterScript { $_.FullName -inotmatch "^$([RegEx]::Escape((Join-Path -Path $BranchBase -ChildPath '.git')))[\\/]" } |
+            ForEach-Object -Process {
+              Copy-Item -LiteralPath $_.FullName -Destination ($_.FullName -ireplace "^$([RegEx]::Escape($BranchBase))", "$BranchMain") -Force -Confirm:$False
+            }
+        shell: "pwsh"
       - name: "Update Assets"
         id: "update-assets"
         run: |
           pwsh -NonInteractive ./_updater.ps1
-      - name: "Push Git Commit"
+        working-directory: "${{steps.branch-path.outputs.main}}"
+      - name: "Push Branch `main`"
         if: "${{github.event_name == 'workflow_dispatch' || steps.update-assets.outputs.should_push == 'true'}}"
         run: |
           git --no-pager add --all
           git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
           git --no-pager push
-          git --no-pager checkout base
-          git --no-pager checkout main **/index.tsv
+        working-directory: "${{steps.branch-path.outputs.main}}"
+      - name: "Pull File From Branch `main` To Branch `base`"
+        run: |
+          [String]$BranchBase = '${{steps.branch-path.outputs.base}}'
+          [String]$BranchMain = '${{steps.branch-path.outputs.main}}'
+          Get-ChildItem -LiteralPath $BranchMain -Recurse -Force -File |
+            Where-Object -FilterScript { $_.FullName -imatch "[\\/]index\.tsv$" } |
+            ForEach-Object -Process {
+              Copy-Item -LiteralPath $_.FullName -Destination ($_.FullName -ireplace "^$([RegEx]::Escape($BranchMain))", "$BranchBase") -Force -Confirm:$False
+            }
+        shell: "pwsh"
+      - name: "Push Branch `base`"
+        if: "${{github.event_name == 'workflow_dispatch' || steps.update-assets.outputs.should_push == 'true'}}"
+        run: |
           git --no-pager add --all
           git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
           git --no-pager push
+        working-directory: "${{steps.branch-path.outputs.base}}"

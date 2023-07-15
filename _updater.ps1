@@ -13,7 +13,7 @@ $CurrentWorkingDirectory = Get-Location
 	Where-Object -FilterScript { $_.Length -gt 0 }
 [Boolean]$ShouldPush = $False
 [DateTime]$TimeInvoke = Get-Date -AsUTC
-[DateTime]$TimeBuffer = $TimeInvoke.AddHours(-2)
+[DateTime]$TimeBuffer = $TimeInvoke.AddHours(-1)
 [String]$TimeCommit = Get-Date -Date $TimeInvoke -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
 Write-Host -Object "Timestamp: $TimeCommit"
 Exit-GitHubActionsLogGroup
