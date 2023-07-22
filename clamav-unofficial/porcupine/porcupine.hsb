@@ -1,4 +1,13 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+862d80c144bcbfdc87f5f8ac0cbbaa56:720825:Porcupine.Trojan.PSW.MSIL.Agensla.gen.151254:73
+1bf5ba7310f25e26a972b4bcc2d8f65c:771072:Porcupine.Trojan.PSW.MSIL.Agensla.gen.151253:73
+35de3e6248be9a9f2c2094d07e44b585:40607:Porcupine.Exploit.MSOffice.CVE.2018.0802.gen.151210:73
+077ac0c3b5475c320d685f2fdac7ff8b:629248:Porcupine.Trojan.MSIL.Taskun.gen.151113:73
+5ed8a395e97900db753cd3a9ee4d79c6:586164:Porcupine.Trojan.MSIL.Taskun.gen.151112:73
+1d10b34f1b80d7401cf8c87d4cbd4767:770560:Porcupine.Trojan.PSW.MSIL.Agensla.gen.151102:73
+fc00449d899865e7c050061af13c0972:675221:Porcupine.Trojan.PSW.MSIL.Agensla.gen.151101:73
+e90c5516bec473b4ce031d10732f6330:629119:Porcupine.Unclassified.150977:73
+2416f21f63fe32aeec0c304eba652330:1310720:Porcupine.Trojan.PSW.MSIL.Agensla.gen.150939:73
 a811b6a711eb8c2ea1c15f64478734ae:3576:Porcupine.Phishing.150863:73
 e5433b062546ea3f59e03d66c800129b:546586:Porcupine.Win32.Injector.ETCQ.150789:73
 2ea1572fba9a84e8b57174a47caa69ab:575896:Porcupine.Win32.Injector.ETCQ.150788:73
@@ -244,12 +253,3 @@ c7db439efc693174d35126795b6f2c80:590687:Porcupine.Unclassified.140256:73
 9c7bf7b8a7a33174e3b449e87abe0b31:11205:Porcupine.DOC.Downloader.Agent.ARJ.140123:73
 47b86daf4c26ec57df2e8ae059496901:487649:Porcupine.DOC.Downloader.Agent.ARJ.140122:73
 ff101e5917705762f20534449cdf74cc:635946:Porcupine.Unclassified.140120:73
-349c858164edf6c0c89ad405aa9d2e3b:22596:Porcupine.Phishing.140103:73
-ac9e836f751cd76101bf095009c27233:517632:Porcupine.DangerousObject.Multi.Generic.140035:73
-cda5d563eed25854b2c777d0772138e9:380046:Porcupine.DangerousObject.Multi.Generic.140034:73
-536f94348bb24081ee35b6b78af68cf1:294488:Porcupine.DangerousObject.Multi.Generic.139952:73
-d63fe952e90788072c6166a39bde21b5:309949:Porcupine.DangerousObject.Multi.Generic.139951:73
-e03b105ad9342c5b0b39b899d034b1d7:38236:Porcupine.Phishing.139950:73
-a8eb2857a603f79b61b2dbe34acba35d:808960:Porcupine.Trojan.PSW.MSIL.Agensla.gen.139883:73
-f1c139ecb12811d8e1873b51f4e1c8e0:644877:Porcupine.Trojan.PSW.MSIL.Agensla.gen.139628:73
-59ff92ac714987af1ddbfd298a711478:11334:Porcupine.Unclassified.139627:73
