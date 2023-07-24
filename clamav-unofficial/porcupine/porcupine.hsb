@@ -1,4 +1,5 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+da41153618c3aa6dd14beefee78b8cc0:1310720:Porcupine.Trojan.PSW.MSIL.Agensla.151660:73
 d511269e9a84cfd7b7eacf52f6d7ed13:280072:Porcupine.Unclassified.151527:73
 17f23f16e070ab4ec9c3fc0e852bc8f7:194606:Porcupine.Trojan.MSIL.DOTHETUK.151526:73
 b329b74a89d0be15d368498921128bfa:585985:Porcupine.Trojan.PSW.Win32.Azorult.151506:73
@@ -236,17 +237,3 @@ ac55edeca30c574480a1b7ad005f68f3:632320:Porcupine.MSIL.GenKryptik.GLBW.140938:73
 7105b5afb5ab65cbe5a9ee0d8aa4d77f:22127:Porcupine.PowerShell.Downloader.Agent.HAR.140932:73
 d04777681c6d476a147da003486ce366:578835:Porcupine.MSIL.GenKryptik.GGTV.140683:73
 162e82db2fef25d2260f56ffaff75aff:621056:Porcupine.MSIL.GenKryptik.GGTV.140682:73
-e77a71ae0b5618096ed33eaecedb3630:27451:Porcupine.Junk.140666:73
-a324c8818af15aee00ff8c82d81b4085:1097216:Porcupine.Trojan.PSW.Multi.Disco.140665:73
-54e8e90a6041af67c4c1bfa81015ab9f:533309:Porcupine.MSIL.Kryptik.AJCJ.140658:73
-23e214080e01e75bd41d98555abc58bc:792576:Porcupine.Trojan.PSW.MSIL.Agensla.gen.140610:73
-747c09cd854da61492297d49dfb3c4f9:743619:Porcupine.Unclassified.140609:73
-686647107bfe8f7c3628bce5927813bd:735674:Porcupine.MSIL.GenKryptik.GKQY.140608:73
-1286686847023fddf36525e00ebbc424:784896:Porcupine.MSIL.GenKryptik.GKQY.140607:73
-5af14a25b955ded49b230c500092c386:11086:Porcupine.DangerousObject.Multi.Generic.140584:73
-6f5eb9826bcd674f9af8e7fc9d82a5a6:3475:Porcupine.Phishing.140570:73
-7efa1ed82ee8af1ed80a418ebac61993:511780:Porcupine.Generik.JDVARMN.140525:73
-5350ed70b1d2dc5cc30b04d21852cf3b:497249:Porcupine.Unclassified.140524:73
-4476243c97ad223807a7b7e22c283bf2:756166:Porcupine.Win32.Exploit.CVE-2017-11882.C.140523:73
-cd382b538879a3c66d779d9f2406b3e4:281392:Porcupine.Trojan.Spy.Win32.Stealer.gen.140351:73
-f1d413bfe14ec8f4102153374eed7b22:297288:Porcupine.Trojan.Spy.Win32.Stealer.gen.140350:73
