@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Remote	Timestamp
-Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-07-24T00:38:20Z
-Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-07-24T00:38:20Z
+Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-07-25T00:40:25Z
+Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-07-25T00:40:25Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar		
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar		
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar		
@@ -732,6 +732,7 @@ Rule	neo23x0	neo23x0/vul_php_zlib_backdoor	neo23x0/yara/vul_php_zlib_backdoor.ya
 Rule	neo23x0	neo23x0/vuln_drivers_strict	neo23x0/yara/yara-rules_vuln_drivers_strict.yar		
 Rule	neo23x0	neo23x0/vuln_drivers_strict_renamed	neo23x0/yara/yara-rules_vuln_drivers_strict_renamed.yar		
 Rule	neo23x0	neo23x0/vuln_gigabyte_driver	neo23x0/yara/vuln_gigabyte_driver.yar		
+Rule	neo23x0	neo23x0/vuln_keepass_brute_forcible	neo23x0/yara/vuln_keepass_brute_forcible.yar		
 Rule	neo23x0	neo23x0/vuln_moveit_0day_jun23	neo23x0/yara/vuln_moveit_0day_jun23.yar		
 Rule	neo23x0	neo23x0/vuln_proxynotshell_cve_2022_41040	neo23x0/yara/vuln_proxynotshell_cve_2022_41040.yar		
 Rule	neo23x0	neo23x0/webshell_regeorg	neo23x0/yara/webshell_regeorg.yar		
