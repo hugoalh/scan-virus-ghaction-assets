@@ -3514,3 +3514,6 @@ Sanesecurity.Foxhole.Zip_fs3513:CL_TYPE_ZIP:*:(?i)^draft_docs_shipment_.{0,30}\.
 Sanesecurity.Foxhole.Rar_fs3514:CL_TYPE_RAR:*:(?i)^icommercial invoice\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3515:CL_TYPE_RAR:*:(?i)^purchase order .{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3516:CL_TYPE_RAR:*:(?i)^soa freight slip\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3517:CL_TYPE_RAR:*:(?i)^quotation #.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3518:CL_TYPE_RAR:*:(?i)2023 pdf\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3519:CL_TYPE_RAR:*:(?i)^swift103\.exe$:*:*:*:1:*:*
