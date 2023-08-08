@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Remote	Timestamp
-Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-08-08T00:35:09Z
-Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-08-08T00:35:09Z
+Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-08-08T03:53:01Z
+Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-08-08T03:53:01Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar		
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar		
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar		
@@ -82,6 +82,7 @@ Rule	bartblaze	bartblaze/ransomware_wickrme	bartblaze/rules/ransomware/WickrMe.y
 Rule	bartblaze	bartblaze/ransomware_winlock	bartblaze/rules/ransomware/WinLock.yar		
 Rule	bartblaze	bartblaze/ransomware_xiaoba	bartblaze/rules/ransomware/XiaoBa.yar		
 Rule	bartblaze	bartblaze/ransomware_zeppelin	bartblaze/rules/ransomware/Zeppelin.yar		
+Rule	bartblaze	bartblaze/shinnyshield	bartblaze/rules/ShinnyShield.yar		
 Rule	neo23x0	neo23x0/apt_aa19_024a	neo23x0/yara/apt_aa19_024a.yar		
 Rule	neo23x0	neo23x0/apt_agent_btz	neo23x0/yara/apt_agent_btz.yar		
 Rule	neo23x0	neo23x0/apt_alienspy_rat	neo23x0/yara/apt_alienspy_rat.yar		
@@ -482,11 +483,13 @@ Rule	neo23x0	neo23x0/crime_xbash	neo23x0/yara/crime_xbash.yar
 Rule	neo23x0	neo23x0/crime_zeus_panda	neo23x0/yara/crime_zeus_panda.yar		
 Rule	neo23x0	neo23x0/crime_zloader_maldocs	neo23x0/yara/crime_zloader_maldocs.yar		
 Rule	neo23x0	neo23x0/expl_adselfservice_cve_2021_40539	neo23x0/yara/expl_adselfservice_cve_2021_40539.yar		
+Rule	neo23x0	neo23x0/expl_citrix_netscaler_adc_exploitation_cve_2023_3519	neo23x0/yara/expl_citrix_netscaler_adc_exploitation_cve_2023_3519.yar		
 Rule	neo23x0	neo23x0/expl_cve_2021_1647	neo23x0/yara/expl_cve_2021_1647.yar		
 Rule	neo23x0	neo23x0/expl_cve_2021_26084_confluence_log	neo23x0/yara/expl_cve_2021_26084_confluence_log.yar		
 Rule	neo23x0	neo23x0/expl_cve_2021_40444	neo23x0/yara/expl_cve_2021_40444.yar		
 Rule	neo23x0	neo23x0/expl_cve_2022_41040_proxynoshell	neo23x0/yara/expl_cve_2022_41040_proxynoshell.yar		
 Rule	neo23x0	neo23x0/expl_cve_2022_46169_cacti	neo23x0/yara/expl_cve_2022_46169_cacti.yar		
+Rule	neo23x0	neo23x0/expl_ivanti_epmm_mobileiron_cve_2023_35078	neo23x0/yara/expl_ivanti_epmm_mobileiron_cve_2023_35078.yar		
 Rule	neo23x0	neo23x0/expl_keepass_cve_2023_24055	neo23x0/yara/expl_keepass_cve_2023_24055.yar		
 Rule	neo23x0	neo23x0/expl_libssh_cve_2023_2283_jun23	neo23x0/yara/expl_libssh_cve_2023_2283_jun23.yar		
 Rule	neo23x0	neo23x0/expl_log4j_cve_2021_44228	neo23x0/yara/expl_log4j_cve_2021_44228.yar		
