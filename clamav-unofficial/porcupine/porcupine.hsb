@@ -1,4 +1,12 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+8ca951cb15e8f0b3d8b68317eb5f7759:897781:Porcupine.Win32.Exploit.CVE-2017-11882.C.158285:73
+d21c03f49c7ffaf637cbb68825add856:93181:Porcupine.Junk.158228:73
+fb8c3847717b2a61cc5d3db9a51a30c5:306626:Porcupine.Trojan.Win32.Strab.gen.158199:73
+408c8de1cf7d5ec31e6c857f9900fa62:322380:Porcupine.Trojan.Win32.Strab.gen.158198:73
+6880dd3f016e3bec1ae3cd77db495cf1:643584:Porcupine.Trojan.Spy.MSIL.Noon.gen.158182:73
+e2d1c32252af3453123d83e16ccc1815:587439:Porcupine.Trojan.Spy.MSIL.Noon.gen.158181:73
+ad60686d861feaa5f86688660db2ac23:455427:Porcupine.Trojan.Win32.Makoob.gen.158165:73
+b3e817a2fc2c92a6368a8db0b6510f2f:581632:Porcupine.Trojan.Win32.Makoob.gen.158132:73
 44bb5b1c5f95532b03a7c27d60cae916:23232:Porcupine.DOC.Downloader.Agent.ARJ.157900:73
 e727100f00ffd509e4599cbd8e3896f5:492016:Porcupine.Trojan.Win32.Makoob.gen.157860:73
 037e4e2cdec214e06fd8cdf90439df77:700195:Porcupine.Trojan.PSW.MSIL.Agensla.gen.157859:73
@@ -263,12 +271,3 @@ b568fdf2d302aa60e1bdd3ee24403145:373124:Porcupine.NSIS.Injector.ASH.147915:73
 0d48a9b9d8d0e3fb493620b84ae49047:366688:Porcupine.MSIL.Spy.AgentTesla_AGen.O.147808:73
 a8dc0090dd9e52d520bc28891981f631:205990:Porcupine.MSIL.Kryptik.AJET.147728:73
 40da41840a588b8c468db3686c2edd98:333824:Porcupine.MSIL.Kryptik.AJET.147727:73
-e82163d300e4f3a3edd8a123c9acb9c1:471552:Porcupine.Backdoor.MSIL.Remcos.gen.147717:73
-fb0662f1ef6d04ddb8401a0425723367:902144:Porcupine.Trojan.PSW.MSIL.Agensla.gen.147716:73
-912847d6e1dcf936dc1101606eeead7d:328259:Porcupine.Trojan.PSW.MSIL.Agensla.gen.147715:73
-bfd3f1d9c0797e7f7174c2bace9c083d:964608:Porcupine.Trojan.PSW.MSIL.Agensla.gen.147714:73
-a5f31e5305eb8a70f5c9f669fb5d5943:374929:Porcupine.Trojan.Win32.Makoob.gen.147660:73
-a13bc9402741893b86f976891d803d22:1364480:Porcupine.BAT.Downloader.Agent.OLP.147516:73
-fd7f38a74f27f95b69e04abe4aadd620:695259:Porcupine.BAT.Downloader.Agent.OLP.147453:73
-adcf92ae5e6f6d06a8539ddd2956623c:99657:Porcupine.Trojan.147311:73
-579e7f48b616f70291eef2dd3d4f9f0d:1638400:Porcupine.Unclassified.147093:73
