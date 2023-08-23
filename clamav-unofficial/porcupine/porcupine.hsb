@@ -1,4 +1,11 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+ce96daa1d0a101c3340a8ffa73c6052d:723793:Porcupine.not.a.virus.AdWare.MSIL.Convagent.gen.160959:73
+655c20604e9d077b1bd99343627fd188:870912:Porcupine.not.a.virus.AdWare.MSIL.Convagent.gen.160958:73
+9fdfcb1374b6a120821bcc03f1e7a8b3:1057792:Porcupine.Trojan.PSW.MSIL.Agensla.160902:73
+d45b0e24d79a45706daa0cc6dab7e3cf:937583:Porcupine.Trojan.PSW.MSIL.Agensla.160901:73
+fc72bbb60376284689391c7bc049ea69:665214:Porcupine.Win32.Exploit.CVE-2017-11882.B.160888:73
+4944af72658d6cd680180e53ed3f5cb4:420568:Porcupine.Unclassified.160805:73
+08e91c2adc6af9c39bcf4f70ea7c115b:214066:Porcupine.Trojan.160785:73
 10816c229a414eba4e76c9f3de35c077:602255:Porcupine.Win32.Exploit.CVE-2017-11882.C.160216:73
 7014a4628eb9d2d134cfce31f620c18d:581869:Porcupine.Trojan.Spy.MSIL.Noon.gen.160203:73
 98609373390936c6bafa41a5ae8607d5:653312:Porcupine.Trojan.Spy.MSIL.Noon.gen.160202:73
@@ -222,11 +229,3 @@ cb042c7e4846ae4285bbd1d700bd2c11:1029120:Porcupine.Trojan.MSIL.Injuke.gen.151812
 43e65a4d39cfba9a4f3c7029a24da0df:484390:Porcupine.Trojan.PSW.MSIL.Agensla.gen.151810:73
 5fe6f15ad9e54dc948590d1ae940c8f8:640791:Porcupine.Trojan.PSW.MSIL.Agensla.gen.151809:73
 da41153618c3aa6dd14beefee78b8cc0:1310720:Porcupine.Trojan.PSW.MSIL.Agensla.151660:73
-d511269e9a84cfd7b7eacf52f6d7ed13:280072:Porcupine.Unclassified.151527:73
-17f23f16e070ab4ec9c3fc0e852bc8f7:194606:Porcupine.Trojan.MSIL.DOTHETUK.151526:73
-b329b74a89d0be15d368498921128bfa:585985:Porcupine.Trojan.PSW.Win32.Azorult.151506:73
-6d4b0530c3590614556f2684c0699b60:32337:Porcupine.Trojan.MSIL.Expomat.gen.151466:73
-8ff902c962bac1fff7566bfeebda12c3:402037:Porcupine.Win32.Downloader.ModiLoader.VW.151459:73
-07bdbb2bf9540553548b97d0cedcff43:808960:Porcupine.Win32.Downloader.ModiLoader.VW.151458:73
-a7475bc22a5626fdbeb927da62e6ecce:637447:Porcupine.Trojan.Spy.MSIL.Noon.gen.151444:73
-bab285a6553bfb7f6580eb418d73429c:853504:Porcupine.Trojan.Spy.MSIL.Noon.gen.151443:73
