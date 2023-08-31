@@ -1,4 +1,15 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+5a1c7978a1ef65ba901b4e5e8a9caee1:711567:Porcupine.Win32.Exploit.CVE-2017-11882.C.163515:73
+605e557146d63b3c49b0e3ac59337ba6:676352:Porcupine.Trojan.Spy.MSIL.Noon.gen.163453:73
+e2a53bdf2f2056cefbc1e4a056d934de:627144:Porcupine.Trojan.Spy.MSIL.Noon.gen.163452:73
+050980027226d96b4cd2c5273f9d6bdf:705618:Porcupine.Win32.Exploit.CVE-2017-11882.C.163422:73
+f11ba74784126ade050c6c006998832b:1310720:Porcupine.Trojan.MSIL.Taskun.gen.163370:73
+a05a2ba71e495862ba735b4384e8bce0:603319:Porcupine.MSIL.GenKryptik.GNHT.163369:73
+b5c43ecb78283e51b8c643b3d3b158f4:483508:Porcupine.DangerousObject.Multi.Generic.163355:73
+1bf2ab8eef87346a00c35aee1364488b:1245184:Porcupine.MSIL.Downloader.Agent.OOD.163354:73
+d1939cad261ab5a7349e73b4f2be8448:1636:Porcupine.Unclassified.163260:73
+e7073860b83b23cb53ae39fdd7fb7386:300206:Porcupine.Trojan.PSW.MSIL.Agensla.gen.163223:73
+60ff914a33692e74d695ed4dc4beeab0:886784:Porcupine.Trojan.PSW.MSIL.Agensla.gen.163222:73
 db4e9ddc50b873072fc0767f88dbab85:589246:Porcupine.Trojan.Spy.MSIL.Stealer.gen.163017:73
 1de345446bf985826dbe743aa29352e3:615936:Porcupine.Trojan.Spy.MSIL.Stealer.gen.163016:73
 cf7ecfac8c084b47c6169097d4ff704b:588342:Porcupine.MSIL.Kryptik.AJMM.163015:73
