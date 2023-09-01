@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Remote	Timestamp
-Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-08-31T00:30:20Z
-Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-08-31T00:30:20Z
+Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-09-01T00:32:41Z
+Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-09-01T00:32:41Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar		
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar		
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar		
