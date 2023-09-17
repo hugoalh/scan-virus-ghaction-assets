@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Remote	Timestamp
-Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-09-17T00:32:51Z
-Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-09-17T00:32:51Z
+Group		bartblaze	bartblaze/rules	https://github.com/bartblaze/Yara-rules.git	2023-09-17T08:13:02Z
+Group		neo23x0	neo23x0/yara	https://github.com/Neo23x0/signature-base.git	2023-09-17T08:13:02Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar		
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar		
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar		
@@ -513,6 +513,7 @@ Rule	neo23x0	neo23x0/exploit_cve_2018_16858	neo23x0/yara/exploit_cve_2018_16858.
 Rule	neo23x0	neo23x0/exploit_cve_2021_31166	neo23x0/yara/exploit_cve_2021_31166.yar		
 Rule	neo23x0	neo23x0/exploit_cve_2021_33766_proxytoken	neo23x0/yara/exploit_cve_2021_33766_proxytoken.yar		
 Rule	neo23x0	neo23x0/exploit_cve_2022_22954_vmware_workspace_one	neo23x0/yara/exploit_cve_2022_22954_vmware_workspace_one.yar		
+Rule	neo23x0	neo23x0/exploit_cve_2023_38146	neo23x0/yara/exploit_cve_2023_38146.yar		
 Rule	neo23x0	neo23x0/exploit_f5_bigip_cve_2021_22986_log	neo23x0/yara/exploit_f5_bigip_cve_2021_22986_log.yar		
 Rule	neo23x0	neo23x0/exploit_gitlab_cve_2021_22205	neo23x0/yara/exploit_gitlab_cve_2021_22205.yar		
 Rule	neo23x0	neo23x0/exploit_rtf_ole2link	neo23x0/yara/exploit_rtf_ole2link.yar		
@@ -630,6 +631,7 @@ Rule	neo23x0	neo23x0/gen_python_encoded_adware	neo23x0/yara/gen_python_encoded_a
 Rule	neo23x0	neo23x0/gen_python_pty_shell	neo23x0/yara/gen_python_pty_shell.yar		
 Rule	neo23x0	neo23x0/gen_python_pyminifier_encoded_payload	neo23x0/yara/gen_python_pyminifier_encoded_payload.yar		
 Rule	neo23x0	neo23x0/gen_python_reverse_shell	neo23x0/yara/gen_python_reverse_shell.yara		
+Rule	neo23x0	neo23x0/gen_qakbot_uninstaller	neo23x0/yara/gen_qakbot_uninstaller.yar		
 Rule	neo23x0	neo23x0/gen_rar_exfil	neo23x0/yara/gen_rar_exfil.yar		
 Rule	neo23x0	neo23x0/gen_rats_malwareconfig	neo23x0/yara/gen_rats_malwareconfig.yar		
 Rule	neo23x0	neo23x0/gen_recon_indicators	neo23x0/yara/gen_recon_indicators.yar		
@@ -671,6 +673,7 @@ Rule	neo23x0	neo23x0/gen_unicorn_obfuscated_powershell	neo23x0/yara/gen_unicorn_
 Rule	neo23x0	neo23x0/gen_unspecified_malware	neo23x0/yara/gen_unspecified_malware.yar		
 Rule	neo23x0	neo23x0/gen_url_persitence	neo23x0/yara/gen_url_persitence.yar		
 Rule	neo23x0	neo23x0/gen_url_to_local_exe	neo23x0/yara/gen_url_to_local_exe.yar		
+Rule	neo23x0	neo23x0/gen_vcruntime140_dll_sideloading	neo23x0/yara/gen_vcruntime140_dll_sideloading.yar		
 Rule	neo23x0	neo23x0/gen_vhd_anomaly	neo23x0/yara/gen_vhd_anomaly.yar		
 Rule	neo23x0	neo23x0/gen_webshell_csharp	neo23x0/yara/gen_webshell_csharp.yar		
 Rule	neo23x0	neo23x0/gen_webshells	neo23x0/yara/gen_webshells.yar		
