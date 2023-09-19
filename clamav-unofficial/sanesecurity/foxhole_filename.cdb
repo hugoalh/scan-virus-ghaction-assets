@@ -156,7 +156,7 @@ Sanesecurity.Foxhole.Zip_fn73:CL_TYPE_ZIP:*:(?i)post_tracking_confirmation_id.{0
 Sanesecurity.Foxhole.Zip_fn74:CL_TYPE_ZIP:*:(?i)details_.{5,10}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn75:CL_TYPE_ZIP:*:(?i)post_.{5,10}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn76:CL_TYPE_ZIP:*:(?i)mail_.{5,10}\.js$:*:*:*:*:*:*
-Sanesecurity.Foxhole.Zip_fn77:CL_TYPE_ZIP:*:(?i)access_.{5,10}\.js$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fn77:CL_TYPE_ZIP:*:(?i)^access_.{5,10}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn78:CL_TYPE_ZIP:*:(?i)unconfirmed_operation_.{5,10}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn79:CL_TYPE_ZIP:*:(?i)operation_.{5,10}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn80:CL_TYPE_ZIP:*:(?i)order list .[0-9]{2,10}\.exe$:*:*:*:*:*:*
@@ -279,7 +279,7 @@ Sanesecurity.Foxhole.Zip_fs183:CL_TYPE_ZIP:*:(?i)riskiness.{4}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs184:CL_TYPE_ZIP:*:(?i)caution.{4}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs185:CL_TYPE_ZIP:*:(?i)data.{4}\.js$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs186:CL_TYPE_ZIP:*:(?i)detail.{4}\.js$:*:*:*:*:*:*
-Sanesecurity.Foxhole.Zip_fs187:CL_TYPE_ZIP:*:(?i)notice.{4}\.js$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs187:CL_TYPE_ZIP:*:(?i)^notice.{4}\.js$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs188:CL_TYPE_ZIP:*:(?i)show.{4}\.js$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs189:CL_TYPE_ZIP:*:(?i)trans.{4}\.js$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs190:CL_TYPE_ZIP:*:(?i)open.{4}\.js$:*:*:*:1:*:*
