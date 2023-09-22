@@ -1,4 +1,8 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+54ab1fa37c440843d7f361ba8133945c:12153:Porcupine.DOC.Fraud.AXC.170485:73
+9032f044019161ceb48ad16bff220a09:1168896:Porcupine.Win32.Exploit.CVE-2017-11882.F.170262:73
+4bdfe31a28c97a3522eb879d11e3d801:1080015:Porcupine.Exploit.MSOffice.Generic.170216:73
+b9a5b465c5b9cfedbe72bb37ffca245e:670:Porcupine.Trojan.WinLNK.SCPSHCNO.a.170134:73
 5a517cbad20948daa9044af901b4f746:631296:Porcupine.MSIL.GenKryptik.GNHC.169917:73
 201ae8fb4f9aa8fec75792311647dc82:586727:Porcupine.MSIL.GenKryptik.GNHC.169916:73
 f24f5d96d61123e87b94c13eadb003e5:1134592:Porcupine.Backdoor.Win32.Remcos.gen.169915:73
@@ -236,4 +240,3 @@ ce96daa1d0a101c3340a8ffa73c6052d:723793:Porcupine.not.a.virus.AdWare.MSIL.Convag
 d45b0e24d79a45706daa0cc6dab7e3cf:937583:Porcupine.Trojan.PSW.MSIL.Agensla.160901:73
 fc72bbb60376284689391c7bc049ea69:665214:Porcupine.Win32.Exploit.CVE-2017-11882.B.160888:73
 4944af72658d6cd680180e53ed3f5cb4:420568:Porcupine.Unclassified.160805:73
-08e91c2adc6af9c39bcf4f70ea7c115b:214066:Porcupine.Trojan.160785:73
