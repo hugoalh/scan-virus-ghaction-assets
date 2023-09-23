@@ -3521,3 +3521,4 @@ Sanesecurity.Foxhole.Zip_fs3520:CL_TYPE_ZIP:*:(?i)^invoice.{0,30}\.iso$:*:*:*:1:
 Sanesecurity.Foxhole.Zip_fs3521:CL_TYPE_ZIP:*:(?i)^p.o.{0,30}\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3522:CL_TYPE_ZIP:*:(?i)^new order.{0,30}\.bat$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Rar_fs3523:CL_TYPE_RAR:*:(?i)^arrival notice.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.7Zip_fs3524:CL_TYPE_7Z:*:(?i)^new purchase order-.{0,30}\pdf\.exe$:*:*:*:*:*:*
