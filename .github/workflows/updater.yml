@@ -16,12 +16,12 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: "Checkout Repository Branch `base`"
-        uses: "actions/checkout@v4.1.0"
+        uses: "actions/checkout@v4.1.1"
         with:
           ref: "base"
           path: "base"
       - name: "Checkout Repository Branch `main`"
-        uses: "actions/checkout@v4.1.0"
+        uses: "actions/checkout@v4.1.1"
         with:
           ref: "main"
           path: "main"
