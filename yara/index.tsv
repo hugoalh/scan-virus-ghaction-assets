@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-10-17T00:52:54Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-10-17T00:52:54Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-10-18T00:52:35Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-10-18T00:52:35Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -124,6 +124,7 @@ Rule	neo23x0	neo23x0/apt_blackenergy_installer	neo23x0/yara/apt_blackenergy_inst
 Rule	neo23x0	neo23x0/apt_bluetermite_emdivi	neo23x0/yara/apt_bluetermite_emdivi.yar			
 Rule	neo23x0	neo23x0/apt_bronze_butler	neo23x0/yara/apt_bronze_butler.yar			
 Rule	neo23x0	neo23x0/apt_buckeye	neo23x0/yara/apt_buckeye.yar			
+Rule	neo23x0	neo23x0/apt_camaro_dragon_oct23	neo23x0/yara/apt_camaro_dragon_oct23.yar			
 Rule	neo23x0	neo23x0/apt_candiru	neo23x0/yara/apt_candiru.yar			
 Rule	neo23x0	neo23x0/apt_carbon_paper_turla	neo23x0/yara/apt_carbon_paper_turla.yar			
 Rule	neo23x0	neo23x0/apt_casper	neo23x0/yara/apt_casper.yar			
@@ -498,7 +499,9 @@ Rule	neo23x0	neo23x0/expl_manageengine_jan23	neo23x0/yara/expl_manageengine_jan2
 Rule	neo23x0	neo23x0/expl_outlook_cve_2023_23397	neo23x0/yara/expl_outlook_cve_2023_23397.yar			
 Rule	neo23x0	neo23x0/expl_proxynotshell_owassrf_dec22	neo23x0/yara/expl_proxynotshell_owassrf_dec22.yar			
 Rule	neo23x0	neo23x0/expl_proxyshell	neo23x0/yara/expl_proxyshell.yar			
+Rule	neo23x0	neo23x0/expl_sharepoint_cve_2023_29357	neo23x0/yara/expl_sharepoint_cve_2023_29357.yar			
 Rule	neo23x0	neo23x0/expl_spring4shell	neo23x0/yara/expl_spring4shell.yar			
+Rule	neo23x0	neo23x0/expl_teamcity_2023_42793	neo23x0/yara/expl_teamcity_2023_42793.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2014_4076	neo23x0/yara/exploit_cve_2014_4076.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2015_1674	neo23x0/yara/exploit_cve_2015_1674.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2015_1701	neo23x0/yara/exploit_cve_2015_1701.yar			
