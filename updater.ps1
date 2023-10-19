@@ -133,7 +133,10 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFilePath @TsvParameters
 	For ([UInt64]$AssetIndexRow = 0; $AssetIndexRow -lt $AssetIndex.Count; $AssetIndexRow += 1) {
 		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexRow]
-		If ($AssetIndexItem.Group.Length -gt 0) {
+		If (
+			$AssetIndexItem.Type -ieq 'Unusable' -or
+			$AssetIndexItem.Group.Length -gt 0
+		) {
 			Continue
 		}
 		If ((Get-Date -Date $AssetIndexItem.Timestamp -AsUTC) -gt $TimeBuffer) {
@@ -197,9 +200,15 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 					$IndexIssues += "Asset ``$($AssetTypeMeta.Name)/$ElementRelativeName`` is not record!"
 				}
 			}
+			Continue
+		}
+		If ($AssetIndexItem.Type -ieq 'Unusable') {
+			Remove-Item -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -Recurse -Force -Confirm:$False
+			Continue
 		}
 		If (!(Test-Path -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -PathType 'Leaf')) {
 			$IndexIssues += "Asset ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)`` is not exist!"
+			Continue
 		}
 	}
 }
