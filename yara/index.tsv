@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-10-19T04:11:12Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-10-19T04:11:12Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-10-19T08:45:07Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-10-19T08:45:07Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -738,3 +738,12 @@ Rule	neo23x0	neo23x0/vuln_moveit_0day_jun23	neo23x0/yara/vuln_moveit_0day_jun23.
 Rule	neo23x0	neo23x0/vuln_proxynotshell_cve_2022_41040	neo23x0/yara/vuln_proxynotshell_cve_2022_41040.yar			
 Rule	neo23x0	neo23x0/webshell_regeorg	neo23x0/yara/webshell_regeorg.yar			
 Rule	neo23x0	neo23x0/webshell_xsl_transform	neo23x0/yara/webshell_xsl_transform.yar			
+Unusable			neo23x0/yara/configured_vulns_ext_vars.yar			
+Unusable			neo23x0/yara/expl_citrix_netscaler_adc_exploitation_cve_2023_3519.yar			
+Unusable			neo23x0/yara/gen_fake_amsi_dll.yar			
+Unusable			neo23x0/yara/gen_webshells_ext_vars.yar			
+Unusable			neo23x0/yara/general_cloaking.yar			
+Unusable			neo23x0/yara/generic_anomalies.yar			
+Unusable			neo23x0/yara/thor_inverse_matches.yar			
+Unusable			neo23x0/yara/yara_mixed_ext_vars.yar			
+Unusable			neo23x0/yara/yara-rules_vuln_drivers_strict_renamed.yar			
