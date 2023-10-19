@@ -69,6 +69,7 @@ jobs:
             git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
             git --no-pager push
           }
+        shell: "pwsh"
         working-directory: "${{env.SVGHAA_PATH_MAIN}}"
       - name: "Update Repository Branch `base`"
         run: |
@@ -79,4 +80,5 @@ jobs:
             git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
             git --no-pager push
           }
+        shell: "pwsh"
         working-directory: "${{env.SVGHAA_PATH_BASE}}"
