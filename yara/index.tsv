@@ -390,7 +390,6 @@ Rule	neo23x0	neo23x0/apt_zxshell	neo23x0/yara/apt_zxshell.yar
 Rule	neo23x0	neo23x0/cn_pentestset_scripts	neo23x0/yara/cn_pentestset_scripts.yar			
 Rule	neo23x0	neo23x0/cn_pentestset_tools	neo23x0/yara/cn_pentestset_tools.yar			
 Rule	neo23x0	neo23x0/cn_pentestset_webshells	neo23x0/yara/cn_pentestset_webshells.yar			
-Rule	neo23x0	neo23x0/configured_vulns_ext_vars	neo23x0/yara/configured_vulns_ext_vars.yar			
 Rule	neo23x0	neo23x0/crime_academic_data_centers_camp_may20	neo23x0/yara/crime_academic_data_centers_camp_may20.yar			
 Rule	neo23x0	neo23x0/crime_andromeda_jun17	neo23x0/yara/crime_andromeda_jun17.yar			
 Rule	neo23x0	neo23x0/crime_antifw_installrex	neo23x0/yara/crime_antifw_installrex.yar			
@@ -484,7 +483,6 @@ Rule	neo23x0	neo23x0/crime_xbash	neo23x0/yara/crime_xbash.yar
 Rule	neo23x0	neo23x0/crime_zeus_panda	neo23x0/yara/crime_zeus_panda.yar			
 Rule	neo23x0	neo23x0/crime_zloader_maldocs	neo23x0/yara/crime_zloader_maldocs.yar			
 Rule	neo23x0	neo23x0/expl_adselfservice_cve_2021_40539	neo23x0/yara/expl_adselfservice_cve_2021_40539.yar			
-Rule	neo23x0	neo23x0/expl_citrix_netscaler_adc_exploitation_cve_2023_3519	neo23x0/yara/expl_citrix_netscaler_adc_exploitation_cve_2023_3519.yar			
 Rule	neo23x0	neo23x0/expl_cve_2021_1647	neo23x0/yara/expl_cve_2021_1647.yar			
 Rule	neo23x0	neo23x0/expl_cve_2021_26084_confluence_log	neo23x0/yara/expl_cve_2021_26084_confluence_log.yar			
 Rule	neo23x0	neo23x0/expl_cve_2021_40444	neo23x0/yara/expl_cve_2021_40444.yar			
@@ -555,7 +553,6 @@ Rule	neo23x0	neo23x0/gen_excel_xll_addin_suspicious	neo23x0/yara/gen_excel_xll_a
 Rule	neo23x0	neo23x0/gen_excel_xor_obfuscation_velvetsweatshop	neo23x0/yara/gen_excel_xor_obfuscation_velvetsweatshop.yar			
 Rule	neo23x0	neo23x0/gen_Excel4Macro_Sharpshooter	neo23x0/yara/gen_Excel4Macro_Sharpshooter.yar			
 Rule	neo23x0	neo23x0/gen_exploit_cve_2017_10271_weblogic	neo23x0/yara/gen_exploit_cve_2017_10271_weblogic.yar			
-Rule	neo23x0	neo23x0/gen_fake_amsi_dll	neo23x0/yara/gen_fake_amsi_dll.yar			
 Rule	neo23x0	neo23x0/gen_faked_versions	neo23x0/yara/gen_faked_versions.yar			
 Rule	neo23x0	neo23x0/gen_file_anomalies	neo23x0/yara/gen_file_anomalies.yar			
 Rule	neo23x0	neo23x0/gen_fireeye_redteam_tools	neo23x0/yara/gen_fireeye_redteam_tools.yar			
@@ -680,7 +677,6 @@ Rule	neo23x0	neo23x0/gen_vcruntime140_dll_sideloading	neo23x0/yara/gen_vcruntime
 Rule	neo23x0	neo23x0/gen_vhd_anomaly	neo23x0/yara/gen_vhd_anomaly.yar			
 Rule	neo23x0	neo23x0/gen_webshell_csharp	neo23x0/yara/gen_webshell_csharp.yar			
 Rule	neo23x0	neo23x0/gen_webshells	neo23x0/yara/gen_webshells.yar			
-Rule	neo23x0	neo23x0/gen_webshells_ext_vars	neo23x0/yara/gen_webshells_ext_vars.yar			
 Rule	neo23x0	neo23x0/gen_win_privesc	neo23x0/yara/gen_win_privesc.yar			
 Rule	neo23x0	neo23x0/gen_winpayloads	neo23x0/yara/gen_winpayloads.yar			
 Rule	neo23x0	neo23x0/gen_winshells	neo23x0/yara/gen_winshells.yar			
@@ -690,9 +686,7 @@ Rule	neo23x0	neo23x0/gen_xored_pe	neo23x0/yara/gen_xored_pe.yar
 Rule	neo23x0	neo23x0/gen_xtreme_rat	neo23x0/yara/gen_xtreme_rat.yar			
 Rule	neo23x0	neo23x0/gen_ysoserial_payloads	neo23x0/yara/gen_ysoserial_payloads.yar			
 Rule	neo23x0	neo23x0/gen_zoho_rcef_logs	neo23x0/yara/gen_zoho_rcef_logs.yar			
-Rule	neo23x0	neo23x0/general_cloaking	neo23x0/yara/general_cloaking.yar			
 Rule	neo23x0	neo23x0/general_officemacros	neo23x0/yara/general_officemacros.yar			
-Rule	neo23x0	neo23x0/generic_anomalies	neo23x0/yara/generic_anomalies.yar			
 Rule	neo23x0	neo23x0/generic_cryptors	neo23x0/yara/generic_cryptors.yar			
 Rule	neo23x0	neo23x0/generic_dumps	neo23x0/yara/generic_dumps.yar			
 Rule	neo23x0	neo23x0/generic_exe2hex_payload	neo23x0/yara/generic_exe2hex_payload.yar			
@@ -725,7 +719,6 @@ Rule	neo23x0	neo23x0/spy_querty_fiveeyes	neo23x0/yara/spy_querty_fiveeyes.yar
 Rule	neo23x0	neo23x0/spy_regin_fiveeyes	neo23x0/yara/spy_regin_fiveeyes.yar			
 Rule	neo23x0	neo23x0/susp_vulndriver_hp_hardware_diagnostics_etdsupp_may23	neo23x0/yara/susp_vulndriver_hp_hardware_diagnostics_etdsupp_may23.yar			
 Rule	neo23x0	neo23x0/thor_hacktools	neo23x0/yara/thor-hacktools.yar			
-Rule	neo23x0	neo23x0/thor_inverse_matches	neo23x0/yara/thor_inverse_matches.yar			
 Rule	neo23x0	neo23x0/thor_webshells	neo23x0/yara/thor-webshells.yar			
 Rule	neo23x0	neo23x0/threat_lenovo_superfish	neo23x0/yara/threat_lenovo_superfish.yar			
 Rule	neo23x0	neo23x0/vul_backdoor_antitheftweb	neo23x0/yara/vul_backdoor_antitheftweb.yar			
@@ -739,11 +732,9 @@ Rule	neo23x0	neo23x0/vul_drivecrypt	neo23x0/yara/vul_drivecrypt.yar
 Rule	neo23x0	neo23x0/vul_jquery_fileupload_cve_2018_9206	neo23x0/yara/vul_jquery_fileupload_cve_2018_9206.yar			
 Rule	neo23x0	neo23x0/vul_php_zlib_backdoor	neo23x0/yara/vul_php_zlib_backdoor.yar			
 Rule	neo23x0	neo23x0/vuln_drivers_strict	neo23x0/yara/yara-rules_vuln_drivers_strict.yar			
-Rule	neo23x0	neo23x0/vuln_drivers_strict_renamed	neo23x0/yara/yara-rules_vuln_drivers_strict_renamed.yar			
 Rule	neo23x0	neo23x0/vuln_gigabyte_driver	neo23x0/yara/vuln_gigabyte_driver.yar			
 Rule	neo23x0	neo23x0/vuln_keepass_brute_forcible	neo23x0/yara/vuln_keepass_brute_forcible.yar			
 Rule	neo23x0	neo23x0/vuln_moveit_0day_jun23	neo23x0/yara/vuln_moveit_0day_jun23.yar			
 Rule	neo23x0	neo23x0/vuln_proxynotshell_cve_2022_41040	neo23x0/yara/vuln_proxynotshell_cve_2022_41040.yar			
 Rule	neo23x0	neo23x0/webshell_regeorg	neo23x0/yara/webshell_regeorg.yar			
 Rule	neo23x0	neo23x0/webshell_xsl_transform	neo23x0/yara/webshell_xsl_transform.yar			
-Rule	neo23x0	neo23x0/yara_mixed_ext_vars	neo23x0/yara/yara_mixed_ext_vars.yar			

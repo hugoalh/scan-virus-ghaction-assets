@@ -15,6 +15,10 @@ jobs:
     name: "Main"
     runs-on: "ubuntu-latest"
     steps:
+      - name: "Setup PowerShell Toolkit"
+        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.6.0"
+        with:
+          version: "^1.7.2"
       - name: "Checkout Repository Branch `base`"
         uses: "actions/checkout@v4.1.0"
         with:
@@ -25,10 +29,6 @@ jobs:
         with:
           ref: "main"
           path: "main"
-      - name: "Setup PowerShell Toolkit"
-        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v1.6.0"
-        with:
-          version: "^1.7.2"
       - name: "Config Git"
         run: |
           git --no-pager config --global "user.name" "github-actions"
@@ -50,7 +50,7 @@ jobs:
       - name: "Update Assets"
         id: "update-assets"
         run: |
-          pwsh -NonInteractive ./_updater.ps1
+          pwsh -NonInteractive ./updater.ps1
         working-directory: "${{env.SVGHAA_PATH_MAIN}}"
       - name: "Pull File From Branch `main` To Branch `base`"
         run: |
@@ -60,17 +60,23 @@ jobs:
               Copy-Item -LiteralPath $_.FullName -Destination ($_.FullName -ireplace "^$([RegEx]::Escape($Env:SVGHAA_PATH_MAIN))", $Env:SVGHAA_PATH_BASE) -Force -Confirm:$False
             }
         shell: "pwsh"
-      - name: "Push Branch `main`"
-        if: "${{github.event_name == 'workflow_dispatch' || steps.update-assets.outputs.should_push == 'true'}}"
+      - name: "Update Repository Branch `main`"
         run: |
-          git --no-pager add --all
-          git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
-          git --no-pager push
+          [String]$Diff = git --no-pager diff --minimal --no-color --numstat |
+            Join-String -Separator "`n"
+          If ($Diff.Length -gt 0) {
+            git --no-pager add --all
+            git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
+            git --no-pager push
+          }
         working-directory: "${{env.SVGHAA_PATH_MAIN}}"
-      - name: "Push Branch `base`"
-        if: "${{github.event_name == 'workflow_dispatch' || steps.update-assets.outputs.should_push == 'true'}}"
+      - name: "Update Repository Branch `base`"
         run: |
-          git --no-pager add --all
-          git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
-          git --no-pager push
+          [String]$Diff = git --no-pager diff --minimal --no-color --numstat |
+            Join-String -Separator "`n"
+          If ($Diff.Length -gt 0) {
+            git --no-pager add --all
+            git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
+            git --no-pager push
+          }
         working-directory: "${{env.SVGHAA_PATH_BASE}}"
