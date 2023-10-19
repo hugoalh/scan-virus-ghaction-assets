@@ -141,16 +141,16 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 		$AssetIndex[$AssetIndexRow].Timestamp = $TimeCommit
 		Exit-GitHubActionsLogGroup
 	}
-	Write-Host -Object "Update ``$AssetDirectoryName`` asset index."
+	Write-Host -Object "Update $($AssetTypeMeta.Name) asset index."
 	$AssetIndex |
 		Export-Csv -LiteralPath $AssetIndexFilePath @TsvParameters -UseQuotes 'AsNeeded' -Confirm:$False
 }
 Write-Host -Object 'Verify assets index.'
 [String[]]$IndexIssuesFileNotExist = @()
 [String[]]$IndexIssuesFileNotRecord = @()
-ForEach ($AssetDirectoryName In $AssetsDirectoryNames) {
-	[String]$AssetDirectoryPath = Join-Path -Path $PSScriptRoot -ChildPath $AssetDirectoryName
-	Write-Host -Object "Read ``$AssetDirectoryName`` asset index."
+ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
+	Write-Host -Object "Read $($AssetTypeMeta.Name) asset index."
+	[String]$AssetDirectoryPath = Join-Path -Path $PSScriptRoot -ChildPath $AssetTypeMeta.Path
 	[String]$AssetIndexFilePath = Join-Path -Path $AssetDirectoryPath -ChildPath 'index.tsv'
 	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFilePath @TsvParameters
 	For ([UInt64]$AssetIndexRow = 0; $AssetIndexRow -lt $AssetIndex.Count; $AssetIndexRow += 1) {
@@ -161,9 +161,9 @@ ForEach ($AssetDirectoryName In $AssetsDirectoryNames) {
 		If (Test-Path -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -PathType 'Leaf') {
 			Continue
 		}
-		$IndexIssuesFileNotExist += "$AssetDirectoryName/$($AssetIndexItem.Name)"
+		$IndexIssuesFileNotExist += "$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)"
 	}
-	If ($AssetDirectoryName -ieq 'yara') {
+	If ($AssetTypeMeta.Path -ieq 'yara') {
 		ForEach ($ElementFullName In (
 			Get-ChildItem -LiteralPath @(
 				(Join-Path -Path $AssetDirectoryPath -ChildPath 'bartblaze' -AdditionalChildPath @('rules')),
