@@ -4,6 +4,43 @@ Import-Module -Name 'hugoalh.GitHubActionsToolkit' -Scope 'Local'
 Test-GitHubActionsEnvironment -Mandatory
 Write-Host -Object 'Initialize.'
 $CurrentWorkingDirectory = [System.Environment]::CurrentDirectory
+[String[]]$ClamAVAllowExtensions = @(
+	'.cat',
+	'.cbc',
+	'.cdb',
+	'.crb',
+	'.fp',
+	'.ftm',
+	'.gdb',
+	'.hdb',
+	'.hdu',
+	'.hsb',
+	'.hsu',
+	'.idb',
+	'.ign',
+	'.ign2',
+	'.info',
+	'.ldb',
+	'.ldu',
+	'.mdb',
+	'.mdu',
+	'.msb',
+	'.msu',
+	'.ndb',
+	'.ndu',
+	'.pdb',
+	'.pwdb',
+	'.sfp',
+	'.wdb',
+	'.yar',
+	'.yara'
+)
+[String[]]$YaraAllowExtensions = @(
+	'.yar',
+	'.yara',
+	'.yarac',
+	'.yarc'
+)
 [String[]]$GitIgnores = @(
 	'.cfduplication.*',
 	'.dockerignore',
@@ -78,7 +115,6 @@ $CurrentWorkingDirectory = [System.Environment]::CurrentDirectory
 [String]$TimeCommit = Get-Date -Date $TimeInvoke -UFormat '%Y-%m-%dT%H:%M:%SZ' -AsUTC
 Write-Host -Object "Timestamp: $TimeCommit"
 Set-GitHubActionsOutput -Name 'timestamp' -Value $TimeCommit
-Write-Host -Object 'Update assets.'
 [PSCustomObject[]]$AssetsTypeMeta = @(
 	[PSCustomObject]@{
 		Name = 'ClamAV'
@@ -89,9 +125,10 @@ Write-Host -Object 'Update assets.'
 		Path = 'yara'
 	}
 )
+[String[]]$IndexIssues = @()
 ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 	Write-Host -Object "Read $($AssetTypeMeta.Name) asset index."
-	[String]$AssetDirectoryPath = Join-Path -Path $PSScriptRoot -ChildPath $AssetTypeMeta.Path
+	[String]$AssetDirectoryPath = Join-Path -Path $CurrentWorkingDirectory -ChildPath $AssetTypeMeta.Path
 	[String]$AssetIndexFilePath = Join-Path -Path $AssetDirectoryPath -ChildPath 'index.tsv'
 	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFilePath @TsvParameters
 	For ([UInt64]$AssetIndexRow = 0; $AssetIndexRow -lt $AssetIndex.Count; $AssetIndexRow += 1) {
@@ -99,14 +136,12 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 		If ($AssetIndexItem.Group.Length -gt 0) {
 			Continue
 		}
-		Enter-GitHubActionsLogGroup -Title "At ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)``."
 		If ((Get-Date -Date $AssetIndexItem.Timestamp -AsUTC) -gt $TimeBuffer) {
-			Write-Host -Object 'No need to update.'
-			Exit-GitHubActionsLogGroup
+			Write-Host -Object "No need to update asset ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)``."
 			Continue
 		}
 		If ($AssetIndexItem.Remote -imatch '^https?:\/\/.+?\.git$') {
-			Write-Host -Object "Update via clone Git repository ``$($AssetIndexItem.Remote)``."
+			Write-Host -Object "Need to update asset ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)`` via clone Git repository ``$($AssetIndexItem.Remote)``."
 			[String]$GitWorkingDirectoryName = $AssetIndexItem.Path -isplit '[\\\/]' |
 				Select-Object -Index 0
 			[String]$GitWorkingDirectoryPath = Join-Path -Path $AssetDirectoryPath -ChildPath $GitWorkingDirectoryName
@@ -125,7 +160,7 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 				Remove-Item -Recurse -Force -Confirm:$False -ErrorAction 'Continue'
 		}
 		Else {
-			Write-Host -Object "Update via web request ``$($AssetIndexItem.Remote)``."
+			Write-Host -Object "Need to update asset ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)`` via web request ``$($AssetIndexItem.Remote)``."
 			[String]$OutFilePath = Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path
 			[String]$OutFilePathParent = Split-Path -Path $OutFilePath -Parent
 			If (!(Test-Path -LiteralPath $OutFilePathParent -PathType 'Container')) {
@@ -139,64 +174,38 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 			}
 		}
 		$AssetIndex[$AssetIndexRow].Timestamp = $TimeCommit
-		Exit-GitHubActionsLogGroup
 	}
 	Write-Host -Object "Update $($AssetTypeMeta.Name) asset index."
 	$AssetIndex |
 		Export-Csv -LiteralPath $AssetIndexFilePath @TsvParameters -UseQuotes 'AsNeeded' -Confirm:$False
-}
-Write-Host -Object 'Verify assets index.'
-[String[]]$IndexIssuesFileNotExist = @()
-[String[]]$IndexIssuesFileNotRecord = @()
-ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
-	Write-Host -Object "Read $($AssetTypeMeta.Name) asset index."
-	[String]$AssetDirectoryPath = Join-Path -Path $PSScriptRoot -ChildPath $AssetTypeMeta.Path
-	[String]$AssetIndexFilePath = Join-Path -Path $AssetDirectoryPath -ChildPath 'index.tsv'
-	[PSCustomObject[]]$AssetIndex = Import-Csv -LiteralPath $AssetIndexFilePath @TsvParameters
 	For ([UInt64]$AssetIndexRow = 0; $AssetIndexRow -lt $AssetIndex.Count; $AssetIndexRow += 1) {
 		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexRow]
 		If ($AssetIndexItem.Type -ieq 'Group') {
-			Continue
-		}
-		If (Test-Path -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -PathType 'Leaf') {
-			Continue
-		}
-		$IndexIssuesFileNotExist += "$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)"
-	}
-	If ($AssetTypeMeta.Path -ieq 'yara') {
-		ForEach ($ElementFullName In (
-			Get-ChildItem -LiteralPath @(
-				(Join-Path -Path $AssetDirectoryPath -ChildPath 'bartblaze' -AdditionalChildPath @('rules')),
-				(Join-Path -Path $AssetDirectoryPath -ChildPath 'neo23x0' -AdditionalChildPath @('yara'))
-			) -Include @('*.yar', '*.yara') -Recurse -File |
-				Select-Object -ExpandProperty 'FullName'
-		)) {
-			[String]$ElementRelativeName = $ElementFullName -ireplace "^$([RegEx]::Escape($AssetDirectoryPath))[\\\/]", '' -ireplace '[\\\/]', '/'
-			If ($AssetIndex.Path -inotcontains $ElementRelativeName) {
-				$IndexIssuesFileNotRecord += $ElementRelativeName
+			If ($AssetsTypeMeta.Path -ieq 'clamav') {
+				[String[]]$AllowExtensions = $ClamAVAllowExtensions
+			} ElseIf ($AssetsTypeMeta.Path -ieq 'yara') {
+				[String[]]$AllowExtensions = $YaraAllowExtensions
+			} Else {
+				Continue
+			}
+			ForEach ($ElementRelativeName In (
+				Get-ChildItem -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -Include $AllowExtensions -Recurse -File |
+					Select-Object -ExpandProperty 'FullName' |
+					ForEach-Object -Process { $_ -ireplace "^$([RegEx]::Escape($AssetDirectoryPath))[\\/]", '' -ireplace '[\\/]', '/' }
+			)) {
+				If ($AssetIndex.Path -inotcontains $ElementRelativeName) {
+					$IndexIssues += "Asset ``$($AssetTypeMeta.Name)/$ElementRelativeName`` is not record!"
+				}
 			}
 		}
+		If (!(Test-Path -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -PathType 'Leaf')) {
+			$IndexIssues += "Asset ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)`` is not exist!"
+		}
 	}
 }
-If ($IndexIssuesFileNotExist.Count -gt 0) {
-	Write-GitHubActionsWarning -Message @"
-File Not Exist [$($IndexIssuesFileNotExist.Count)]:
-
-$(
-	$IndexIssuesFileNotExist |
-		Sort-Object |
-		Join-String -Separator "`n" -FormatString '- `{0}`'
-)
-"@
-}
-If ($IndexIssuesFileNotRecord -gt 0) {
-	Write-GitHubActionsWarning -Message @"
-File Not Record [$($IndexIssuesFileNotRecord.Count)]:
-
-$(
-	$IndexIssuesFileNotRecord |
-		Sort-Object |
-		Join-String -Separator "`n" -FormatString '- `{0}`'
-)
-"@
+If ($IndexIssues.Count -gt 0) {
+	Write-GitHubActionsWarning -Message (
+		$IndexIssues |
+			Join-String -Separator "`n" -FormatString '- {0}'
+	)
 }
