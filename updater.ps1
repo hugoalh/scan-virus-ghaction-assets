@@ -37,20 +37,9 @@ $CurrentWorkingDirectory = [System.Environment]::CurrentDirectory
 )
 [String[]]$YaraAllowExtensions = @(
 	'*.yar',
-	'*.yara',
-	'*.yarac',
-	'*.yarc'
+	'*.yara'
 )
 [String[]]$GitIgnores = @(
-	'.cfduplication.*',
-	'.dockerignore',
-	'.eslintrc.*',
-	'.git',
-	'.github',
-	'.markdownlint.*',
-	'.vscode',
-	'.vscodeignore',
-	'.yamllint.*',
 	'*.[0-9][0-9][0-9]',
 	'*.ai',
 	'*.alz',
@@ -61,8 +50,10 @@ $CurrentWorkingDirectory = [System.Environment]::CurrentDirectory
 	'*.cjs',
 	'*.cpuprofile',
 	'*.db',
+	'*.deb',
 	'*.diff',
 	'*.dll',
+	'*.[Dd]ockerfile',
 	'*.egg',
 	'*.eml',
 	'*.exe',
@@ -78,6 +69,9 @@ $CurrentWorkingDirectory = [System.Environment]::CurrentDirectory
 	'*.lnk',
 	'*.log',
 	'*.mjs',
+	'*.msi',
+	'*.msix',
+	'*.msixbundle',
 	'*.pdf',
 	'*.pkg',
 	'*.png',
@@ -89,8 +83,10 @@ $CurrentWorkingDirectory = [System.Environment]::CurrentDirectory
 	'*.py',
 	'*.rar',
 	'*.rb',
+	'*.rpm',
 	'*.sh',
 	'*.sql',
+	'*.svg',
 	'*.tar',
 	'*.tar.gz',
 	'*.tar.gzip',
@@ -103,7 +99,16 @@ $CurrentWorkingDirectory = [System.Environment]::CurrentDirectory
 	'*.yaml',
 	'*.yml',
 	'*.zip',
-	'Dockerfile',
+	'.cfduplication.*',
+	'.dockerignore',
+	'.eslintrc.*',
+	'.git',
+	'.github',
+	'.markdownlint.*',
+	'.vscode',
+	'.vscodeignore',
+	'.yamllint.*',
+	'[Dd]ockerfile',
 	'[Mm]akefile'
 )
 [Hashtable]$TsvParameters = @{
@@ -125,7 +130,6 @@ Set-GitHubActionsOutput -Name 'timestamp' -Value $TimeCommit
 		Path = 'yara'
 	}
 )
-[String[]]$IndexIssues = @()
 ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 	Write-Host -Object "Read $($AssetTypeMeta.Name) asset index."
 	[String]$AssetDirectoryPath = Join-Path -Path $CurrentWorkingDirectory -ChildPath $AssetTypeMeta.Path
@@ -183,6 +187,7 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 		Export-Csv -LiteralPath $AssetIndexFilePath @TsvParameters -UseQuotes 'AsNeeded' -Confirm:$False
 	For ([UInt64]$AssetIndexRow = 0; $AssetIndexRow -lt $AssetIndex.Count; $AssetIndexRow += 1) {
 		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexRow]
+		[String]$AssetIndexItemFullPath = Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path
 		If ($AssetIndexItem.Type -ieq 'Group') {
 			If ($AssetsTypeMeta.Path -ieq 'clamav') {
 				[String[]]$AllowExtensions = $ClamAVAllowExtensions
@@ -192,29 +197,25 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 				Continue
 			}
 			ForEach ($ElementRelativeName In (
-				Get-ChildItem -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -Include $AllowExtensions -Recurse -File |
+				Get-ChildItem -LiteralPath $AssetIndexItemFullPath -Include $AllowExtensions -Recurse -File |
 					Select-Object -ExpandProperty 'FullName' |
 					ForEach-Object -Process { $_ -ireplace "^$([RegEx]::Escape($AssetDirectoryPath))[\\/]", '' -ireplace '[\\/]', '/' }
 			)) {
 				If ($AssetIndex.Path -inotcontains $ElementRelativeName) {
-					$IndexIssues += "Asset ``$($AssetTypeMeta.Name)/$ElementRelativeName`` is not record!"
+					Write-GitHubActionsWarning -Message "Asset ``$($AssetTypeMeta.Name)/$ElementRelativeName`` is not record!"
 				}
 			}
 			Continue
 		}
 		If ($AssetIndexItem.Type -ieq 'Unusable') {
-			Remove-Item -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -Recurse -Force -Confirm:$False
+			If (Test-Path -LiteralPath $AssetIndexItemFullPath -PathType 'Leaf') {
+				Remove-Item -LiteralPath $AssetIndexItemFullPath -Recurse -Force -Confirm:$False
+			}
 			Continue
 		}
-		If (!(Test-Path -LiteralPath (Join-Path -Path $AssetDirectoryPath -ChildPath $AssetIndexItem.Path) -PathType 'Leaf')) {
-			$IndexIssues += "Asset ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)`` is not exist!"
+		If (!(Test-Path -LiteralPath $AssetIndexItemFullPath -PathType 'Leaf')) {
+			Write-GitHubActionsWarning -Message "Asset ``$($AssetTypeMeta.Name)/$($AssetIndexItem.Name)`` is not exist!"
 			Continue
 		}
 	}
-}
-If ($IndexIssues.Count -gt 0) {
-	Write-GitHubActionsWarning -Message (
-		$IndexIssues |
-			Join-String -Separator "`n" -FormatString '- {0}'
-	)
 }
