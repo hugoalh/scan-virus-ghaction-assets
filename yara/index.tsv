@@ -11,6 +11,7 @@ Rule	bartblaze	bartblaze/crimeware_aurorastealer	bartblaze/rules/crimeware/Auror
 Rule	bartblaze	bartblaze/crimeware_avemaria	bartblaze/rules/crimeware/AveMaria.yar			
 Rule	bartblaze	bartblaze/crimeware_bazarbackdoor	bartblaze/rules/crimeware/BazarBackdoor.yar			
 Rule	bartblaze	bartblaze/crimeware_bazarloader	bartblaze/rules/crimeware/BazarLoader.yar			
+Rule	bartblaze	bartblaze/crimeware_broex	bartblaze/rules/crimeware/BroEx.yar			
 Rule	bartblaze	bartblaze/crimeware_crunchyroll	bartblaze/rules/crimeware/CrunchyRoll.yar			
 Rule	bartblaze	bartblaze/crimeware_ganelp	bartblaze/rules/crimeware/Ganelp.yar			
 Rule	bartblaze	bartblaze/crimeware_icedid	bartblaze/rules/crimeware/IcedID.yar			
