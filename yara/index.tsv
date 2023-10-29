@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-10-29T00:55:32Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-10-29T00:55:32Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-10-29T08:14:25Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-10-29T08:14:25Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -491,6 +491,7 @@ Rule	neo23x0	neo23x0/expl_cve_2022_41040_proxynoshell	neo23x0/yara/expl_cve_2022
 Rule	neo23x0	neo23x0/expl_cve_2022_46169_cacti	neo23x0/yara/expl_cve_2022_46169_cacti.yar			
 Rule	neo23x0	neo23x0/expl_ivanti_epmm_mobileiron_cve_2023_35078	neo23x0/yara/expl_ivanti_epmm_mobileiron_cve_2023_35078.yar			
 Rule	neo23x0	neo23x0/expl_keepass_cve_2023_24055	neo23x0/yara/expl_keepass_cve_2023_24055.yar			
+Rule	neo23x0	neo23x0/expl_libcue_cve_2023_43641	neo23x0/yara/expl_libcue_cve_2023_43641.yar			
 Rule	neo23x0	neo23x0/expl_libssh_cve_2023_2283_jun23	neo23x0/yara/expl_libssh_cve_2023_2283_jun23.yar			
 Rule	neo23x0	neo23x0/expl_log4j_cve_2021_44228	neo23x0/yara/expl_log4j_cve_2021_44228.yar			
 Rule	neo23x0	neo23x0/expl_macos_switcharoo_dec22	neo23x0/yara/expl_macos_switcharoo_dec22.yar			
@@ -671,6 +672,7 @@ Rule	neo23x0	neo23x0/gen_thumbs_cloaking	neo23x0/yara/gen_thumbs_cloaking.yar
 Rule	neo23x0	neo23x0/gen_transformed_strings	neo23x0/yara/gen_transformed_strings.yar			
 Rule	neo23x0	neo23x0/gen_tscookie_rat	neo23x0/yara/gen_tscookie_rat.yar			
 Rule	neo23x0	neo23x0/gen_unicorn_obfuscated_powershell	neo23x0/yara/gen_unicorn_obfuscated_powershell.yar			
+Rule	neo23x0	neo23x0/gen_unsigned_thor	neo23x0/yara/gen_unsigned_thor.yar			
 Rule	neo23x0	neo23x0/gen_unspecified_malware	neo23x0/yara/gen_unspecified_malware.yar			
 Rule	neo23x0	neo23x0/gen_url_persitence	neo23x0/yara/gen_url_persitence.yar			
 Rule	neo23x0	neo23x0/gen_url_to_local_exe	neo23x0/yara/gen_url_to_local_exe.yar			
