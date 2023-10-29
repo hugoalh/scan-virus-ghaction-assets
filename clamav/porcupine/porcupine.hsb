@@ -1,4 +1,9 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+b7938fd498d7c874cbfe193689595082:598596:Porcupine.NSIS.Injector.ASH.183216:73
+617ff260c3c17d90c394d42cc5e14959:736090:Porcupine.NSIS.Injector.ASH.183215:73
+baf4ab23ae9a0ba5f85999c640f22c97:189345:Porcupine.Unclassified.183113:73
+d1d6a5f8c4fdeb6ca94550107dfd4ee7:602812:Porcupine.NSIS.Injector.ASH.183047:73
+f6cbf303899397b7d28e19930d48627d:740313:Porcupine.NSIS.Injector.ASH.183046:73
 84b89958077bf01cce1a6a6e56f9b043:1245184:Porcupine.Trojan.PSW.MSIL.Agensla.gen.182930:73
 0059cc7f2decc3d1ee0f530491e43a74:600509:Porcupine.Trojan.PSW.MSIL.Agensla.gen.182654:73
 8412f83da0625874eeb397d89338fb7b:424536:Porcupine.MSIL.Kryptik_AGen.BMA.182653:73
@@ -167,16 +172,3 @@ c6c1f5550ba032ce8cc907426b461b8f:635125:Porcupine.Win32.Exploit.CVE-2017-11882.C
 8ddc072ecdb047e970d092f34996e1ac:25313:Porcupine.DOC.Phishing.Agent.TA.172625:73
 128d867568cb6705bec0027f15cb353b:444222:Porcupine.Trojan.MSIL.Crypt.gen.172524:73
 5503751d2d374b2602868c82a4907633:703488:Porcupine.Trojan.MSIL.Crypt.gen.172523:73
-ae58dec70300b0418143fafa30053cf8:16430:Porcupine.DangerousObject.Multi.Generic.172506:73
-c26455a679dd2ae7fcde773b9bebe643:833991:Porcupine.Win32.Downloader.ModiLoader.XB.172485:73
-cea4b789e3692f28b75a77db622ac900:1378304:Porcupine.Win32.Downloader.ModiLoader.XB.172484:73
-e7069d8b1f590fb4fb64371b0c18781a:1245184:Porcupine.MSIL.Downloader.Agent.KWG.172415:73
-321850c5a150f6fa4adab3b1772169f3:659456:Porcupine.Unclassified.172409:73
-03e60d9cb812424aa5590c655b24a326:639575:Porcupine.Trojan.MSIL.Taskun.gen.172388:73
-e98ca37bf501a94cc1014db34defbeb1:744398:Porcupine.Unclassified.172371:73
-b85a889fd4821baf56d94ffabacaa7b0:934793:Porcupine.Trojan.MSIL.Cryptos.dfpw.172370:73
-e371fd1288953c8f5a6010384aa9cd3c:994304:Porcupine.MSIL.Downloader.Agent.PSH.172369:73
-fd2c52c8a3fdfd8015400a1ec02b8648:651317:Porcupine.Win32.Exploit.CVE-2017-11882.C.172326:73
-e942aa9438b4af6bea35cfd7c9f05c5e:79872:Porcupine.Unclassified.172325:73
-f0ef2c3a320448b3a8ea0535da3b411b:1910756:Porcupine.DangerousObject.Multi.Generic.172234:73
-4bfb32d1fffed625ac05dc418e6116c0:2688:Porcupine.MSIL.GenKryptik.GOEQ.172150:73
