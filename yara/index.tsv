@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-11-18T00:54:31Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-11-18T00:54:31Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-11-19T00:58:59Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-11-19T00:58:59Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -501,6 +501,7 @@ Rule	neo23x0	neo23x0/expl_proxynotshell_owassrf_dec22	neo23x0/yara/expl_proxynot
 Rule	neo23x0	neo23x0/expl_proxyshell	neo23x0/yara/expl_proxyshell.yar			
 Rule	neo23x0	neo23x0/expl_sharepoint_cve_2023_29357	neo23x0/yara/expl_sharepoint_cve_2023_29357.yar			
 Rule	neo23x0	neo23x0/expl_spring4shell	neo23x0/yara/expl_spring4shell.yar			
+Rule	neo23x0	neo23x0/expl_sysaid_cve_2023_47246	neo23x0/yara/expl_sysaid_cve_2023_47246.yar			
 Rule	neo23x0	neo23x0/expl_teamcity_2023_42793	neo23x0/yara/expl_teamcity_2023_42793.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2014_4076	neo23x0/yara/exploit_cve_2014_4076.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2015_1674	neo23x0/yara/exploit_cve_2015_1674.yar			
