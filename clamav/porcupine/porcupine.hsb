@@ -1,4 +1,8 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+fa8a94f695d538e04aeeb8c7ac7cbd35:756168:Porcupine.NSIS.Injector.ASH.189991:73
+984f81d6a1c0da37ed2d5b4dd307ee34:776952:Porcupine.NSIS.Injector.ASH.189977:73
+19937e405b6aee62a32a488162174604e0a53e688bdccb3f7aeb0f780ba7d1f1:2009088:Porcupine.Unclassified.189894:73
+287c003f919180e57cf66343ff47789f:652800:Porcupine.Trojan.Spy.MSIL.Noon.gen.189893:73
 e5485d26f4b8db95fbf85ca7d525d533:176000:Porcupine.Trojan.189725:73
 a5e36aaefd2b38d954bf5fb3bc0f0d71:17213:Porcupine.Trojan.Script.Generic.189724:73
 d80cb276836c34bc2d44922fe4cbf6e5:818176:Porcupine.Trojan.PSW.MSIL.Agensla.gen.189710:73
@@ -187,18 +191,3 @@ f6cbf303899397b7d28e19930d48627d:740313:Porcupine.NSIS.Injector.ASH.183046:73
 a26bd3cad5532960669496443fca1aa8:30385:Porcupine.Unclassified.182359:73
 8129a8973b8baa7cfededc2d7b6ceb86:53057:Porcupine.Trojan.VBS.SAgent.gen.182331:73
 515ccd73233706a60bd4b6a20dd72d2d:28576:Porcupine.Trojan.VBS.SAgent.gen.182330:73
-c94a42b8695a8d1be0cd2f74181a5540:218408:Porcupine.NSIS.Injector.ASH.182233:73
-049e78cac6292afca7c630dec50db2e1:768000:Porcupine.NSIS.Injector.ASH.182232:73
-8921974d605d2532500aed2b0c30b252:187838:Porcupine.Generik.GHQNGRS.182207:73
-be507f29d2167b88eeff6dc04e7eb8e7:868159:Porcupine.Win32.Downloader.ModiLoader.XM.182186:73
-2a45d8e8d66c9a11ce2c51df8c0425ba:1314816:Porcupine.Backdoor.Win32.Remcos.gen.182185:73
-67d802db01505a844344fce68323f8dd:612560:Porcupine.Trojan.PSW.MSIL.Agensla.gen.182143:73
-f71ec82b93ee1bfc2db0b939a243bb3e:662416:Porcupine.Trojan.PSW.MSIL.Agensla.gen.182142:73
-26cd2001a30831edd75bcaf4fb8dd039:557293:Porcupine.Unclassified.182098:73
-3a42ed7fadf2e13edb88a34e84ccdb66:642048:Porcupine.MSIL.Kryptik.AJXY.182046:73
-e8916185f3034a9fe8415b48ce177d67:617525:Porcupine.MSIL.Kryptik.AJXY.182045:73
-1c52d7690aa24400f2065f3387eeb22f:1245184:Porcupine.Trojan.VBS.SAgent.gen.181992:73
-1fc8c34df634e73623d961f82015bb10:414186:Porcupine.Trojan.MSIL.Taskun.gen.181830:73
-6fabf567f215fd1769dde8dfdac3b8b5:493056:Porcupine.Trojan.MSIL.Convagent.gen.181829:73
-b11cace8452e8f30dde46d643a226460:659668:Porcupine.Trojan.Win32.Convagent.gen.181801:73
-5f7fe9c19aae16719cdd112e20e39134:759296:Porcupine.Trojan.Win32.Convagent.gen.181800:73
