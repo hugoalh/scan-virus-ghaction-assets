@@ -280,6 +280,7 @@ Rule	neo23x0	neo23x0/apt_quasar_rat	neo23x0/yara/apt_quasar_rat.yar
 Rule	neo23x0	neo23x0/apt_quasar_vermin	neo23x0/yara/apt_quasar_vermin.yar			
 Rule	neo23x0	neo23x0/apt_rancor	neo23x0/yara/apt_rancor.yar			
 Rule	neo23x0	neo23x0/apt_ransom_darkbit_feb23	neo23x0/yara/apt_ransom_darkbit_feb23.yar			
+Rule	neo23x0	neo23x0/apt_ransom_lockbit_citrixbleed_nov23	neo23x0/yara/apt_ransom_lockbit_citrixbleed_nov23.yar		
 Rule	neo23x0	neo23x0/apt_ransom_vicesociety_dec22	neo23x0/yara/apt_ransom_vicesociety_dec22.yar			
 Rule	neo23x0	neo23x0/apt_reaver_sunorcal	neo23x0/yara/apt_reaver_sunorcal.yar			
 Rule	neo23x0	neo23x0/apt_rehashed_rat	neo23x0/yara/apt_rehashed_rat.yar			
