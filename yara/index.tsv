@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-12-04T00:55:52Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-12-04T00:55:52Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-12-05T00:56:11Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-12-05T00:56:11Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -280,6 +280,7 @@ Rule	neo23x0	neo23x0/apt_quasar_rat	neo23x0/yara/apt_quasar_rat.yar
 Rule	neo23x0	neo23x0/apt_quasar_vermin	neo23x0/yara/apt_quasar_vermin.yar			
 Rule	neo23x0	neo23x0/apt_rancor	neo23x0/yara/apt_rancor.yar			
 Rule	neo23x0	neo23x0/apt_ransom_darkbit_feb23	neo23x0/yara/apt_ransom_darkbit_feb23.yar			
+Rule	neo23x0	neo23x0/apt_ransom_lockbit_citrixbleed_nov23	neo23x0/yara/apt_ransom_lockbit_citrixbleed_nov23.yar			
 Rule	neo23x0	neo23x0/apt_ransom_vicesociety_dec22	neo23x0/yara/apt_ransom_vicesociety_dec22.yar			
 Rule	neo23x0	neo23x0/apt_reaver_sunorcal	neo23x0/yara/apt_reaver_sunorcal.yar			
 Rule	neo23x0	neo23x0/apt_rehashed_rat	neo23x0/yara/apt_rehashed_rat.yar			
