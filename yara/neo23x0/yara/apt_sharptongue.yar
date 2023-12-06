@@ -10,6 +10,7 @@ rule APT_SharpTongue_JS_SharpExt_Chrome_Extension : SharpTongue {
         memory_suitable = 1
         score = 85
         license = "See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt"
+        id = "61b5176a-ff73-5fce-bc70-c9e09bb5afed"
     strings:
         $s1 = "\"mode=attach&name=\"" ascii
         $s2 = "\"mode=new&mid=\"" ascii
