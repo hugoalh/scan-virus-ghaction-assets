@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-12-15T00:56:14Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-12-15T00:56:14Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-12-15T05:13:00Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-12-15T05:13:00Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -707,6 +707,7 @@ Rule	neo23x0	neo23x0/mal_cryp_rat	neo23x0/yara/mal_cryp_rat.yar
 Rule	neo23x0	neo23x0/mal_drivers	neo23x0/yara/yara-rules_mal_drivers.yar			
 Rule	neo23x0	neo23x0/mal_ducktail_compromised_certs_jun23	neo23x0/yara/mal_ducktail_compromised_certs_jun23.yar			
 Rule	neo23x0	neo23x0/mal_efile_apr23	neo23x0/yara/mal_efile_apr23.yar			
+Rule	neo23x0	neo23x0/mal_fake_document_software	neo23x0/yara/mal_fake_document_software.yar			
 Rule	neo23x0	neo23x0/mal_lnx_barracuda_cve_2023_2868	neo23x0/yara/mal_lnx_barracuda_cve_2023_2868.yar			
 Rule	neo23x0	neo23x0/mal_lnx_implant_may22	neo23x0/yara/mal_lnx_implant_may22.yar			
 Rule	neo23x0	neo23x0/mal_lockbit_lnx_macos_apr23	neo23x0/yara/mal_lockbit_lnx_macos_apr23.yar			
