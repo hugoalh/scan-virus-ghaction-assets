@@ -3528,3 +3528,4 @@ Sanesecurity.Foxhole.Rar_fs3527:CL_TYPE_RAR:*:(?i)^shipping doc.{0,30}\.exe$:*:*
 Sanesecurity.Foxhole.Rar_fs3528:CL_TYPE_RAR:*:(?i)^remiitance copy.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3529:CL_TYPE_ZIP:*:(?i)^new order inquiry.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.7Zip_fs3530:CL_TYPE_7Z:*:(?i)^new order purchase.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.BadPdf_fs3531:CL_TYPE_MAIL:*:^202.[0-9]{10}\.pdf:*:*:*:*:*:*
