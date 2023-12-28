@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-12-27T00:53:25Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-12-27T00:53:25Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2023-12-28T00:53:16Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2023-12-28T00:53:16Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -27,6 +27,7 @@ Rule	bartblaze	bartblaze/crimeware_purplefox	bartblaze/rules/crimeware/PurpleFox
 Rule	bartblaze	bartblaze/crimeware_redline	bartblaze/rules/crimeware/RedLine.yar			
 Rule	bartblaze	bartblaze/crimeware_redline_campaign_june2021	bartblaze/rules/crimeware/RedLine_Campaign_June2021.yar			
 Rule	bartblaze	bartblaze/crimeware_saintbot	bartblaze/rules/crimeware/SaintBot.yar			
+Rule	bartblaze	bartblaze/crimeware_shinnyshield	bartblaze/rules/crimeware/ShinnyShield.yar			
 Rule	bartblaze	bartblaze/crimeware_systembc	bartblaze/rules/crimeware/SystemBC.yar			
 Rule	bartblaze	bartblaze/crimeware_unk_br_banker	bartblaze/rules/crimeware/Unk_BR_Banker.yar			
 Rule	bartblaze	bartblaze/crimeware_unk_crime_downloader_1	bartblaze/rules/crimeware/Unk_Crime_Downloader_1.yar			
@@ -83,7 +84,6 @@ Rule	bartblaze	bartblaze/ransomware_wickrme	bartblaze/rules/ransomware/WickrMe.y
 Rule	bartblaze	bartblaze/ransomware_winlock	bartblaze/rules/ransomware/WinLock.yar			
 Rule	bartblaze	bartblaze/ransomware_xiaoba	bartblaze/rules/ransomware/XiaoBa.yar			
 Rule	bartblaze	bartblaze/ransomware_zeppelin	bartblaze/rules/ransomware/Zeppelin.yar			
-Rule	bartblaze	bartblaze/shinnyshield	bartblaze/rules/ShinnyShield.yar			
 Rule	neo23x0	neo23x0/apt_aa19_024a	neo23x0/yara/apt_aa19_024a.yar			
 Rule	neo23x0	neo23x0/apt_agent_btz	neo23x0/yara/apt_agent_btz.yar			
 Rule	neo23x0	neo23x0/apt_alienspy_rat	neo23x0/yara/apt_alienspy_rat.yar			
