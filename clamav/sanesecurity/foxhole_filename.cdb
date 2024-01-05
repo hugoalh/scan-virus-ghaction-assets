@@ -3528,3 +3528,46 @@ Sanesecurity.Foxhole.Rar_fs3527:CL_TYPE_RAR:*:(?i)^shipping doc.{0,30}\.exe$:*:*
 Sanesecurity.Foxhole.Rar_fs3528:CL_TYPE_RAR:*:(?i)^remiitance copy.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3529:CL_TYPE_ZIP:*:(?i)^new order inquiry.{0,30}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.7Zip_fs3530:CL_TYPE_7Z:*:(?i)^new order purchase.{0,30}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Rar_fs3531:CL_TYPE_RAR:*:(?i)^94 jugs x poast ultra 7.7l\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3532:CL_TYPE_RAR:*:(?i)^sales inquiry contract.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3533:CL_TYPE_RAR:*:(?i)^wire details confirmation.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3534:CL_TYPE_RAR:*:(?i)^outstanding for.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3535:CL_TYPE_RAR:*:(?i)^bank copy #.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3536:CL_TYPE_RAR:*:(?i)^dhl doc img.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3537:CL_TYPE_RAR:*:(?i)^credit advice.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3538:CL_TYPE_RAR:*:(?i)^po-.{0,30}\.pif$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3539:CL_TYPE_RAR:*:(?i)______pdf\.\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3540:CL_TYPE_RAR:*:(?i)^inquiry .{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3541:CL_TYPE_RAR:*:(?i)^receipt confirmon\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3542:CL_TYPE_RAR:*:(?i)^purchase _order-enduer#.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3543:CL_TYPE_RAR:*:(?i)^document\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3544:CL_TYPE_RAR:*:(?i)^overdue invoices.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3545:CL_TYPE_RAR:*:(?i)^quote-.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3546:CL_TYPE_RAR:*:(?i)^new quote-.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3547:CL_TYPE_RAR:*:(?i)^due invoice\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3547:CL_TYPE_RAR:*:(?i)^soa_.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3549:CL_TYPE_RAR:*:(?i)^pre alert.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3550:CL_TYPE_RAR:*:(?i)^5th hire soa\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3551:CL_TYPE_RAR:*:(?i)^quote-.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3552:CL_TYPE_RAR:*:(?i)^qpi-yongkang zhongheng\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3553:CL_TYPE_RAR:*:(?i)^dhl consignment.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3554:CL_TYPE_RAR:*:(?i)^payee advise.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3555:CL_TYPE_RAR:*:(?i)^statement of account.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3556:CL_TYPE_ZIP:*:(?i)^mbl+hbl shipping advice\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3557:CL_TYPE_ZIP:*:(?i)^purchase  order.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3558:CL_TYPE_ZIP:*:(?i)pdf\.exe\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3559:CL_TYPE_ZIP:*:(?i),pdf\.pdf$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3560:CL_TYPE_ZIP:*:(?i)^kwez\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3561:CL_TYPE_ZIP:*:(?i)^mbl+hbl shipping docs.{0,30}\.exe$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3562:CL_TYPE_ZIP:*:(?i)^request for proposal.{0,30}\.exe$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3563:CL_TYPE_ZIP:*:(?i)^chima\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3564:CL_TYPE_ZIP:*:(?i)^hsbc swift\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3565:CL_TYPE_ZIP:*:(?i)^confirm payment\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3566:CL_TYPE_ZIP:*:(?i)^shipping documents.{0,30}\.exe$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3567:CL_TYPE_ZIP:*:(?i)mb\)\.exe$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3568:CL_TYPE_ZIP:*:(?i)^euro .{0,30}\.bat$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3569:CL_TYPE_ZIP:*:(?i)^po cee#.{0,30}\.bat$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3570:CL_TYPE_ZIP:*:(?i)^swift .{0,30}\.bat$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3571:CL_TYPE_ZIP:*:(?i)^soa .{0,30}\.bat$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3572:CL_TYPE_ZIP:*:(?i)^pre alert .{0,30}\.bat$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3573:CL_TYPE_ZIP:*:(?i)^skmbt_.{0,30}\.bat$:*:*:*:1:*:
