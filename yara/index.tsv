@@ -284,6 +284,7 @@ Rule	neo23x0	neo23x0/apt_ransom_lockbit_citrixbleed_nov23	neo23x0/yara/apt_ranso
 Rule	neo23x0	neo23x0/apt_ransom_vicesociety_dec22	neo23x0/yara/apt_ransom_vicesociety_dec22.yar			
 Rule	neo23x0	neo23x0/apt_reaver_sunorcal	neo23x0/yara/apt_reaver_sunorcal.yar			
 Rule	neo23x0	neo23x0/apt_rehashed_rat	neo23x0/yara/apt_rehashed_rat.yar			
+Rule	neo23x0	neo23x0/apt_report_ivanti_mandiant_jan24	neo23x0/yara/apt_report_ivanti_mandiant_jan24.yar			
 Rule	neo23x0	neo23x0/apt_revenge_rat	neo23x0/yara/apt_revenge_rat.yar			
 Rule	neo23x0	neo23x0/apt_rocketkitten_keylogger	neo23x0/yara/apt_rocketkitten_keylogger.yar			
 Rule	neo23x0	neo23x0/apt_rokrat	neo23x0/yara/apt_rokrat.yar			
