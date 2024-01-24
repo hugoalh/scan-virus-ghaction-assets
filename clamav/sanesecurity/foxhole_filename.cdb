@@ -3563,11 +3563,14 @@ Sanesecurity.Foxhole.Zip_fs3562:CL_TYPE_ZIP:*:(?i)^request for proposal.{0,30}\.
 Sanesecurity.Foxhole.Zip_fs3563:CL_TYPE_ZIP:*:(?i)^chima\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3564:CL_TYPE_ZIP:*:(?i)^hsbc swift\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3565:CL_TYPE_ZIP:*:(?i)^confirm payment\.exe$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs3566:CL_TYPE_ZIP:*:(?i)^shipping documents.{0,30}\.exe$:*:*:*:1:*:
-Sanesecurity.Foxhole.Zip_fs3567:CL_TYPE_ZIP:*:(?i)mb\)\.exe$:*:*:*:1:*:
-Sanesecurity.Foxhole.Zip_fs3568:CL_TYPE_ZIP:*:(?i)^euro .{0,30}\.bat$:*:*:*:1:*:
-Sanesecurity.Foxhole.Zip_fs3569:CL_TYPE_ZIP:*:(?i)^po cee#.{0,30}\.bat$:*:*:*:1:*:
-Sanesecurity.Foxhole.Zip_fs3570:CL_TYPE_ZIP:*:(?i)^swift .{0,30}\.bat$:*:*:*:1:*:
-Sanesecurity.Foxhole.Zip_fs3571:CL_TYPE_ZIP:*:(?i)^soa .{0,30}\.bat$:*:*:*:1:*:
-Sanesecurity.Foxhole.Zip_fs3572:CL_TYPE_ZIP:*:(?i)^pre alert .{0,30}\.bat$:*:*:*:1:*:
-Sanesecurity.Foxhole.Zip_fs3573:CL_TYPE_ZIP:*:(?i)^skmbt_.{0,30}\.bat$:*:*:*:1:*:
+Sanesecurity.Foxhole.Zip_fs3566:CL_TYPE_ZIP:*:(?i)^shipping documents.{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3567:CL_TYPE_ZIP:*:(?i)mb\)\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3568:CL_TYPE_ZIP:*:(?i)^euro .{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3569:CL_TYPE_ZIP:*:(?i)^po cee#.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3570:CL_TYPE_ZIP:*:(?i)^swift .{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3571:CL_TYPE_ZIP:*:(?i)^soa .{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3572:CL_TYPE_ZIP:*:(?i)^pre alert .{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3573:CL_TYPE_ZIP:*:(?i)^skmbt_.{0,30}\.bat$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3574:CL_TYPE_ZIP:*:(?i)^ftc_.{0,50}\.hta$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3575:CL_TYPE_ZIP:*:(?i)^ftc_.{0,50}\.hta$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Mail_fs3576:CL_TYPE_MAIL:*:PURCHASE ORDER REQUEST_XLX.SHTML$:*:*:*:*:*:*
