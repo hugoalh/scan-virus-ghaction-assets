@@ -30,8 +30,9 @@ jobs:
           path: "main"
       - name: "Config Git"
         run: |
-          git --no-pager config --global "user.name" "github-actions"
-          git --no-pager config --global "user.email" "github-actions@users.noreply.github.com"
+          git --no-pager config --global 'user.name' 'github-actions'
+          git --no-pager config --global 'user.email' 'github-actions@users.noreply.github.com'
+        shell: "pwsh"
       - name: "Set Branch Path As Environment Variable"
         run: |
           Import-Module -Name 'hugoalh.GitHubActionsToolkit' -Scope 'Local'
