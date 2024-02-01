@@ -138,7 +138,7 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 	For ([UInt64]$AssetIndexRow = 0; $AssetIndexRow -lt $AssetIndex.Count; $AssetIndexRow += 1) {
 		[PSCustomObject]$AssetIndexItem = $AssetIndex[$AssetIndexRow]
 		If (
-			$AssetIndexItem.Type -ieq 'Unusable' -or
+			$AssetIndexItem.Type -iin @('Unusable') -or
 			$AssetIndexItem.Group.Length -gt 0
 		) {
 			Continue
@@ -207,7 +207,7 @@ ForEach ($AssetTypeMeta In $AssetsTypeMeta) {
 			}
 			Continue
 		}
-		If ($AssetIndexItem.Type -ieq 'Unusable') {
+		If ($AssetIndexItem.Type -iin @('Unusable')) {
 			If (Test-Path -LiteralPath $AssetIndexItemFullPath -PathType 'Leaf') {
 				Remove-Item -LiteralPath $AssetIndexItemFullPath -Recurse -Force -Confirm:$False
 			}
