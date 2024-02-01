@@ -48,7 +48,7 @@ jobs:
               ForEach-Object -Process { $_.Trim() } |
               Where-Object -FilterScript { $_.Length -gt 0 }
           )) {
-            git --no-pager checkout base $File
+            git --no-pager restore --source base -- $File
           }
         shell: "pwsh"
       - name: "Update Assets"
@@ -67,7 +67,7 @@ jobs:
         shell: "pwsh"
       - name: "Checkout Repository Branch `base`"
         run: |
-          git --no-pager checkout base
+          git --no-pager switch base
         shell: "pwsh"
       - name: "Checkout Files From Branch `main` To Branch `base`"
         run: |
@@ -76,7 +76,7 @@ jobs:
               ForEach-Object -Process { $_.Trim() } |
               Where-Object -FilterScript { $_.Length -gt 0 }
           )) {
-            git --no-pager checkout main $File
+            git --no-pager restore --source main -- $File
           }
         shell: "pwsh"
       - name: "Push Repository Branch `base`"
