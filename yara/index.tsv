@@ -1,6 +1,6 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2024-01-31T00:53:02Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2024-01-31T00:53:02Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2024-02-01T00:54:50Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2024-02-01T00:54:50Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
@@ -262,6 +262,7 @@ Rule	neo23x0	neo23x0/apt_op_wocao	neo23x0/yara/apt_op_wocao.yar
 Rule	neo23x0	neo23x0/apt_passcv	neo23x0/yara/apt_passcv.yar			
 Rule	neo23x0	neo23x0/apt_passthehashtoolkit	neo23x0/yara/apt_passthehashtoolkit.yar			
 Rule	neo23x0	neo23x0/apt_patchwork	neo23x0/yara/apt_patchwork.yar			
+Rule	neo23x0	neo23x0/apt_peach_sandstorm	neo23x0/yara/apt_peach_sandstorm.yar			
 Rule	neo23x0	neo23x0/apt_plead_downloader	neo23x0/yara/apt_plead_downloader.yar			
 Rule	neo23x0	neo23x0/apt_plugx	neo23x0/yara/apt_plugx.yar			
 Rule	neo23x0	neo23x0/apt_poisonivy	neo23x0/yara/apt_poisonivy.yar			
