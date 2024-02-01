@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: "Update Assets"
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+permissions:
+  contents: "write"
+concurrency:
+  group: "update-assets"
+  cancel-in-progress: false
+env:
+  INPUT_FILES: |-
+    .github\ISSUE_TEMPLATE\config.yml
+    .github\workflows\sync-labels.yml
+    .github\workflows\update-assets.yml
+    .github\dependabot.yml
+    .github\labels.yml
+    clamav\index.tsv
+    yara\index.tsv
+    .gitattributes
+    .gitignore
+    README.md
+    updater.ps1
+jobs:
+  main:
+    name: "Main"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: "Checkout Repository Branch `main`"
+        uses: "actions/checkout@v4.1.1"
+        with:
+          ref: "main"
+      - name: "Setup PowerShell Toolkit"
+        uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v2.0.0"
+        with:
+          version: "^2.1.0"
+      - name: "Config Git"
+        run: |
+          git --no-pager config --global 'user.name' 'github-actions'
+          git --no-pager config --global 'user.email' 'github-actions@users.noreply.github.com'
+        shell: "pwsh"
+      - name: "Checkout Files From Branch `base` To Branch `main`"
+        run: |
+          ForEach ($File In (
+            $Env:INPUT_FILES -isplit '\r?\n' |
+              ForEach-Object -Process { $_.Trim() } |
+              Where-Object -FilterScript { $_.Length -gt 0 }
+          )) {
+            git --no-pager checkout base $File
+          }
+        shell: "pwsh"
+      - name: "Update Assets"
+        id: "update-assets"
+        run: |
+          pwsh -NonInteractive ./updater.ps1
+      - name: "Push Repository Branch `main`"
+        run: |
+          [String]$Diff = git --no-pager diff --minimal --no-color --numstat |
+            Join-String -Separator "`n"
+          If ($Diff.Length -gt 0) {
+            git --no-pager add --all
+            git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
+            git --no-pager push
+          }
+        shell: "pwsh"
+      - name: "Checkout Repository Branch `base`"
+        run: |
+          git --no-pager checkout base
+        shell: "pwsh"
+      - name: "Checkout Files From Branch `main` To Branch `base`"
+        run: |
+          ForEach ($File In (
+            $Env:INPUT_FILES -isplit '\r?\n' |
+              ForEach-Object -Process { $_.Trim() } |
+              Where-Object -FilterScript { $_.Length -gt 0 }
+          )) {
+            git --no-pager checkout main $File
+          }
+        shell: "pwsh"
+      - name: "Push Repository Branch `base`"
+        run: |
+          [String]$Diff = git --no-pager diff --minimal --no-color --numstat |
+            Join-String -Separator "`n"
+          If ($Diff.Length -gt 0) {
+            git --no-pager add --all
+            git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
+            git --no-pager push
+          }
+        shell: "pwsh"
