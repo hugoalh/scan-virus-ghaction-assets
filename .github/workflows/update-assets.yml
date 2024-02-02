@@ -15,11 +15,7 @@ jobs:
     runs-on: "ubuntu-latest"
     env:
       INPUT_FILES: |-
-        .github/ISSUE_TEMPLATE/config.yml
-        .github/workflows/sync-labels.yml
-        .github/workflows/update-assets.yml
-        .github/dependabot.yml
-        .github/labels.yml
+        .github/**
         clamav/index.tsv
         yara/index.tsv
         .gitattributes
