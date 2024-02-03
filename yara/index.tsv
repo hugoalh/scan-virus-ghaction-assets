@@ -530,6 +530,7 @@ Rule	neo23x0	neo23x0/exploit_uac_elevators	neo23x0/yara/exploit_uac_elevators.ya
 Rule	neo23x0	neo23x0/gen_100days_of_yara_2023	neo23x0/yara/gen_100days_of_yara_2023.yar			
 Rule	neo23x0	neo23x0/gen_ace_with_exe	neo23x0/yara/gen_ace_with_exe.yar			
 Rule	neo23x0	neo23x0/gen_anomalies_keyword_combos	neo23x0/yara/gen_anomalies_keyword_combos.yar			
+Rule	neo23x0	neo23x0/gen_anydesk_compromised_cert_feb23	neo23x0/yara/gen_anydesk_compromised_cert_feb23.yar			
 Rule	neo23x0	neo23x0/gen_armitage	neo23x0/yara/gen_armitage.yar			
 Rule	neo23x0	neo23x0/gen_autocad_lsp_malware	neo23x0/yara/gen_autocad_lsp_malware.yar			
 Rule	neo23x0	neo23x0/gen_b374k_extra	neo23x0/yara/gen_b374k_extra.yar			
