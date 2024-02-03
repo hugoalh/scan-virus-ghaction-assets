@@ -4,28 +4,24 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-permissions:
-  contents: "write"
 concurrency:
   group: "update-assets"
   cancel-in-progress: false
-env:
-  INPUT_FILES: |-
-    .github/ISSUE_TEMPLATE/config.yml
-    .github/workflows/sync-labels.yml
-    .github/workflows/update-assets.yml
-    .github/dependabot.yml
-    .github/labels.yml
-    clamav/index.tsv
-    yara/index.tsv
-    .gitattributes
-    .gitignore
-    README.md
-    updater.ps1
 jobs:
   main:
     name: "Main"
+    permissions:
+      contents: "write"
     runs-on: "ubuntu-latest"
+    env:
+      INPUT_FILES: |-
+        .github/**
+        clamav/index.tsv
+        yara/index.tsv
+        .gitattributes
+        .gitignore
+        README.md
+        updater.ps1
     steps:
       - name: "Setup PowerShell Toolkit"
         uses: "hugoalh-studio/setup-powershell-toolkit-ghaction@v2.0.0"
@@ -39,11 +35,9 @@ jobs:
       - name: "Checkout Repository Branch `base`"
         run: |
           git --no-pager checkout -b base refs/remotes/origin/base
-        shell: "pwsh"
       - name: "Switch To Repository Branch `main`"
         run: |
           git --no-pager switch main
-        shell: "pwsh"
       - name: "Config Git"
         run: |
           git --no-pager config --global 'user.name' 'github-actions'
@@ -76,7 +70,6 @@ jobs:
       - name: "Switch To Repository Branch `base`"
         run: |
           git --no-pager switch base
-        shell: "pwsh"
       - name: "Checkout Files From Branch `main` To Branch `base`"
         run: |
           ForEach ($File In (
