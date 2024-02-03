@@ -34,7 +34,7 @@ jobs:
           fetch-depth: "0"
       - name: "Checkout Repository Branch `base`"
         run: |
-          git --no-pager checkout -b base refs/remotes/origin/base
+          git --no-pager checkout -b base origin/base
       - name: "Switch To Repository Branch `main`"
         run: |
           git --no-pager switch main
@@ -59,9 +59,9 @@ jobs:
           pwsh -NonInteractive ./updater.ps1
       - name: "Push Repository Branch `main`"
         run: |
-          [String]$Diff = git --no-pager diff --minimal --no-color --numstat |
+          [String]$GitStatus = git --no-pager status --short |
             Join-String -Separator "`n"
-          If ($Diff.Length -gt 0) {
+          If ($GitStatus.Length -gt 0) {
             git --no-pager add --all
             git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
             git --no-pager push
@@ -82,9 +82,9 @@ jobs:
         shell: "pwsh"
       - name: "Push Repository Branch `base`"
         run: |
-          [String]$Diff = git --no-pager diff --minimal --no-color --numstat |
+          [String]$GitStatus = git --no-pager status --short |
             Join-String -Separator "`n"
-          If ($Diff.Length -gt 0) {
+          If ($GitStatus.Length -gt 0) {
             git --no-pager add --all
             git --no-pager commit --message="Update assets on ${{steps.update-assets.outputs.timestamp}}"
             git --no-pager push
