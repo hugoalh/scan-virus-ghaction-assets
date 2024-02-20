@@ -262,13 +262,3 @@ a596fe3be7b357ddee0df3f26c54d4e8:18432:Porcupine.DangerousObject.Multi.Generic.2
 3a9e75accf2f17fad6f0c4360fc4a884:215141:Porcupine.Exploit.MSOffice.CVE.2018.0802.gen.206042:73
 8f0d5f3651967151ad772123616bfe13:656896:Porcupine.Trojan.PSW.MSIL.Agensla.gen.206041:73
 e0c472ca06db9de81526e12ebaa6b0f3:1044480:Porcupine.Trojan.MSIL.Taskun.gen.205340:73
-3ee86cf85ca87087118ccd76a01a7fee:783872:Porcupine.MSIL.GenKryptik.GSWL.205280:73
-59ace771e42c2f3d2e882ad6e13c761b:614968:Porcupine.MSIL.GenKryptik.GSWL.205279:73
-33ba8d8149f8446741a81e950af0e440:1127424:Porcupine.Win32.Injector.Autoit.FRU.205255:73
-893e3899da83b0c31e01b70d1f3c8e72:599681:Porcupine.Win32.Injector.Autoit.FRU.205254:73
-f7d956dd77ca0f804fe7d9ac55ed0782:755200:Porcupine.Trojan.MSIL.Taskun.205190:73
-ac9432464dad09f5d0b14a6d95c9bc51:675160:Porcupine.Trojan.MSIL.Taskun.205189:73
-423a07fc8178d3a61d686655a671a9b5:1028096:Porcupine.DangerousObject.Multi.Generic.205188:73
-f2a94f46e52ad2f3e775a2ca5183d475:673114:Porcupine.MSIL.Kryptik.AKQL.205155:73
-03a74f6f9bb8f16703dbcbb014f41961:738304:Porcupine.MSIL.Kryptik.AKQL.205154:73
-903c93f7e4155a4f6448fd6dd55cd4ca:1245184:Porcupine.Trojan.Spy.MSIL.Noon.gen.205054:73
