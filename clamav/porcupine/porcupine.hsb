@@ -1,4 +1,6 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+6d531996252c138a6aaea938d04a9975:7513:Porcupine.Trojan.VBS.SAgent.gen.215022:73
+efd906c63e642e9ea1d2840e2b678505:4687:Porcupine.Trojan.VBS.SAgent.gen.214980:73
 03da9c507e81c3d36e04dfd7358c8d45:852992:Porcupine.Trojan.Win32.Guloader.gen.214678:73
 869288892ab156d569c40e98081ed017:637876:Porcupine.Trojan.Spy.MSIL.Noon.gen.214677:73
 53270c6f295520b4b048de2eeb85764a:713728:Porcupine.Trojan.PSW.MSIL.Agensla.gen.214668:73
@@ -250,14 +252,3 @@ a7349364523f7f3637a6665497532953:1276416:Porcupine.Trojan.Win32.Strab.207306:73
 fae427ad68dd28b0c705a590e3905e14:265706:Porcupine.MSIL.GenKryptik.GTCR.207237:73
 de3d6c31e1285a0e5badfc72fa02c4e0:213985:Porcupine.MSIL.Downloader.Agent.QFT.207176:73
 8eae91cc1101b2fcb9058fcfc7fbc544:658552:Porcupine.MSIL.Downloader.Agent.QFT.207175:73
-bbb24fbe1537b1dca329bf06a538c70e:637952:Porcupine.Trojan.Spy.MSIL.Noon.gen.207123:73
-12da763a185560699c08cf3abc0f3f19:346101:Porcupine.MSIL.Downloader.Agent.QFG.207101:73
-ea25b2f51fa3c21a147139e8522fa13d:1056768:Porcupine.MSIL.Downloader.Agent.QFG.207100:73
-eb67273c54e78db4faffab9001148753:295944:Porcupine.Win32.Adware.NotToTrack.A.207077:73
-0e90ce500f71beee999e30d01965c96d:579905:Porcupine.Trojan.Spy.MSIL.Noon.gen.207076:73
-4ce28fbd7fa35035b22ff61a51fcf54a:1120256:Porcupine.Win32.Injector.Autoit.FSQ.207024:73
-364e2179200592f9cd76a0e47514724f:648172:Porcupine.Win32.Injector.Autoit.FSQ.207023:73
-d0d75bf695f8c9ba17bd7b94449eec27:617576:Porcupine.Trojan.Spy.MSIL.Noon.gen.206971:73
-bec209eaa0b01e498c6c9ad2125dbf14:633344:Porcupine.Trojan.Spy.MSIL.Noon.gen.206970:73
-7f044f94304424d92b90ee25aab6e8e2:867510:Porcupine.Unclassified.206968:73
-8c0808705c8abff0a07a6ca91c6df24e:882688:Porcupine.Unclassified.206967:73
