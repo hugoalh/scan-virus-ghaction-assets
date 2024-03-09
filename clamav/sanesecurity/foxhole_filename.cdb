@@ -3574,3 +3574,4 @@ Sanesecurity.Foxhole.Zip_fs3573:CL_TYPE_ZIP:*:(?i)^skmbt_.{0,30}\.bat$:*:*:*:1:*
 Sanesecurity.Foxhole.Zip_fs3574:CL_TYPE_ZIP:*:(?i)^ftc_.{0,50}\.hta$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3575:CL_TYPE_ZIP:*:(?i)^ftc_.{0,50}\.hta$:*:*:*:2:*:*
 Sanesecurity.Foxhole.Mail_fs3576:CL_TYPE_MAIL:*:PURCHASE ORDER REQUEST_XLX.SHTML$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3577:CL_TYPE_ZIP:*:^.[0-9]{10}\.IMG$:*:*:*:1:*:*
