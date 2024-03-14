@@ -3576,3 +3576,5 @@ Sanesecurity.Foxhole.Zip_fs3575:CL_TYPE_ZIP:*:(?i)^ftc_.{0,50}\.hta$:*:*:*:2:*:*
 Sanesecurity.Foxhole.Mail_fs3576:CL_TYPE_MAIL:*:PURCHASE ORDER REQUEST_XLX.SHTML$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs3577:CL_TYPE_ZIP:*:.[0-9]{5,10}\.IMG$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3578:CL_TYPE_ZIP:*:.[0-9]{5,10}\.WSF$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fn3579:CL_TYPE_7Z:*:(?i)^dhl shipment arrival\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fn3580:CL_TYPE_7Z:*:(?i)^document[0-9]{0,5}\.exe$:*:*:*:*:*:*
