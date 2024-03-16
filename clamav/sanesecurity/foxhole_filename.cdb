@@ -3578,3 +3578,7 @@ Sanesecurity.Foxhole.Zip_fs3577:CL_TYPE_ZIP:*:.[0-9]{5,10}\.IMG$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3578:CL_TYPE_ZIP:*:.[0-9]{5,10}\.WSF$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fn3579:CL_TYPE_7Z:*:(?i)^dhl shipment arrival\.exe$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn3580:CL_TYPE_7Z:*:(?i)^document[0-9]{0,5}\.exe$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3581:CL_TYPE_ZIP:*:(?i)^details and invoices\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3582:CL_TYPE_ZIP:*:(?i)^inquiry#.{0,50}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fn3583:CL_TYPE_7Z:*:(?i)^scanned purchase copy\.vbs$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fn3583:CL_TYPE_7Z:*:(?i)^po .{0,30}\.bat$:*:*:*:*:*:*
