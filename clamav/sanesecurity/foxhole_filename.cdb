@@ -3582,3 +3582,6 @@ Sanesecurity.Foxhole.Zip_fs3581:CL_TYPE_ZIP:*:(?i)^details and invoices\.exe$:*:
 Sanesecurity.Foxhole.Zip_fs3582:CL_TYPE_ZIP:*:(?i)^inquiry#.{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fn3583:CL_TYPE_7Z:*:(?i)^scanned purchase copy\.vbs$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fn3583:CL_TYPE_7Z:*:(?i)^po .{0,30}\.bat$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3584:CL_TYPE_ZIP:*:(?i)^invoice_.{0,50}\pdf\.url$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3585:CL_TYPE_ZIP:*:(?i)^document\/document\.doc\.lnk$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Rar_fs3586:CL_TYPE_RAR:*:(?i)^chemical list\.exe$:*:*:*:1:*:*
