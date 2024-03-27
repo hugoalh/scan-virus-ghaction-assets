@@ -1,4 +1,20 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+68ad72a982c62054a37f10115ed06d05:6359:Porcupine.VBS.Agent.RSN.222712:73
+4e036cea4acbe8488c0eeb2d51db6891:182443:Porcupine.Exploit.MSOffice.CVE.2018.0802.gen.222619:73
+ab8ef25689571b2067b6aa01f0bf8e96:124410:Porcupine.Trojan.MSIL.Fsysna.gen.222526:73
+937285e67679dcbd6d3a218cff5723e4:243209:Porcupine.Trojan.VBS.SAgent.gen.222525:73
+02c423946b226d33971a98d5fe60ad64:611942:Porcupine.Trojan.MSIL.Fsysna.gen.222524:73
+cdef16a2a2116cd907aa817b11217cfd:617072:Porcupine.Trojan.MSIL.Fsysna.gen.222523:73
+4bdc4934c5146827cf7109505f54b3e4:715776:Porcupine.Trojan.Spy.MSIL.Noon.gen.222451:73
+bccd52d8b27cd0cdc0370502f4f1ae99:656459:Porcupine.Trojan.Spy.MSIL.Noon.gen.222450:73
+1c1a756218884d532814597afd086ebb:448512:Porcupine.Exploit.MSIL.AmsiBypass.gen.222446:73
+6aae6c2331f40697d68fa7ca40beeb88:69357:Porcupine.Trojan.VBS.SAgent.gen.222445:73
+2abdbfd83497c9995cb7042541e4d630:697856:Porcupine.Trojan.MSIL.Taskun.gen.222438:73
+ad33be98d7a5d3ecbeb8e41b530e322c:638777:Porcupine.Trojan.MSIL.Taskun.gen.222437:73
+37542e8c1a49dbc9fe65a8df1be8ae48:741376:Porcupine.Trojan.MSIL.Gorgon.gen.222431:73
+e8e41fea7fa0550e4faee3d8bcbdd2ec:686139:Porcupine.Trojan.MSIL.Gorgon.gen.222430:73
+0aa08a1de128f754244a41caad13b855:579584:Porcupine.Unclassified.222419:73
+cbd569452894b15d30a166f44d6ccaaf:522432:Porcupine.Unclassified.222418:73
 7e63079e0b4854f06e995dec4a2bd6f5:2612:Porcupine.Trojan.Script.Generic.222375:73
 848ced66c05a735b64b58de6e60a7cb8:722136:Porcupine.NSIS.Injector.CLA.222374:73
 464a6d16d27727a522b802e0f8acf221:6431:Porcupine.Phishing.222249:73
@@ -198,5 +214,3 @@ f1edf67a4d96a52830f803a1ec166252:1057280:Porcupine.Win32.Injector.Autoit.FUP.215
 b3e2be6a986ce0c1e721fed07faf2058:619009:Porcupine.Win32.Injector.Autoit.FUP.215090:73
 1b7cac056ba0e34c049ad8d54d32d486:746496:Porcupine.Trojan.Spy.MSIL.Noon.gen.215071:73
 0903d0d8a216513871e319f0478a008c:703326:Porcupine.Trojan.Spy.MSIL.Noon.gen.215070:73
-6d531996252c138a6aaea938d04a9975:7513:Porcupine.Trojan.VBS.SAgent.gen.215022:73
-efd906c63e642e9ea1d2840e2b678505:4687:Porcupine.Trojan.VBS.SAgent.gen.214980:73

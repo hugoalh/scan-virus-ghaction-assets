@@ -3581,7 +3581,17 @@ Sanesecurity.Foxhole.Zip_fn3580:CL_TYPE_7Z:*:(?i)^document[0-9]{0,5}\.exe$:*:*:*
 Sanesecurity.Foxhole.Zip_fs3581:CL_TYPE_ZIP:*:(?i)^details and invoices\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3582:CL_TYPE_ZIP:*:(?i)^inquiry#.{0,50}\.exe$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fn3583:CL_TYPE_7Z:*:(?i)^scanned purchase copy\.vbs$:*:*:*:*:*:*
-Sanesecurity.Foxhole.Zip_fn3583:CL_TYPE_7Z:*:(?i)^po .{0,30}\.bat$:*:*:*:*:*:*
-Sanesecurity.Foxhole.Zip_fs3584:CL_TYPE_ZIP:*:(?i)^invoice_.{0,50}\pdf\.url$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Zip_fs3585:CL_TYPE_ZIP:*:(?i)^document\/document\.doc\.lnk$:*:*:*:2:*:*
-Sanesecurity.Foxhole.Rar_fs3586:CL_TYPE_RAR:*:(?i)^chemical list\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fn3584:CL_TYPE_7Z:*:(?i)^po .{0,30}\.bat$:*:*:*:*:*:*
+Sanesecurity.Foxhole.Zip_fs3585:CL_TYPE_ZIP:*:(?i)^invoice_.{0,50}\pdf\.url$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3586:CL_TYPE_ZIP:*:(?i)^document\/document\.doc\.lnk$:*:*:*:2:*:*
+Sanesecurity.Foxhole.Rar_fs3587:CL_TYPE_RAR:*:(?i)^chemical list\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3588:CL_TYPE_RAR:*:(?i)^amended order no\..{0,30}\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3589:CL_TYPE_RAR:*:(?i)^justificante de pago contrato.{0,30}\.exe$:*:*:*:1:*:* 
+Sanesecurity.Foxhole.Rar_fs3590:CL_TYPE_RAR:*:(?i)^transferencia.{0,30}\.exe$:*:*:*:1:*:* 
+Sanesecurity.Foxhole.Rar_fs3591:CL_TYPE_RAR:*:(?i)^request for quotation\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3592:CL_TYPE_RAR:*:(?i)^reorchestrates\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3593:CL_TYPE_RAR:*:(?i)^rmariyelstherapy\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3594:CL_TYPE_RAR:*:(?i)^comprobante de transferencia\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3595:CL_TYPE_RAR:*:(?i)^mauqes\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3596:CL_TYPE_RAR:*:(?i)^order quotation\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Rar_fs3597:CL_TYPE_RAR:*:(?i)^hipping documents invoice and copy of dhl\.exe$:*:*:*:1:*:*
