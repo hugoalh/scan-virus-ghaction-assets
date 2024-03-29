@@ -1,8 +1,9 @@
 Type	Group	Name	Path	Dependencies	Remote	Timestamp
-Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2024-03-29T00:55:05Z
-Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2024-03-29T00:55:05Z
+Group		bartblaze	bartblaze/rules		https://github.com/bartblaze/Yara-rules.git	2024-03-29T08:03:35Z
+Group		neo23x0	neo23x0/yara		https://github.com/Neo23x0/signature-base.git	2024-03-29T08:03:35Z
 Rule	bartblaze	bartblaze/apt_confucius_b	bartblaze/rules/APT/Confucius_B.yar			
 Rule	bartblaze	bartblaze/apt_cotx_rat	bartblaze/rules/APT/Cotx_RAT.yar			
+Rule	bartblaze	bartblaze/apt_rokrat	bartblaze/rules/APT/RokRAT.yar			
 Rule	bartblaze	bartblaze/apt_royalroad_rtf	bartblaze/rules/APT/RoyalRoad_RTF.yar			
 Rule	bartblaze	bartblaze/crimeware_andromeda	bartblaze/rules/crimeware/Andromeda.yar			
 Rule	bartblaze	bartblaze/crimeware_arechclient	bartblaze/rules/crimeware/ArechClient.yar			
@@ -23,6 +24,8 @@ Rule	bartblaze	bartblaze/crimeware_monero_compromise	bartblaze/rules/crimeware/M
 Rule	bartblaze	bartblaze/crimeware_offlrouter	bartblaze/rules/crimeware/OfflRouter.yar			
 Rule	bartblaze	bartblaze/crimeware_parallax	bartblaze/rules/crimeware/Parallax.yar			
 Rule	bartblaze	bartblaze/crimeware_prometei	bartblaze/rules/crimeware/Prometei.yar			
+Rule	bartblaze	bartblaze/crimeware_purecrypter	bartblaze/rules/crimeware/PureCrypter.yar			
+Rule	bartblaze	bartblaze/crimeware_purezip	bartblaze/rules/crimeware/PureZip.yar			
 Rule	bartblaze	bartblaze/crimeware_purplefox	bartblaze/rules/crimeware/PurpleFox.yar			
 Rule	bartblaze	bartblaze/crimeware_redline	bartblaze/rules/crimeware/RedLine.yar			
 Rule	bartblaze	bartblaze/crimeware_redline_campaign_june2021	bartblaze/rules/crimeware/RedLine_Campaign_June2021.yar			
@@ -31,9 +34,11 @@ Rule	bartblaze	bartblaze/crimeware_shinnyshield	bartblaze/rules/crimeware/Shinny
 Rule	bartblaze	bartblaze/crimeware_systembc	bartblaze/rules/crimeware/SystemBC.yar			
 Rule	bartblaze	bartblaze/crimeware_unk_br_banker	bartblaze/rules/crimeware/Unk_BR_Banker.yar			
 Rule	bartblaze	bartblaze/crimeware_unk_crime_downloader_1	bartblaze/rules/crimeware/Unk_Crime_Downloader_1.yar			
+Rule	bartblaze	bartblaze/crimeware_unk_crime_downloader_2	bartblaze/rules/crimeware/Unk_Crime_Downloader_2.yar			
 Rule	bartblaze	bartblaze/crimeware_unk_desktoploader	bartblaze/rules/crimeware/Unk_DesktopLoader.yar			
 Rule	bartblaze	bartblaze/crimeware_zloader	bartblaze/rules/crimeware/ZLoader.yar			
 Rule	bartblaze	bartblaze/generic_autoit	bartblaze/rules/generic/AutoIT.yar			
+Rule	bartblaze	bartblaze/generic_costura_protobuf	bartblaze/rules/generic/Costura_Protobuf.yar			
 Rule	bartblaze	bartblaze/generic_enigmastub	bartblaze/rules/generic/EnigmaStub.yar			
 Rule	bartblaze	bartblaze/generic_generic_phishing_pdf	bartblaze/rules/generic/Generic_Phishing_PDF.yar			
 Rule	bartblaze	bartblaze/generic_hidden	bartblaze/rules/generic/Hidden.yar			
@@ -87,8 +92,6 @@ Rule	bartblaze	bartblaze/ransomware_zeppelin	bartblaze/rules/ransomware/Zeppelin
 Rule	neo23x0	neo23x0/apt_aa19_024a	neo23x0/yara/apt_aa19_024a.yar			
 Rule	neo23x0	neo23x0/apt_agent_btz	neo23x0/yara/apt_agent_btz.yar			
 Rule	neo23x0	neo23x0/apt_alienspy_rat	neo23x0/yara/apt_alienspy_rat.yar			
-Rule	neo23x0	neo23x0/apt_apt3_bemstour	neo23x0/yara/apt_apt3_bemstour.yar			
-Rule	neo23x0	neo23x0/apt_apt6_malware	neo23x0/yara/apt_apt6_malware.yar			
 Rule	neo23x0	neo23x0/apt_apt10	neo23x0/yara/apt_apt10.yar			
 Rule	neo23x0	neo23x0/apt_apt10_redleaves	neo23x0/yara/apt_apt10_redleaves.yar			
 Rule	neo23x0	neo23x0/apt_apt12_malware	neo23x0/yara/apt_apt12_malware.yar			
@@ -102,12 +105,14 @@ Rule	neo23x0	neo23x0/apt_apt28_drovorub	neo23x0/yara/apt_apt28_drovorub.yar
 Rule	neo23x0	neo23x0/apt_apt29_grizzly_steppe	neo23x0/yara/apt_apt29_grizzly_steppe.yar			
 Rule	neo23x0	neo23x0/apt_apt29_nobelium_apr22	neo23x0/yara/apt_apt29_nobelium_apr22.yar			
 Rule	neo23x0	neo23x0/apt_apt29_nobelium_may21	neo23x0/yara/apt_apt29_nobelium_may21.yar			
+Rule	neo23x0	neo23x0/apt_apt3_bemstour	neo23x0/yara/apt_apt3_bemstour.yar			
 Rule	neo23x0	neo23x0/apt_apt30_backspace	neo23x0/yara/apt_apt30_backspace.yar			
 Rule	neo23x0	neo23x0/apt_apt32	neo23x0/yara/apt_apt32.yar			
 Rule	neo23x0	neo23x0/apt_apt34	neo23x0/yara/apt_apt34.yar			
 Rule	neo23x0	neo23x0/apt_apt37	neo23x0/yara/apt_apt37.yar			
 Rule	neo23x0	neo23x0/apt_apt37_bluelight	neo23x0/yara/apt_apt37_bluelight.yar			
 Rule	neo23x0	neo23x0/apt_apt41	neo23x0/yara/apt_apt41.yar			
+Rule	neo23x0	neo23x0/apt_apt6_malware	neo23x0/yara/apt_apt6_malware.yar			
 Rule	neo23x0	neo23x0/apt_ar18_165a	neo23x0/yara/apt_ar18_165a.yar			
 Rule	neo23x0	neo23x0/apt_area1_phishing_diplomacy	neo23x0/yara/apt_area1_phishing_diplomacy.yar			
 Rule	neo23x0	neo23x0/apt_aus_parl_compromise	neo23x0/yara/apt_aus_parl_compromise.yar			
@@ -487,6 +492,7 @@ Rule	neo23x0	neo23x0/crime_xbash	neo23x0/yara/crime_xbash.yar
 Rule	neo23x0	neo23x0/crime_zeus_panda	neo23x0/yara/crime_zeus_panda.yar			
 Rule	neo23x0	neo23x0/crime_zloader_maldocs	neo23x0/yara/crime_zloader_maldocs.yar			
 Rule	neo23x0	neo23x0/expl_adselfservice_cve_2021_40539	neo23x0/yara/expl_adselfservice_cve_2021_40539.yar			
+Rule	neo23x0	neo23x0/expl_connectwise_screenconnect_vuln_feb24.yar	neo23x0/yara/expl_connectwise_screenconnect_vuln_feb24.yar			
 Rule	neo23x0	neo23x0/expl_cve_2021_1647	neo23x0/yara/expl_cve_2021_1647.yar			
 Rule	neo23x0	neo23x0/expl_cve_2021_26084_confluence_log	neo23x0/yara/expl_cve_2021_26084_confluence_log.yar			
 Rule	neo23x0	neo23x0/expl_cve_2021_40444	neo23x0/yara/expl_cve_2021_40444.yar			
@@ -500,6 +506,7 @@ Rule	neo23x0	neo23x0/expl_log4j_cve_2021_44228	neo23x0/yara/expl_log4j_cve_2021_
 Rule	neo23x0	neo23x0/expl_macos_switcharoo_dec22	neo23x0/yara/expl_macos_switcharoo_dec22.yar			
 Rule	neo23x0	neo23x0/expl_manageengine_jan23	neo23x0/yara/expl_manageengine_jan23.yar			
 Rule	neo23x0	neo23x0/expl_outlook_cve_2023_23397	neo23x0/yara/expl_outlook_cve_2023_23397.yar			
+Rule	neo23x0	neo23x0/expl_outlook_cve_2024_21413.yar	neo23x0/yara/expl_outlook_cve_2024_21413.yar			
 Rule	neo23x0	neo23x0/expl_proxynotshell_owassrf_dec22	neo23x0/yara/expl_proxynotshell_owassrf_dec22.yar			
 Rule	neo23x0	neo23x0/expl_proxyshell	neo23x0/yara/expl_proxyshell.yar			
 Rule	neo23x0	neo23x0/expl_sharepoint_cve_2023_29357	neo23x0/yara/expl_sharepoint_cve_2023_29357.yar			
@@ -512,9 +519,9 @@ Rule	neo23x0	neo23x0/exploit_cve_2015_1701	neo23x0/yara/exploit_cve_2015_1701.ya
 Rule	neo23x0	neo23x0/exploit_cve_2015_2426	neo23x0/yara/exploit_cve_2015_2426.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2015_2545	neo23x0/yara/exploit_cve_2015_2545.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2015_5119	neo23x0/yara/exploit_cve_2015_5119.yar			
+Rule	neo23x0	neo23x0/exploit_cve_2017_11882	neo23x0/yara/exploit_cve_2017_11882.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2017_8759	neo23x0/yara/exploit_cve_2017_8759.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2017_9800	neo23x0/yara/exploit_cve_2017_9800.yar			
-Rule	neo23x0	neo23x0/exploit_cve_2017_11882	neo23x0/yara/exploit_cve_2017_11882.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2018_0802	neo23x0/yara/exploit_cve_2018_0802.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2018_16858	neo23x0/yara/exploit_cve_2018_16858.yar			
 Rule	neo23x0	neo23x0/exploit_cve_2021_31166	neo23x0/yara/exploit_cve_2021_31166.yar			
@@ -711,6 +718,7 @@ Rule	neo23x0	neo23x0/mal_drivers	neo23x0/yara/yara-rules_mal_drivers.yar
 Rule	neo23x0	neo23x0/mal_ducktail_compromised_certs_jun23	neo23x0/yara/mal_ducktail_compromised_certs_jun23.yar			
 Rule	neo23x0	neo23x0/mal_efile_apr23	neo23x0/yara/mal_efile_apr23.yar			
 Rule	neo23x0	neo23x0/mal_fake_document_software	neo23x0/yara/mal_fake_document_software.yar			
+Rule	neo23x0	neo23x0/mal_fortinet_coathanger_feb24.yar	neo23x0/yara/mal_fortinet_coathanger_feb24.yar			
 Rule	neo23x0	neo23x0/mal_lnx_barracuda_cve_2023_2868	neo23x0/yara/mal_lnx_barracuda_cve_2023_2868.yar			
 Rule	neo23x0	neo23x0/mal_lnx_implant_may22	neo23x0/yara/mal_lnx_implant_may22.yar			
 Rule	neo23x0	neo23x0/mal_lockbit_lnx_macos_apr23	neo23x0/yara/mal_lockbit_lnx_macos_apr23.yar			
