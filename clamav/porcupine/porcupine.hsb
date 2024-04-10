@@ -1,4 +1,14 @@
 62b0c4ac16bbfdf982cf15358cf69f10:329:porcupine.hsb.lite:73
+50f32dc0a493ecb64a1372479f04e7f3:985088:Porcupine.Trojan.Spy.Win32.Stealer.feih.226165:73
+0c56f233b45eab5754cac9123b588d0e:1136128:Porcupine.Win32.Injector.Autoit.FWQ.226122:73
+405f541b2c60a838eae4af9a0aed0925:17408:Porcupine.Win32.Exploit.CVE-2017-0199.QM.226118:73
+9c40740798c1a267f90d8c7256d3f185:543473:Porcupine.Trojan.MSIL.PowerShell.gen.226115:73
+0fd0e0858393bc225ac7b8ef828886d4:554720:Porcupine.Trojan.MSIL.PowerShell.gen.226114:73
+3cea44b6d192416c78f15119c3091b37:663216:Porcupine.Trojan.PSW.MSIL.Agensla.225929:73
+af41f314e4312944bfd1ac6de6ef3436:679574:Porcupine.Trojan.PSW.MSIL.Agensla.gen.225878:73
+bdcc914d440c50c31e1f0e7cc746003d:876552:Porcupine.Trojan.PSW.MSIL.Agensla.gen.225877:73
+c24b65d3318d94c0c913784a4e991c1b:1256960:Porcupine.Win32.Injector.Autoit.FWS.225861:73
+66b6455bd274e469e3425526751a181d:727462:Porcupine.Win32.Injector.Autoit.FWS.225860:73
 9f761a8cea613521e480ada9e8286fc7:1152000:Porcupine.Win32.Injector.Autoit.FWV.225218:73
 b0ba673c656ecf4799bbddbef115df42:201550:Porcupine.MSIL.Kryptik.AFAK.225081:73
 ff1786ef2ee848b48df39a295ec31f7a:364032:Porcupine.MSIL.Kryptik.AFAK.225080:73
@@ -172,9 +182,3 @@ d9752fcb67ba472501447778ad1a78b8:16427:Porcupine.Unclassified.218228:73
 0c8cebed7a44da9e131acb5a007c2dae:699392:Porcupine.Unclassified.218221:73
 2643273cb25de8b674f5b116c22ebf7c:674793:Porcupine.Trojan.Spy.MSIL.Noon.gen.218220:73
 07de3e03a634fb081f9e7ae7c185c632:29574:Porcupine.Phishing.218130:73
-f5b194a805de8de90d8c742adad636c0:602624:Porcupine.Win32.Injector.Autoit.FVL.217786:73
-bf55b803ed8f7fe4ffeced1f67e24831:752640:Porcupine.Trojan.MSIL.Crypt.gen.217724:73
-0c6d7a15681ab7982dbb2a3300861c5a:641149:Porcupine.MSIL.Spy.AgentTesla.I.217723:73
-a6b1300cc5f581621e59443c81855d29:2498858:Porcupine.BAT.TrojanDropper.Agent.NKM.217702:73
-b3cc065a08ae54b888715fc65a1daeb4:1051648:Porcupine.Win32.Injector.Autoit.FVK.217701:73
-05c4ef254f27409fe5e1fa39d008d51d:568320:Porcupine.Trojan.Win32.GuLoader.gen.217700:73
