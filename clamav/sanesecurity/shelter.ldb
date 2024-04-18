@@ -59,3 +59,4 @@ Sanesecurity.Shelter.Malware.QLnk5;Engine:81-255,Target:3;(0&1);3c2f686561643e3c
 Sanesecurity.Shelter.Malware.QLnk6;Engine:81-255,Target:3;(0&1);3c2f686561643e3c626f64793e3c703e7265766965772066696c653a2068747470733a2f2f;0/\/[a-z]{2,4}\/\??[0-9]{7}<br>/
 Sanesecurity.Shelter.Malware.QLnk7;Engine:81-255,Target:3;(0&1);3c2f686561643e3c626f64793e3c703e766965772066696c653a2068747470733a2f2f;0/\/[a-z]{2,4}\/\??[0-9]{7}<br>/
 Sanesecurity.Shelter.Malware.QLnk8;Engine:81-255,Target:3;(0&1);3c2f686561643e3c626f64793e3c703e7669657720646f63756d656e743a2068747470733a2f2f;0/\/[a-z]{2,4}\/\??[0-9]{7}<br>/
+Sanesecurity.Shelter.Malware.BadPdfZip;Engine:81-255,FileSize:1337-250000,Target:10;(0);2F54797065202F416374696F6E*2E7A697029*2F54797065202F416E6E6F740D
