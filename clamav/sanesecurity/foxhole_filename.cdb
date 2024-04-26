@@ -3599,4 +3599,5 @@ Sanesecurity.Foxhole.7Zip_fs3598:CL_TYPE_7Z:*:(?i)^booking form pif\.scr$:*:*:*:
 Sanesecurity.Foxhole.Mail_fs3599:CL_TYPE_MAIL:*:(?i)^dhl_.{0,30}_pdf\.gz$:*:*:*:*:*:*
 Sanesecurity.Foxhole.Zip_fs3600:CL_TYPE_ZIP:*:(?i)^document\.doc\.lnk$:*:*:*:1:*:*
 Sanesecurity.Foxhole.Zip_fs3601:CL_TYPE_ZIP:*:(?i)^complementoweb.{0,50}\.js$:*:*:*:1:*:*
-Sanesecurity.Foxhole.Rar_fs3602:CL_TYPE_RAR:*:(?i)^quote .{0,30}\.pdf\.exe$:*:*:*:1:*:* 
+Sanesecurity.Foxhole.Rar_fs3602:CL_TYPE_RAR:*:(?i)^quote .{0,30}\.pdf\.exe$:*:*:*:1:*:*
+Sanesecurity.Foxhole.Zip_fs3603:CL_TYPE_ZIP:*:(?i)^document\.doc\.scr$:*:*:*:1:*:* 
